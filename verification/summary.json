@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-03",
+  "status": "PASS",
+  "python_full_workflow": "3.12.14",
+  "unit_tests": 33,
+  "unit_test_python_versions": [
+    "3.12.14",
+    "3.13.5"
+  ],
+  "full_workflow_seconds": 1040.203786170001,
+  "exact_reference_comparisons": [
+    "order2_construction.json",
+    "order3_construction.json",
+    "order4_construction.json",
+    "order5_construction.json",
+    "order6_construction.json",
+    "order2_event_result.json",
+    "order3_event_result.json",
+    "hierarchical/order4_recursive_replay.json",
+    "hierarchical/order5_recursive_replay.json",
+    "hierarchical/order6_recursive_replay.json",
+    "hierarchical/order6_dense_certified_samples.json"
+  ],
+  "figure_numeric_arrays": 17,
+  "supplied_reference_data_modified": false,
+  "hosted_ci_run": false,
+  "license_selected": false
+}

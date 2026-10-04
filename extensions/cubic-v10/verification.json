@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "termination": "event budget",
+  "events": 2000000,
+  "t": "16727255004807900625001",
+  "log10_t": "22.22342467771815745562683677083789344539613327173220252786668243065925721553972557364",
+  "completed_outer_phases": 250000,
+  "final_phase": 251733,
+  "max_batch_cycles": 251733,
+  "represented_runs": "95051875000",
+  "ratio": "1.000051638459662540501620507638821861470346192333040361053215629887399601720369259570",
+  "relative_deviation": "0.000051638459662540501620507638821861470346192333040361053215629887399601720369259570",
+  "old_relative_deviation": "0.000196802958560990862101371154288783460263975234755572012501590941132312765156200694",
+  "deviation_reduction_factor": "3.811170198474285358575252530247795505030549600398757722349934780527554440887336406834",
+  "samples_checked": 20128,
+  "checks": [
+    "unmodified audited engine and matrix",
+    "every transcript event count/time update",
+    "every saved sample score/gap/normalization",
+    "full archived trajectory sample prefix and million-event state",
+    "final count/score identities",
+    "exact count-table boundary identity"
+  ],
+  "limitation": "Production event certificates cover all skipped decisions. Independent extension check reconstructs transcript counts and sample scores, but does not separately rederive every new decision inequality.",
+  "files": {
+    "exact_events.py": "f40d5cead4d02c66cfa84fe46e92d64912feed941c92ea35e234f9c576066f3b",
+    "order3_construction.json": "b1cab364471604f7f584f45b94f0c11b6e0193069fca409b1a320edf9ff0b9ad",
+    "order3_event_result.json": "99f6028b89193988dc236a33b5a77e1b25b9c42a3513d4d8f157197ca1750d81",
+    "order3_event_transcript.jsonl.gz": "ab696fc27da6bbfa3cbf1c04151d69086d722161184cdd34a87d53c59e54f37a"
+  }
+}

@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+outputs/
+computations/plots/generated/
+*.jsonl.gz
+.DS_Store
+
+/extensions/cubic-v10/order3_event_transcript.jsonl.gz

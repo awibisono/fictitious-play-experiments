@@ -1,0 +1,18 @@
+CHECKED RPS base: 12 strict symbolic endpoint margins, signed counter, reset, positive weights and both moment tests.
+BUILT 2 Q digits 1 seconds 0.000947909000387881
+LIFTING ORDER 2 (3 actions) -> ORDER 3 (10 actions)
+  scale selected: T_* bits=20, A_min bits=21
+  simplex radius bits=29, next stride bits=4
+BUILT 3 Q digits 4 seconds 0.4553125579986954
+LIFTING ORDER 3 (10 actions) -> ORDER 4 (19 actions)
+  scale selected: T_* bits=111, A_min bits=141
+  simplex radius bits=158, next stride bits=8
+BUILT 4 Q digits 9 seconds 1.1908931550024136
+LIFTING ORDER 4 (19 actions) -> ORDER 5 (30 actions)
+  scale selected: T_* bits=514, A_min bits=569
+  simplex radius bits=713, next stride bits=37
+BUILT 5 Q digits 45 seconds 7.583760131998133
+LIFTING ORDER 5 (30 actions) -> ORDER 6 (43 actions)
+  scale selected: T_* bits=2208, A_min bits=2919
+  simplex radius bits=3009, next stride bits=23
+BUILT 6 Q digits 173 seconds 137.22548621999886

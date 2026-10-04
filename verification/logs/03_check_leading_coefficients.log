@@ -1,0 +1,46 @@
+[
+  {
+    "order": 2,
+    "recurrent_actions": 3,
+    "installed_actions": 4,
+    "count_top_positive": true,
+    "height_top_positive": true,
+    "constant_verified": true
+  },
+  {
+    "order": 3,
+    "recurrent_actions": 10,
+    "installed_actions": 11,
+    "count_top_positive": true,
+    "height_top_positive": true,
+    "constant_verified": true,
+    "lift_top_coefficients_verified": true
+  },
+  {
+    "order": 4,
+    "recurrent_actions": 19,
+    "installed_actions": 20,
+    "count_top_positive": true,
+    "height_top_positive": true,
+    "constant_verified": true,
+    "lift_top_coefficients_verified": true
+  },
+  {
+    "order": 5,
+    "recurrent_actions": 30,
+    "installed_actions": 31,
+    "count_top_positive": true,
+    "height_top_positive": true,
+    "constant_verified": true,
+    "lift_top_coefficients_verified": true
+  },
+  {
+    "order": 6,
+    "recurrent_actions": 43,
+    "installed_actions": 44,
+    "count_top_positive": true,
+    "height_top_positive": true,
+    "constant_verified": true,
+    "lift_top_coefficients_verified": true
+  }
+]

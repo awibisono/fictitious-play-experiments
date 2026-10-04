@@ -1,0 +1,32 @@
+test_certificate_interval_union (test_certificates.CertificateTests.test_certificate_interval_union) ... ok
+test_constructor_metadata_and_count_tables (test_certificates.CertificateTests.test_constructor_metadata_and_count_tables) ... ok
+test_count_sums_and_all_margin_polynomials_independent (test_certificates.CertificateTests.test_count_sums_and_all_margin_polynomials_independent) ... ok
+test_faulhaber_formulas_against_integer_sums (test_certificates.CertificateTests.test_faulhaber_formulas_against_integer_sums) ... ok
+test_not_certified_is_not_a_counterexample (test_certificates.CertificateTests.test_not_certified_is_not_a_counterexample) ... ok
+test_optimized_python_is_rejected (test_certificates.CertificateTests.test_optimized_python_is_rejected) ... ok
+test_strict_and_nonstrict_zero (test_certificates.CertificateTests.test_strict_and_nonstrict_zero) ... ok
+test_tensor_bernstein_against_direct_basis (test_certificates.CertificateTests.test_tensor_bernstein_against_direct_basis) ... ok
+test_first_nonpositive_exhaustive_small (test_events.ExactHelpers.test_first_nonpositive_exhaustive_small) ... ok
+test_first_nonpositive_large_integer_cases (test_events.ExactHelpers.test_first_nonpositive_large_integer_cases) ... ok
+test_polymin_against_complete_scan (test_events.ExactHelpers.test_polymin_against_complete_scan) ... ok
+test_run_against_round_scan_on_random_states (test_events.ExactHelpers.test_run_against_round_scan_on_random_states) ... ok
+test_construction_rejects_forged_hash_and_changed_matrix (test_events.InputGuards.test_construction_rejects_forged_hash_and_changed_matrix) ... ok
+test_construction_rejects_incorrect_shape_order_and_skew_symmetry (test_events.InputGuards.test_construction_rejects_incorrect_shape_order_and_skew_symmetry) ... ok
+test_cycle_cap_must_be_positive_integer (test_events.InputGuards.test_cycle_cap_must_be_positive_integer) ... ok
+test_decision_rejects_ties_setup_and_inexact_scores (test_events.InputGuards.test_decision_rejects_ties_setup_and_inexact_scores) ... ok
+test_execute_rejects_invalid_limits_before_loading_or_writing (test_events.InputGuards.test_execute_rejects_invalid_limits_before_loading_or_writing) ... ok
+test_installed_order_range (test_events.InputGuards.test_installed_order_range) ... ok
+test_logarithm_requires_positive_integer (test_events.InputGuards.test_logarithm_requires_positive_integer) ... ok
+test_optimized_python_is_rejected_at_import (test_events.InputGuards.test_optimized_python_is_rejected_at_import) ... ok
+test_quadratic_domains_and_exact_types (test_events.InputGuards.test_quadratic_domains_and_exact_types) ... ok
+test_round_counts_are_nonnegative_integers (test_events.InputGuards.test_round_counts_are_nonnegative_integers) ... ok
+test_run_rejects_bad_shape_diagonal_and_infinite_plateau (test_events.InputGuards.test_run_rejects_bad_shape_diagonal_and_infinite_plateau) ... ok
+test_batches_against_independent_event_replay (test_events.InstalledData.test_batches_against_independent_event_replay) ... ok
+test_construction_and_saved_state_invariants (test_events.InstalledData.test_construction_and_saved_state_invariants) ... ok
+test_direct_simultaneous_prefix_and_jump (test_events.InstalledData.test_direct_simultaneous_prefix_and_jump) ... ok
+test_publication_cap_sampling_and_transcript (test_events.PublicationReplay.test_publication_cap_sampling_and_transcript) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 4.013s
+
+OK

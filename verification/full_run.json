@@ -1,0 +1,208 @@
+{
+  "stage": "all",
+  "status": "PASS",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 4.178677239000535,
+      "log": "01_unit_tests.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/checks/check_integrity.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.868053295002028,
+      "log": "02_check_integrity.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/checks/check_leading_coefficients.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.09565543399730814,
+      "log": "03_check_leading_coefficients.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/construction.py",
+        "--max-order",
+        "6"
+      ],
+      "exit_code": 0,
+      "seconds": 281.65515648699875,
+      "log": "04_construction.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/build_constructions.py"
+      ],
+      "exit_code": 0,
+      "seconds": 147.17295222300163,
+      "log": "05_build_constructions.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/exact_events.py",
+        "--orders",
+        "2",
+        "--events",
+        "100000",
+        "--seconds",
+        "1000000000000.0",
+        "--publication-v5"
+      ],
+      "exit_code": 0,
+      "seconds": 9.757216905996756,
+      "log": "06_exact_events.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/exact_events.py",
+        "--orders",
+        "3",
+        "--events",
+        "1000000",
+        "--seconds",
+        "1000000000000.0",
+        "--publication-v5"
+      ],
+      "exit_code": 0,
+      "seconds": 83.40405782599919,
+      "log": "07_exact_events.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/hierarchical/run_recursive_replay.py",
+        "--orders",
+        "4",
+        "5",
+        "--doublings",
+        "12"
+      ],
+      "exit_code": 0,
+      "seconds": 56.80146671200055,
+      "log": "08_run_recursive_replay.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/hierarchical/run_sextic_replay.py"
+      ],
+      "exit_code": 0,
+      "seconds": 175.17321284399804,
+      "log": "09_run_sextic_replay.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/hierarchical/extract_certified_sextic_samples.py"
+      ],
+      "exit_code": 0,
+      "seconds": 17.936673463998886,
+      "log": "10_extract_certified_sextic_samples.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/checks/check_integrity.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.9105069229990477,
+      "log": "11_check_integrity.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/audit/independent_audit.py"
+      ],
+      "exit_code": 0,
+      "seconds": 41.53592203399967,
+      "log": "12_independent_audit.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/checks/recheck_hierarchical_signs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 25.459915572999307,
+      "log": "13_recheck_hierarchical_signs.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/hierarchical/audit/independent_sextic_full_signs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 164.23869076299889,
+      "log": "14_independent_sextic_full_signs.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/hierarchical/audit/audit_replay_outputs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2479763669980457,
+      "log": "15_audit_replay_outputs.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/hierarchical/audit/audit_sextic_dense.py"
+      ],
+      "exit_code": 0,
+      "seconds": 15.946896943001775,
+      "log": "16_audit_sextic_dense.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/full/computations/plots/make_print_figures.py",
+        "--output-dir",
+        "outputs/full/figures"
+      ],
+      "exit_code": 0,
+      "seconds": 9.446383252001397,
+      "log": "17_make_print_figures.log"
+    }
+  ],
+  "comparisons": [
+    "order2_construction.json",
+    "order3_construction.json",
+    "order4_construction.json",
+    "order5_construction.json",
+    "order6_construction.json",
+    "order2_event_result.json",
+    "order3_event_result.json",
+    "hierarchical/order4_recursive_replay.json",
+    "hierarchical/order5_recursive_replay.json",
+    "hierarchical/order6_recursive_replay.json",
+    "hierarchical/order6_dense_certified_samples.json"
+  ],
+  "dependencies": {
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "elapsed_seconds": 1040.203786170001
+}

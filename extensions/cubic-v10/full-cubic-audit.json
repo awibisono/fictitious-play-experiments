@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "events": 2000000,
+  "represented_runs": 95051875000,
+  "batches": 250000,
+  "cycles": 31683375000,
+  "samples": 20128,
+  "t": "16727255004807900625001",
+  "minimum_scaled_integer_margin": "1",
+  "ratio": "1.00005163845966254050162050763882186147034619233304036105321562988739960172036925957298937",
+  "relative_deviation": "0.00005163845966254050162050763882186147034619233304036105321562988739960172036925957298937",
+  "seconds": 88.54274201393127,
+  "checks": [
+    "every constant run decision by affine endpoint comparison",
+    "every batched cycle decision by exact quadratic integer minimum",
+    "all actions including setup and every outer action",
+    "every event count/time update",
+    "every saved sample gap and normalization",
+    "final score/count identities",
+    "phase-boundary count formula"
+  ],
+  "scope": "Finite exact independently coded certificate; shares only payoff matrix, transcript word, and output data, imports no production routines",
+  "inputs": {
+    "order3_construction.json": "b1cab364471604f7f584f45b94f0c11b6e0193069fca409b1a320edf9ff0b9ad",
+    "order3_event_result.json": "99f6028b89193988dc236a33b5a77e1b25b9c42a3513d4d8f157197ca1750d81",
+    "order3_event_transcript.jsonl.gz": "ab696fc27da6bbfa3cbf1c04151d69086d722161184cdd34a87d53c59e54f37a"
+  }
+}

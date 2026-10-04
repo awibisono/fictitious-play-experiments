@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "exact_events.py",
+    "--orders",
+    "3",
+    "--events",
+    "2000000",
+    "--seconds",
+    "300",
+    "--logt",
+    "1000"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 178.63932922099775,
+  "max_rss_kib": 854272,
+  "user_seconds": 175.00424,
+  "system_seconds": 3.556469,
+  "address_space_limit_bytes": 2147483648
+}

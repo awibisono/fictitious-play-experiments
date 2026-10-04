@@ -1,0 +1,161 @@
+{
+  "status": "PASS",
+  "canvas_width_inches": 6.5,
+  "body_font_pt": 8.5,
+  "tick_font_pt": 8,
+  "legend_font_pt": 8,
+  "simulations_rerun": false,
+  "method": "Capture all original Line2D numeric arrays without saving source figures, then reuse unchanged arrays in new layouts",
+  "figures": {
+    "exact_observed_orders_2_3_print": {
+      "numeric_arrays_identical": true,
+      "lines": [
+        {
+          "new_axis": 0,
+          "source_axis": 0,
+          "line": 0,
+          "points": 10117,
+          "x_sha256": "292a515088614bb0cb4554a02ea761bc76903b1ac16d4ab89a5105733419f06e",
+          "y_sha256": "792a7bdfdc8821523095f599f0610163e536a6a8428be3daee574da1f03b2cec"
+        },
+        {
+          "new_axis": 0,
+          "source_axis": 0,
+          "line": 1,
+          "points": 2,
+          "x_sha256": "a0feb8f422936442c706f3f04560f9eba08b1e5b0a8c45ef576ac6d4540ab515",
+          "y_sha256": "1066fd7724a0c4d1e26a122d4889d2c669c213c486e6b56f1dfb5f8bef5e1eed"
+        },
+        {
+          "new_axis": 1,
+          "source_axis": 2,
+          "line": 0,
+          "points": 10117,
+          "x_sha256": "292a515088614bb0cb4554a02ea761bc76903b1ac16d4ab89a5105733419f06e",
+          "y_sha256": "7a65122682a804c0696e8ec19aaa4ebdbc44ba18b5ba3661ccae323b097c4402"
+        },
+        {
+          "new_axis": 1,
+          "source_axis": 2,
+          "line": 1,
+          "points": 2,
+          "x_sha256": "fc62429c3e69001d65972cdeb94fb9aa18a7d9c16bc449e1e474e7e41bb95a7d",
+          "y_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        },
+        {
+          "new_axis": 2,
+          "source_axis": 1,
+          "line": 0,
+          "points": 10128,
+          "x_sha256": "3104b6df50f53f00f2d92a8394acd66d0b9845e970daa76b60238a4cd36ac22b",
+          "y_sha256": "1cc87ef25a34049cf93f8dfb53bec999119ec32a736cda7149a7ebba2320a817"
+        },
+        {
+          "new_axis": 2,
+          "source_axis": 1,
+          "line": 1,
+          "points": 2,
+          "x_sha256": "aa02ae162e0844b8faeea9f36e02d9596f2f72f6ee8b1a89866353f57c7f5434",
+          "y_sha256": "bc084907a4cdd21daa4f1b8cc5ff320ebbbf75ea17c341be20068fd55e4d0d2a"
+        },
+        {
+          "new_axis": 3,
+          "source_axis": 3,
+          "line": 0,
+          "points": 10128,
+          "x_sha256": "3104b6df50f53f00f2d92a8394acd66d0b9845e970daa76b60238a4cd36ac22b",
+          "y_sha256": "fc93de110c1a8cb5b4583a9d1b4f3415e295c3223ab2ced0712c734b2aff1a7c"
+        },
+        {
+          "new_axis": 3,
+          "source_axis": 3,
+          "line": 1,
+          "points": 2,
+          "x_sha256": "fc62429c3e69001d65972cdeb94fb9aa18a7d9c16bc449e1e474e7e41bb95a7d",
+          "y_sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        }
+      ],
+      "width_inches": 6.5,
+      "height_inches": 5.8
+    },
+    "hierarchical_orders_4_5_6_print": {
+      "numeric_arrays_identical": true,
+      "lines": [
+        {
+          "new_axis": 0,
+          "source_axis": 0,
+          "line": 0,
+          "points": 12,
+          "x_sha256": "7db54b2204e978f3d619c8632dad12e0cb09757e180ed5a6b711bce71fd64eda",
+          "y_sha256": "7b4b1fe85ed00b9736db457b5bc639bee96e0fa2e3b99479f185b0a80c9f76cc"
+        },
+        {
+          "new_axis": 0,
+          "source_axis": 0,
+          "line": 1,
+          "points": 12,
+          "x_sha256": "7db54b2204e978f3d619c8632dad12e0cb09757e180ed5a6b711bce71fd64eda",
+          "y_sha256": "e9dc5a62b12a30a4859c3f9c74a7766a4404563e944b7202d24d99cdc4b6d4c8"
+        },
+        {
+          "new_axis": 1,
+          "source_axis": 3,
+          "line": 0,
+          "points": 12,
+          "x_sha256": "09acb96890e30114a4902f848592c21f2803152092d615269a7ac47fb8dfb699",
+          "y_sha256": "30697434ea1f0704ae90af713bf3e2060ad5abaf39af1f848cf5ba99d7716935"
+        },
+        {
+          "new_axis": 2,
+          "source_axis": 1,
+          "line": 0,
+          "points": 12,
+          "x_sha256": "b5c4b3aae427c56e9cc4a7aa84d90286e532ac49b25614f4fbff5d1aa7fdeac4",
+          "y_sha256": "c8659be34eed48ee7dc4df0175ee374da7548605f168c62c077543ec4ee1eada"
+        },
+        {
+          "new_axis": 2,
+          "source_axis": 1,
+          "line": 1,
+          "points": 12,
+          "x_sha256": "b5c4b3aae427c56e9cc4a7aa84d90286e532ac49b25614f4fbff5d1aa7fdeac4",
+          "y_sha256": "b25de03ec87596f8689c5d6938811b648b818b43bbfd9a63778613f2418dfe1a"
+        },
+        {
+          "new_axis": 3,
+          "source_axis": 4,
+          "line": 0,
+          "points": 12,
+          "x_sha256": "09acb96890e30114a4902f848592c21f2803152092d615269a7ac47fb8dfb699",
+          "y_sha256": "2a2b14a513e3960f1e871d29de9cec530da98ac22016dfdb98d40f53a6051bdc"
+        },
+        {
+          "new_axis": 4,
+          "source_axis": 2,
+          "line": 0,
+          "points": 12,
+          "x_sha256": "e1c9d40a4257d262af98e6bbaf3d4042353f2de9e928c38721c758758656ad50",
+          "y_sha256": "61cde82c725dfe4a872075c9414d5fc449651b4dfec3d01fe40f0ee48ac50434"
+        },
+        {
+          "new_axis": 4,
+          "source_axis": 2,
+          "line": 1,
+          "points": 12,
+          "x_sha256": "e1c9d40a4257d262af98e6bbaf3d4042353f2de9e928c38721c758758656ad50",
+          "y_sha256": "36710e14db2ae3a44d6c46809e0ea7fd884b46dba8c3ad8418e11679010d5c62"
+        },
+        {
+          "new_axis": 5,
+          "source_axis": 5,
+          "line": 0,
+          "points": 12,
+          "x_sha256": "09acb96890e30114a4902f848592c21f2803152092d615269a7ac47fb8dfb699",
+          "y_sha256": "cb74731729c8a684f2ac9de73cc616727ce17c640c807df7ac89d27bb6268fe5"
+        }
+      ],
+      "width_inches": 6.5,
+      "height_inches": 7.2
+    }
+  }
+}

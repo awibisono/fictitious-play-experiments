@@ -1,0 +1,47 @@
+{
+  "stage": "smoke",
+  "status": "PASS",
+  "python": "3.12.14",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "commands": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 4.324895546000334,
+      "log": "01_unit_tests.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/smoke/computations/checks/check_integrity.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.772252242997638,
+      "log": "02_check_integrity.log"
+    },
+    {
+      "command": [
+        "python",
+        "outputs/smoke/computations/checks/check_leading_coefficients.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.11065532000066014,
+      "log": "03_check_leading_coefficients.log"
+    }
+  ],
+  "comparisons": [],
+  "dependencies": {
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8"
+  },
+  "elapsed_seconds": 7.218970399000682
+}

@@ -1,0 +1,32 @@
+{
+  "filename": "order3_event_transcript.jsonl.gz",
+  "sha256": "ab696fc27da6bbfa3cbf1c04151d69086d722161184cdd34a87d53c59e54f37a",
+  "size": 39296361,
+  "parts": [
+    {
+      "name": "order3_event_transcript.jsonl.gz.part00",
+      "sha256": "b670bc5f151dbe278c554a4f701dd9ae2792edb4407f255c3614b5bc429befbd",
+      "size": 8388608
+    },
+    {
+      "name": "order3_event_transcript.jsonl.gz.part01",
+      "sha256": "ed8371ce6576a65191e4906c7ffdbc73a0f16e5bf2c785cd967be2dfa7802c7c",
+      "size": 8388608
+    },
+    {
+      "name": "order3_event_transcript.jsonl.gz.part02",
+      "sha256": "2426625ac8cb5a1f653b580a5889db0792a462c742ca41e9e351315f3c994fa6",
+      "size": 8388608
+    },
+    {
+      "name": "order3_event_transcript.jsonl.gz.part03",
+      "sha256": "854dae3b4c573651980b22650c899a40e98a4df1586b7af8cf0970cf5540484a",
+      "size": 8388608
+    },
+    {
+      "name": "order3_event_transcript.jsonl.gz.part04",
+      "sha256": "a00d781a621f3810d56a4b898ca1540d07f5016f259affb3b37997d62b9e9de1",
+      "size": 5741929
+    }
+  ]
+}

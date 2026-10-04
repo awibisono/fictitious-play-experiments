@@ -1,0 +1,85 @@
+CHECKED RPS-based exposition and exact first even-degree correction.
+CHECKED named polynomial identities in degrees 0..8; finite exponential/geometric identities for d=2..9.
+CHECKED RPS base: 12 strict symbolic endpoint margins, signed counter, reset, positive weights and both moment tests.
+CHECKED order 2: three recurrent actions, four including setup.
+LIFTING ORDER 2 (3 actions) -> ORDER 3 (10 actions)
+  scale selected: T_* bits=20, A_min bits=21
+  simplex radius bits=29, next stride bits=4
+  CHECKED radius-uniform identities/bounds at radii A_min, 2*A_min, 17*A_min for parent d=2.
+CHECKED {"order": 3, "recurrent_actions": 10, "total_actions": 11, "scale_bits": 20, "radius_bits": 29, "threshold": "1733", "strict_decisions": 64, "univariate_certificates": 36, "uniform_certificates": 4, "seconds": 0.402}
+LIFTING ORDER 3 (10 actions) -> ORDER 4 (19 actions)
+  scale selected: T_* bits=111, A_min bits=141
+  simplex radius bits=158, next stride bits=8
+  CHECKED radius-uniform identities/bounds at radii A_min, 2*A_min, 17*A_min for parent d=3.
+CHECKED {"order": 4, "recurrent_actions": 19, "total_actions": 20, "scale_bits": 111, "radius_bits": 158, "threshold": "130490910", "strict_decisions": 64, "univariate_certificates": 103, "uniform_certificates": 6, "seconds": 1.567}
+LIFTING ORDER 4 (19 actions) -> ORDER 5 (30 actions)
+  scale selected: T_* bits=514, A_min bits=569
+  simplex radius bits=713, next stride bits=37
+  CHECKED radius-uniform identities/bounds at radii A_min, 2*A_min, 17*A_min for parent d=4.
+CHECKED {"order": 5, "recurrent_actions": 30, "total_actions": 31, "scale_bits": 514, "radius_bits": 713, "threshold": "870549456358243844772751451170668971917584140", "strict_decisions": 64, "univariate_certificates": 219, "uniform_certificates": 8, "seconds": 13.089}
+LIFTING ORDER 5 (30 actions) -> ORDER 6 (43 actions)
+  scale selected: T_* bits=2208, A_min bits=2919
+  simplex radius bits=3009, next stride bits=23
+  CHECKED radius-uniform identities/bounds at radii A_min, 2*A_min, 17*A_min for parent d=5.
+CHECKED {"order": 6, "recurrent_actions": 43, "total_actions": 44, "scale_bits": 2208, "radius_bits": 3009, "threshold": "81896038987080900198948903059256017978241976399752024139711282187929203739717643573530752917434346333608805061453089940198683794366352233440974094806892115058258038981120000", "strict_decisions": 64, "univariate_certificates": 395, "uniform_certificates": 10, "seconds": 264.127}
+{
+  "status": "PASS",
+  "orders": [
+    {
+      "order": 2,
+      "recurrent_actions": 3,
+      "total_actions": 4,
+      "strict_decisions": 64
+    },
+    {
+      "order": 3,
+      "recurrent_actions": 10,
+      "total_actions": 11,
+      "scale_bits": 20,
+      "radius_bits": 29,
+      "threshold": "1733",
+      "strict_decisions": 64,
+      "univariate_certificates": 36,
+      "uniform_certificates": 4,
+      "seconds": 0.402
+    },
+    {
+      "order": 4,
+      "recurrent_actions": 19,
+      "total_actions": 20,
+      "scale_bits": 111,
+      "radius_bits": 158,
+      "threshold": "130490910",
+      "strict_decisions": 64,
+      "univariate_certificates": 103,
+      "uniform_certificates": 6,
+      "seconds": 1.567
+    },
+    {
+      "order": 5,
+      "recurrent_actions": 30,
+      "total_actions": 31,
+      "scale_bits": 514,
+      "radius_bits": 713,
+      "threshold": "870549456358243844772751451170668971917584140",
+      "strict_decisions": 64,
+      "univariate_certificates": 219,
+      "uniform_certificates": 8,
+      "seconds": 13.089
+    },
+    {
+      "order": 6,
+      "recurrent_actions": 43,
+      "total_actions": 44,
+      "scale_bits": 2208,
+      "radius_bits": 3009,
+      "threshold": "81896038987080900198948903059256017978241976399752024139711282187929203739717643573530752917434346333608805061453089940198683794366352233440974094806892115058258038981120000",
+      "strict_decisions": 64,
+      "univariate_certificates": 395,
+      "uniform_certificates": 10,
+      "seconds": 264.127
+    }
+  ],
+  "elapsed_seconds": 279.215,
+  "scope": "Exact finite algebra and chronology certificates; 64 actual post-setup decisions per order; no complete lifted phase simulation or replacement for the all-order proof."
+}

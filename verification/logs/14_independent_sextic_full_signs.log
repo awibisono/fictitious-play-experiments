@@ -1,0 +1,19 @@
+PULL_SELFTEST_PASS 125 seconds 0.3247293290005473
+INDEPENDENT_MODEL_BUILT constraints 3745 seconds 10.638939707001555
+NORMALIZATION_READY monomials 63 seconds 10.658283864999248
+PROGRESS 250 of 3745 coefficients 1394 failed 0 seconds 10.927550358999724
+PROGRESS 500 of 3745 coefficients 2875 failed 0 seconds 11.197097000000213
+PROGRESS 750 of 3745 coefficients 4351 failed 0 seconds 11.457595509000384
+PROGRESS 1000 of 3745 coefficients 5788 failed 0 seconds 11.714994361002027
+PROGRESS 1250 of 3745 coefficients 11654 failed 0 seconds 13.213483069001086
+PROGRESS 1500 of 3745 coefficients 18582 failed 0 seconds 14.984430882999732
+PROGRESS 1750 of 3745 coefficients 25505 failed 0 seconds 16.717303179000737
+PROGRESS 2000 of 3745 coefficients 40005 failed 0 seconds 20.644319070001075
+PROGRESS 2250 of 3745 coefficients 68822 failed 0 seconds 28.814523515000474
+PROGRESS 2500 of 3745 coefficients 97698 failed 0 seconds 37.03889077400163
+PROGRESS 2750 of 3745 coefficients 176674 failed 0 seconds 57.680214995001734
+PROGRESS 3000 of 3745 coefficients 278998 failed 0 seconds 83.92604767500234
+PROGRESS 3250 of 3745 coefficients 501568 failed 0 seconds 126.47968682200008
+PROGRESS 3500 of 3745 coefficients 684199 failed 0 seconds 162.36219747500218
+PROGRESS 3745 of 3745 coefficients 691406 failed 0 seconds 163.96537367100245
+DONE {"status": "PASS", "order": 6, "initial_q": "81896038987080900198948903059256017978241976399752024139711282187929203739717643573530752917434346333608805061453089940198683794366352233440974094806892115058258038981120000", "completed_phases": "335364279652096286314695758027653393620900893356984538852117700559570089314143750433608433196893648236128056726650403305113610137930212395940788918234223211163566669627686400000", "final_q": "335446175691083367214894706930712649638879135333384290876257411841758018517883468077181963949811082582461665531711856395053808821724578748174229892329030103278624927666667520000", "inequalities": 3745, "bernstein_coefficients_tested": 691406, "failed": [], "degrees": [[0, 0, 0, 0, 0], [1, 0, 0, 0, 0], [1, 1, 0, 0, 0], [1, 1, 1, 0, 0], [1, 1, 1, 1, 0], [1, 1, 1, 1, 1], [2, 0, 0, 0, 0], [2, 2, 0, 0, 0], [2, 2, 2, 0, 0], [2, 2, 2, 2, 0], [2, 2, 2, 2, 2], [3, 0, 0, 0, 0], [3, 3, 0, 0, 0], [3, 3, 3, 0, 0], [3, 3, 3, 3, 0], [3, 3, 3, 3, 2], [4, 0, 0, 0, 0], [4, 4, 0, 0, 0], [4, 4, 4, 0, 0], [4, 4, 4, 3, 0], [4, 4, 4, 3, 2], [5, 0, 0, 0, 0], [5, 5, 0, 0, 0], [5, 5, 4, 0, 0], [5, 5, 4, 3, 0], [5, 5, 4, 3, 2], [6, 0, 0, 0, 0], [6, 5, 0, 0, 0], [6, 5, 4, 0, 0], [6, 5, 4, 3, 0], [6, 5, 4, 3, 2]], "independent_sign_recomputation": true, "producer_code_imported": false, "source_C_or_R_used": false, "coefficient_conversion": "Own forward-axis grouped pull transform, crosschecked against direct tensor formula", "conversion_selftests": 125, "seconds": 163.96548674800215, "implementation_sha256": "7e99d362f5052846ae28e96ab484e01b9b52de9e67c7a328c834230174e06276", "independent_model_sha256": "0c357f02b427e753a64cb4238b65efe76cc252952f9e2942eba6a61b01c114c7"}

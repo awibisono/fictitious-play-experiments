@@ -1,0 +1,147 @@
+[
+  {
+    "original_path": "verify_master_v4.py",
+    "release_path": "computations/construction.py",
+    "original_sha256": "adbee84f957f00cd532bfa3c344ca11e87de60c9bb7c372574ad67cc6d9fc319"
+  },
+  {
+    "original_path": "build_current.py",
+    "release_path": "computations/build_constructions.py",
+    "original_sha256": "5a0601738fbd7b5338140fb6d3c1ff393e77958483b13a04491178667458364e"
+  },
+  {
+    "original_path": "exact_events_publication_repro.py",
+    "release_path": "computations/exact_events.py",
+    "original_sha256": "724b492814d28a8a3cdd358a3af73f9ad0bb7533be0935d9bf007260668a496c"
+  },
+  {
+    "original_path": "hierarchical/certify_recursive_word.py",
+    "release_path": "computations/hierarchical/certify_recursive_word.py",
+    "original_sha256": "68ce8b1c825537ecf8bf2886bb8805d7e3f476236e31596637fb62910c859dc5"
+  },
+  {
+    "original_path": "hierarchical/run_recursive_replay.py",
+    "release_path": "computations/hierarchical/run_recursive_replay.py",
+    "original_sha256": "e877d4015d3885d19c3775267ab61518ba380424df9a762a3bbfcd9baba315d9"
+  },
+  {
+    "original_path": "hierarchical/extract_certified_sextic_samples.py",
+    "release_path": "computations/hierarchical/extract_certified_sextic_samples.py",
+    "original_sha256": "659e347ca7e8ec7212ce22afefe2f7cf58938400e90082d5518df8abe5662884"
+  },
+  {
+    "original_path": "checks/check_leading_coefficients.py",
+    "release_path": "computations/checks/check_leading_coefficients.py",
+    "original_sha256": "f7bd44f64771ff59b6e40f75ef3dcd556b1fcdcfe69a31cd818a7bceebd6befa"
+  },
+  {
+    "original_path": "checks/recheck_hierarchical_signs.py",
+    "release_path": "computations/checks/recheck_hierarchical_signs.py",
+    "original_sha256": "b918d188eff837e38c3adcd75a94087a96677e3dbfebf71cb3ec5be664363ceb"
+  },
+  {
+    "original_path": "audit/independent_audit.py",
+    "release_path": "computations/audit/independent_audit.py",
+    "original_sha256": "a65abe3b2eaa768c6241d166344a4874aa2a64faf64d2ee5f2b806f5ba83b453"
+  },
+  {
+    "original_path": "hierarchical/audit/audit_sextic_dense.py",
+    "release_path": "computations/hierarchical/audit/audit_sextic_dense.py",
+    "original_sha256": "661d3603609965908ee0cfbdb973a797d095c6e3bec441f20d20ad172c0039db"
+  },
+  {
+    "original_path": "hierarchical/audit/independent_sextic_full_signs.py",
+    "release_path": "computations/hierarchical/audit/independent_sextic_full_signs.py",
+    "original_sha256": "16b2de04052a7154f26d57864b4754b65e6f61365b15af08f4c4b52ba53e316d"
+  },
+  {
+    "original_path": "hierarchical/audit/independent_general_certificate.py",
+    "release_path": "computations/hierarchical/audit/independent_general_certificate.py",
+    "original_sha256": "e275199e4ab796693088bdcc2e4a367152dce228799f62f9fea627c8bb98d0a9"
+  },
+  {
+    "original_path": "hierarchical/audit/audit_replay_outputs.py",
+    "release_path": "computations/hierarchical/audit/audit_replay_outputs.py",
+    "original_sha256": "32aec176dc168e261abc33612ef9d6aa434cb650892b2d29ec8e4d2b9c21ce8e"
+  },
+  {
+    "original_path": "plots/source_orders_4_5_6.py",
+    "release_path": "computations/plots/source_orders_4_5_6.py",
+    "original_sha256": "16b8f75596f352a8862faf0345049afc9e125a00e3336b2a247a8b2581165c60"
+  },
+  {
+    "original_path": "plots/make_print_figures.py",
+    "release_path": "computations/plots/make_print_figures.py",
+    "original_sha256": "7633727ae56c3a162e4feb20e42bc3a9b094276025467fb627e7f0f2cd29cef9"
+  },
+  {
+    "original_path": "plots/source_orders_2_3.py",
+    "release_path": "computations/plots/source_orders_2_3.py",
+    "original_sha256": "c10ef47fde20f9e1dc4ad2f468c87628b1d208e2c136b12c87a3262ee86c5cbf"
+  },
+  {
+    "original_path": "order3_construction.json",
+    "release_path": "computations/order3_construction.json",
+    "original_sha256": "b1cab364471604f7f584f45b94f0c11b6e0193069fca409b1a320edf9ff0b9ad"
+  },
+  {
+    "original_path": "order2_construction.json",
+    "release_path": "computations/order2_construction.json",
+    "original_sha256": "23c73222da40ef2edc252b808d94f2a9217fdf5a57a1c8f72edb8540b5f0e2a1"
+  },
+  {
+    "original_path": "order4_construction.json",
+    "release_path": "computations/order4_construction.json",
+    "original_sha256": "69541e53436440b8afefd1428f2c51c4f0f9523d68b9fd15238af922c658e4c3"
+  },
+  {
+    "original_path": "order6_construction.json",
+    "release_path": "computations/order6_construction.json",
+    "original_sha256": "c920404527f8b25fb0de425b7f2242386583440dedf8b5827655417c6d3492fa"
+  },
+  {
+    "original_path": "order5_construction.json",
+    "release_path": "computations/order5_construction.json",
+    "original_sha256": "20f52f6efb817958e4b476af0c591246473e503e063f1103abbfb4565e792b3b"
+  },
+  {
+    "original_path": "order2_event_result.json",
+    "release_path": "computations/order2_event_result.json",
+    "original_sha256": "b77520f3d981760ba96c1cce08e53c899ecfa01ee592aef406e9c047b478d3c4"
+  },
+  {
+    "original_path": "order3_event_result.json",
+    "release_path": "computations/order3_event_result.json",
+    "original_sha256": "21e053e86934beee8bb141689f29eef6e2eefbd2a70b39945bee8da5c7ffafdd"
+  },
+  {
+    "original_path": "summary.json",
+    "release_path": "computations/summary.json",
+    "original_sha256": "c3b3cf470bbba779fcf7007c2521399f092de82639e6e813da6d54cbf0c2ad5c"
+  },
+  {
+    "original_path": "plots/expected_plot_arrays.json",
+    "release_path": "computations/plots/expected_plot_arrays.json",
+    "original_sha256": "eef28ce2d84c31a61b1e58b9c33f13186fcf9a6515da5702c80905674d130e5a"
+  },
+  {
+    "original_path": "hierarchical/order6_recursive_replay.json",
+    "release_path": "computations/hierarchical/order6_recursive_replay.json",
+    "original_sha256": "594e69bb8ee43a6b6c6b6fa19109f99cd38f07b837b075921415d7d3204bb5fe"
+  },
+  {
+    "original_path": "hierarchical/order5_recursive_replay.json",
+    "release_path": "computations/hierarchical/order5_recursive_replay.json",
+    "original_sha256": "9016572ddc33fd4c4b70b464a82f75dd4533e2f76010215598c32d82bab29985"
+  },
+  {
+    "original_path": "hierarchical/order4_recursive_replay.json",
+    "release_path": "computations/hierarchical/order4_recursive_replay.json",
+    "original_sha256": "34adce3de44d80d3ae7a6f53e9e54651be5ce590a5879722e6688d26ba31e30c"
+  },
+  {
+    "original_path": "hierarchical/order6_dense_certified_samples.json",
+    "release_path": "computations/hierarchical/order6_dense_certified_samples.json",
+    "original_sha256": "ce9fd2c5e8ffa8db91d79c952a3c8de2bc9492f014f72bce620ad6f5f755c69c"
+  }
+]
