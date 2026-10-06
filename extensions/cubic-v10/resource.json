@@ -1,6 +1,6 @@
 {
   "command": [
-    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "python",
     "exact_events.py",
     "--orders",
     "3",

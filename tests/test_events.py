@@ -472,7 +472,9 @@ class PublicationReplay(unittest.TestCase):
             )
             with patch.object(ENGINE, "ROOT", root), redirect_stdout(io.StringIO()):
                 result = ENGINE.execute(2, 1500, 1e9, 1000, publication_v5=True)
-            self.assertEqual(result["samples"][:-1], expected)
+            from computations.reference_comparison import compare_reference
+
+            compare_reference(result["samples"][:-1], expected)
             self.assertEqual(result["events"], 1500)
             self.assertEqual(sum(map(int, result["counts"])), int(result["t"]))
             with gzip.open(root / "order2_event_transcript.jsonl.gz", "rt") as stream:

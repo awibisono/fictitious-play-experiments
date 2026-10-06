@@ -12,6 +12,8 @@ import subprocess
 import sys
 import time
 
+from computations.reference_comparison import compare_reference
+
 ROOT = Path(__file__).resolve().parent
 
 
@@ -40,7 +42,7 @@ def compare_outputs(fresh, original, mode):
             if order < 4:
                 old.pop("wall_seconds", None)
                 new.pop("wall_seconds", None)
-                assert old == new, filename
+                compare_reference(new, old, filename)
             else:
                 for key in (
                     "counts",
@@ -63,6 +65,20 @@ def compare_outputs(fresh, original, mode):
         assert old["samples"] == new["samples"], filename
         checks.append(filename)
     return checks
+
+
+def prepare_plot_inputs(work, plot_work, reference_root):
+    # Preserve raw replay outputs; use archived libm rounding only in plots.
+    shutil.copytree(work, plot_work)
+    for order in (2, 3):
+        filename = f"order{order}_event_result.json"
+        fresh = json.loads((plot_work / filename).read_text())
+        reference = json.loads((reference_root / filename).read_text())
+        compare_reference(fresh["samples"], reference["samples"], filename)
+        for actual, expected in zip(fresh["samples"], reference["samples"]):
+            for field in ("log10_t", "log10_gap", "log10_normalized_gap"):
+                actual[field] = expected[field]
+        (plot_work / filename).write_text(json.dumps(fresh, indent=2) + "\n")
 
 
 def main():
@@ -195,6 +211,14 @@ def main():
             run("hierarchical/audit/audit_replay_outputs.py")
             run("hierarchical/audit/audit_sextic_dense.py")
         if args.stage in ("figures", "all"):
+            if args.stage == "all":
+                plot_work = output / "plot-inputs"
+                prepare_plot_inputs(work, plot_work, ROOT / "computations")
+                report["plot_log_rounding"] = (
+                    "Archived descriptive logs used after absolute 1e-12 comparison; "
+                    "raw replay outputs retained in computations."
+                )
+                work = plot_work
             run("plots/make_print_figures.py", "--output-dir", output / "figures")
         report["status"] = "PASS"
     except Exception as error:

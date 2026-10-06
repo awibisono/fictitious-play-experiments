@@ -1,8 +1,18 @@
-# Alpha experiments
+# Fictitious-play experiments
 
 Exact, reproducible computations for the RPS-based simultaneous fictitious-play construction of orders 2–6. The installed games have 4, 11, 20, 31, and 44 actions, respectively.
 
 All action choices, score updates, run boundaries, and sign certificates use integers or exact rational numbers. Floating-point values are used for descriptive logarithms, plotting, elapsed-time budgets, and optional log-time stopping, never to select an action or certify a sign. Higher-order logarithms and ratios use Decimal arithmetic.
+
+## Extended-run figures
+
+The extended cubic experiment and revised figures are in [extensions/cubic-v10](extensions/cubic-v10/README.md). After installing the dependencies below, regenerate those figures with:
+
+```sh
+python extensions/cubic-v10/replot_v10.py --data-root extensions/cubic-v10 --output-dir outputs/figures-v10
+```
+
+This uses the saved two-million-event cubic run. The quick start and reproduction stages below reproduce the original million-event baseline. Full transcript verification instructions for the extension appear at the end of this README.
 
 ## Quick start
 
@@ -46,7 +56,7 @@ python reproduce.py all --output-dir outputs/full
 
 Short checks take seconds. Complete replay/audit runs take minutes and may take longer on other machines; order 6 uses very large exact integers. See [AUDIT.md](AUDIT.md) for measured timings and the precise tests actually run. Logs are retained if a stage fails. Reusing an existing output directory is deliberately refused.
 
-The full pipeline compares freshly generated construction data and final states with the supplied reference data. For orders 2–3 it compares the entire result, including every sampled value, excluding elapsed time. For orders 4–6 it compares all final exact counts, scores, times, normalization data, and sampled values; certificate implementation hashes and runtimes are allowed to change.
+The full pipeline compares freshly generated construction data and final states with the supplied reference data. For orders 2–3 it compares the entire result, including every sampled exact value, excluding elapsed time. The three descriptive floating-point log fields allow an absolute difference of `1e-12` for platform-dependent math-library rounding; all integer and rational fields remain exact. For orders 4–6 it compares all final exact counts, scores, times, normalization data, and sampled values; certificate implementation hashes and runtimes are allowed to change.
 
 ## Experiment conventions
 
@@ -67,7 +77,7 @@ The dashed laws use constants computed from exact leading coefficients, rather t
 
 The reproduced PDFs and PNG previews are included in [figures/](figures/README.md).
 
-Figure generation verifies SHA-256 fingerprints of all 17 plotted numeric line arrays against the bundled publication arrays. It writes PDFs, PNG previews, and `plot_data_verification.json`. Numeric arrays are the reproducibility target; PDF bytes may depend on fonts and plotting-library versions.
+Figure generation verifies SHA-256 fingerprints of all 17 plotted numeric line arrays against the bundled publication arrays. It writes PDFs, PNG previews, and `plot_data_verification.json`. For `all`, a separate plotting copy uses the archived descriptive logs only after checking that tolerance; fresh replay outputs remain untouched. Numeric arrays are the reproducibility target; PDF bytes may depend on fonts and plotting-library versions.
 
 ## Layout
 

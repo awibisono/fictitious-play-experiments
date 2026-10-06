@@ -19,3 +19,11 @@
 - Integrity checks bind reported phase origins to the construction and reject empty or gapped certificate coverage
 
 These fixes apply to invalid inputs, provenance validation, and reproducibility safeguards. Valid-domain exact arithmetic and archived numerical output are unchanged. Tests exercise the former failures and independent direct oracles.
+
+## Publication-readiness cleanup — 6 October 2026
+
+- Allow platform rounding only in descriptive replay logarithms while preserving exact scientific comparisons and raw replay outputs
+- Add regressions for exact mismatches, structural changes, nonfinite logs, and plot-copy isolation
+- Make the extended-run figure command prominent and remove obsolete internal version wording
+- Format the supplemental scripts without changing their Python syntax trees and replace the resource report's machine-specific interpreter path with `python`
+- Refresh integrity manifests; retain numerical data, useful scientific comments, provenance, and the existing no-license status
