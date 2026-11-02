@@ -1,0 +1,347 @@
+WRITTEN_ROUTE_PASS Karlin.FaithfulScale.binomial_row_integral_of_values: bodies=12125; full=12293; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula]; excluded=[]
+WRITTEN_ROUTE_PASS Karlin.FaithfulScale.divided_power_to_binomial_integral: bodies=16703; full=16984; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula]; excluded=[]
+WRITTEN_ROUTE_PASS Karlin.FaithfulScaleClock.chosenCorrection_DP: bodies=17167; full=17466; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula]; excluded=[]
+WRITTEN_ROUTE_PASS Karlin.FaithfulTables.E_integer: bodies=16729; full=17010; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula]; excluded=[]
+WRITTEN_ROUTE_PASS Karlin.FaithfulTables.F_integer: bodies=16911; full=17192; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula]; excluded=[]
+WRITTEN_ROUTE_PASS Karlin.FaithfulInheritance.oldLengthRow_last_pos: bodies=20513; full=20804; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion]; excluded=[Karlin.F_tau_mat_diag]
+WRITTEN_ROUTE_PASS Karlin.FaithfulTables.zeta_leading: bodies=17962; full=18244; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec]; excluded=[Karlin.FaithfulTables.antiderivative_last]
+WRITTEN_ROUTE_PASS Karlin.Faithful.actual_reset_signs: bodies=17009; full=17285; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound]; excluded=[Karlin.Faithful.internal_linear_bound,
+ Karlin.Faithful.score_error_bound,
+ Karlin.Faithful.coupling_error_bound]
+WRITTEN_ROUTE_PASS Karlin.FaithfulEffectiveParameters.certificate_valid: bodies=23795; full=24139; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound]; excluded=[]
+WRITTEN_ROUTE_PASS Karlin.FaithfulRateError.all_integer_polynomial_gap_error: bodies=26955; full=27162; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulRate.interpolated_normalized_limits]
+WRITTEN_ROUTE_PASS Karlin.FaithfulRealization.exact_gap_limit: bodies=27638; full=27860; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulRate.interpolated_normalized_limits]
+WRITTEN_ROUTE_PASS Karlin.FaithfulRealization.relative_gap_error: bodies=27622; full=27844; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulRate.interpolated_normalized_limits]
+WRITTEN_ROUTE_PASS Karlin.FaithfulActualSuffix.actual_suffix: bodies=27846; full=28197; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint]; excluded=[]
+WRITTEN_ROUTE_PASS Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain: bodies=26925; full=27273; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint]; excluded=[Karlin.FaithfulNextClockAssembly.word_valid,
+ Karlin.FaithfulNextClockAssembly.rotated_end,
+ Karlin.FaithfulActualSuffix.actual_suffix]
+WRITTEN_ROUTE_PASS Karlin.FaithfulMain.strict_simultaneous: bodies=29689; full=30057; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula,
+ Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec,
+ Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound,
+ Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint,
+ Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff]; excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.momentSection_solves]
+WRITTEN_ROUTE_PASS Karlin.FaithfulSevenFamily.strict_simultaneous: bodies=29762; full=30127; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula,
+ Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec,
+ Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound,
+ Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint,
+ Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff]; excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.momentSection_solves]
+WRITTEN_ROUTE_PASS Karlin.FaithfulMain.exact_gap: bodies=37285; full=37669; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula,
+ Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec,
+ Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound,
+ Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint,
+ Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff,
+ Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.momentSection_solves]
+WRITTEN_ROUTE_PASS Karlin.FaithfulMain.relative_error: bodies=37269; full=37653; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula,
+ Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec,
+ Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound,
+ Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint,
+ Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff,
+ Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.momentSection_solves]
+WRITTEN_ROUTE_PASS Karlin.FaithfulSevenFamily.exact_gap: bodies=37357; full=37738; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula,
+ Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec,
+ Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound,
+ Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint,
+ Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff,
+ Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.momentSection_solves]
+WRITTEN_ROUTE_PASS Karlin.FaithfulSevenFamily.relative_error: bodies=37341; full=37722; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula,
+ Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec,
+ Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound,
+ Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint,
+ Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff,
+ Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.momentSection_solves]
+WRITTEN_ROUTE_PASS Karlin.FaithfulMain.main_theorem: bodies=37329; full=37713; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula,
+ Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec,
+ Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound,
+ Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint,
+ Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff,
+ Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.momentSection_solves]
+WRITTEN_ROUTE_PASS Karlin.FaithfulSevenFamily.main_theorem: bodies=37398; full=37779; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; required=[Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference,
+ Karlin.FaithfulFiniteDifference.forward_difference_formula,
+ Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.polynomial_bundle_remainder,
+ Karlin.FaithfulPolynomialRoutes.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient,
+ Karlin.FaithfulTables.zeta_spec,
+ Karlin.FaithfulAppendix.internal_norm_sum_bound,
+ Karlin.FaithfulAppendix.internal_norm_sum_square_bound,
+ Karlin.Faithful.internal_normStar_bound_with_entry_constants,
+ Karlin.Faithful.score_error_normStar_bound,
+ Karlin.Faithful.coupling_error_normStar_bound,
+ Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain,
+ Karlin.FaithfulGatewaySuffix.terminal_prefix_gain,
+ Karlin.FaithfulGatewaySuffix.actual_old_endpoint,
+ Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff,
+ Karlin.FaithfulRateError.polynomial_successor_ratio_error,
+ Karlin.FaithfulRateError.within_phase_ratio_error,
+ Karlin.FaithfulRateError.interpolated_polynomial_error]; excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.momentSection_solves]
+OWNED_TRUST_PASS modules=76; declarations=3923; theorems=3085; closure=40751; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+WRITTEN_ROUTE_GATES_PASSED 22
+structure Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer {k : ℕ} (P : Karlin.FaithfulClock.Clock k) : Type
+number of parameters: 2
+fields:
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.program : Karlin.FaithfulEffectiveContract.UniversalProgram
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.computes : ∀ (eps : ℚ),
+      0 < eps → self.program.eval eps = Part.some ↑(P.threshold eps)
+constructor:
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.mk {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+    (program : Karlin.FaithfulEffectiveContract.UniversalProgram)
+    (computes : ∀ (eps : ℚ), 0 < eps → program.eval eps = Part.some ↑(P.threshold eps)) :
+    Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P
+@Karlin.FaithfulEffectiveContract.lift_every_partrec_parent_program : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (f : ℕ → Part ℕ),
+  Nat.Partrec f →
+    (∀ (eps : ℚ), 0 < eps → f (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+      ∃ code,
+        ∀ (input : ℕ),
+          0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+            Karlin.FaithfulEffectiveContract.UniversalProgram.runCode code input =
+              Part.some ((Karlin.FaithfulLift.nextClock A).threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+Karlin.FaithfulEffectiveContract.universal_rpsFamily_correct : ∀ (k : ℕ) (hk : 2 ≤ k) (eps : ℚ),
+  0 < eps →
+    ∃ fuel,
+      (Karlin.FaithfulEffectiveContract.universalRpsFamily k hk).program.execute fuel
+          (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+        some (Karlin.FaithfulEffectiveLift.familyThreshold k hk eps)
+Karlin.FaithfulEffectiveContract.universal_sevenFamily_correct : ∀ (k : ℕ) (hk : 3 ≤ k) (eps : ℚ),
+  0 < eps →
+    ∃ fuel,
+      (Karlin.FaithfulEffectiveContract.universalSevenFamily k hk).program.execute fuel
+          (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+        some (Karlin.FaithfulSevenFamily.threshold k hk eps)
+Karlin.FaithfulMain.main_theorem : ∀ (k : ℕ),
+  2 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 5 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulMain.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))
+Karlin.FaithfulSevenFamily.main_theorem : ∀ (k : ℕ),
+  3 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 9 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulSevenFamily.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))

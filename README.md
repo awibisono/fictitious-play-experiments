@@ -4,6 +4,10 @@ Exact, reproducible computations for the RPS-based simultaneous fictitious-play 
 
 All action choices, score updates, run boundaries, and sign certificates use integers or exact rational numbers. Floating-point values are used for descriptive logarithms, plotting, elapsed-time budgets, and optional log-time stopping, never to select an action or certify a sign. Higher-order logarithms and ratios use Decimal arithmetic.
 
+## Lean formalization
+
+The [Lean formalization](lean/README.md) contains the main technical constructions, pinned dependencies, reproduction instructions, and verification evidence. Its proof scope is distinct from the finite experimental certificates below; see the [formalization scope and manuscript correspondence](lean/README.md#scope).
+
 ## Extended-run figures
 
 The extended cubic experiment and revised figures are in [extensions/cubic-v10](extensions/cubic-v10/README.md). After installing the dependencies below, regenerate those figures with:

@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "last_stage": "complete",
+  "exit_code": 0,
+  "finished_utc": "2026-11-02T05:08:24.781624+00:00",
+  "scope": "public-export integrity, pinned build/dependencies, six independent probes, eight companion checks",
+  "not_checked": [
+    "historical cross-revision preservation",
+    "complete v19 correspondence"
+  ]
+}

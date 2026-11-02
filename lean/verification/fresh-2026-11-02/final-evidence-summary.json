@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "aggregate_exit_code": 0,
+  "started_utc": "2026-11-02T04:32:33.922999+00:00",
+  "finished_utc": "2026-11-02T05:08:24.781624+00:00",
+  "wall_seconds": 2150.858625,
+  "build_jobs": 3205,
+  "project_build_outputs_before": 0,
+  "dependency_cache": "official mathlib cache; no project outputs reused",
+  "build_warnings": 18,
+  "other_log_warnings": 0,
+  "errors": 0,
+  "six_independent_probes": "all passed",
+  "eight_companion_checks": "all passed",
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "faithful_modules": 76,
+  "faithful_declarations": 3923,
+  "faithful_theorems": 3085,
+  "union_dependency_closure": 40751,
+  "main_closures": [
+    37713,
+    37779
+  ],
+  "inventory_records": 9240,
+  "inventory_equals_fresh_original_and_historical": true,
+  "input_identities": {
+    "provenance/SOURCE_MAP.json": "991979fe299c26bd1531a0b620900e0efe28e3d90bb7b302a6f58dd4f38a26df",
+    "PUBLICATION_MANIFEST.json": "da697e74de6013e4a05ad11194d641b7b0b1ab10b788aebdac58243426453b52",
+    "REPRODUCE.sh": "7bb2a11395070c141f3231e58266986959b8327f68d4f5d0e0da981d8d7f9604",
+    "VERIFY_PACKAGE.py": "fd30ea5775ccfdedc57bac57f8a9bf0876f4a26199414ff1274d69bcc066646c",
+    "lake-manifest.json": "035a626c8ad011ff3af79aabf71205ca0c6cbb83279e3cbaaff87c2f03f9f03d",
+    "lean-toolchain": "d55ca0039a5479db5b38919d005b2c427b89b3be4f0184a20f2f4eae931f5bdb"
+  },
+  "source_scope": {
+    "retained_mathematical_library_files": 95,
+    "retained_project_lean_files": 103,
+    "independent_probe_files": 6,
+    "comment_only_changed_project_files": 10,
+    "explicitly_omitted_superseded_audit_harnesses": 2
+  },
+  "lean_version": "Lean (version 4.27.0, x86_64-unknown-linux-gnu, commit db93fe1608548721853390a10cd40580fe7d22ae, Release)",
+  "dependency_check": [
+    {
+      "name": "mathlib",
+      "rev": "a3a10db0e9d66acbebf76c5e6a135066525ac900",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "plausible",
+      "rev": "009dc1e6f2feb2c96c081537d80a0905b2c6498f",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "rev": "5ce7f0a355f522a952a3d678d696bd563bb4fd28",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "importGraph",
+      "rev": "8f497d55985a189cea8020d9dc51260af1e41ad2",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "rev": "c04225ee7c0585effbd933662b3151f01b600e40",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "aesop",
+      "rev": "cb837cc26236ada03c81837bebe0acd9c70ced7d",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "Qq",
+      "rev": "bd58c9efe2086d56ca361807014141a860ddbf8c",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "batteries",
+      "rev": "b25b36a7caf8e237e7d1e6121543078a06777c8a",
+      "tracked_sources_clean": true
+    },
+    {
+      "name": "Cli",
+      "rev": "55c37290ff6186e2e965d68cf853a57c0702db82",
+      "tracked_sources_clean": true
+    }
+  ],
+  "log_hashes": {
+    "IndependentAssemblyGate.log": "82ebc212fa7a4626ba3ac52fa1b4384d4a501bb862bc3ada41daf8d89a35ea3f",
+    "IndependentContracts.log": "cb0c2ab2e1dc67e312bc34b6024b7090aae70a39663351339d2180ae16243847",
+    "IndependentInventory.log": "d89424b15e641601b3cd0bef0c9d10f4ebe60fee682b471532c43778b0cbef57",
+    "IndependentRemainingGate.log": "1951944de1fe53273ffdfaab3e425e83b5a5c1e0b7d2f66f012c606af88d2aab",
+    "IndependentRouteGate.log": "4fee40b2d833194d00dd734f42ceb56b3bf94ddb2b5c8c7243cc42b1263e02ec",
+    "IndependentWholeGate.log": "23a4ac3ad82bcd1be58ba16fc591e35a9ca1343ac1282d9ecf6fbe048d465b74",
+    "MainPaperRouteVerification.lean.log": "7d4859c38d61ec5716a4a659fb353bc9ea29b07e680bc85c5e6d22492c0371b1",
+    "PaperRouteVerification.lean.log": "7bdd83cc57e571afa1431730aeb6fe61c471e354c6d278a77109b77f6f079f87",
+    "RemainingPaperRouteVerification.lean.log": "fd4acf3c6f95367524abff05bb995fa7868ee75c4ffbb79a91f70dec324dc63f",
+    "build.log": "64da66740dc46f5f2e0cada57382eb37b3efa8b5f93a15d1e12ded6a689ffe2f",
+    "clean.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "faithful_audit_FinalDependencies.lean.log": "29e489d92786fea43146702396f137421b9909618e2750901385b3299bcd93cf",
+    "faithful_audit_IndependentMainDependencies.lean.log": "db3fb84a6dba6f2632e4bdc120f5ae38ed83e5189ef62f66f9fa7572c3ab4528",
+    "faithful_audit_revised_CrosswalkCurrentExports.lean.log": "4c804933e00c2e8f83389e817a8663b70a39dc5f495c4c3d4873fdfd4b709b83",
+    "faithful_audit_revised_IntegrationGate.lean.log": "23a4ac3ad82bcd1be58ba16fc591e35a9ca1343ac1282d9ecf6fbe048d465b74",
+    "faithful_audit_revised_RevisedAllDependencies.lean.log": "93852746d6ed34136dddf91c07f5e9eb292b0eb3d123047bfb1b76c0bcf604ac",
+    "package-after.log": "315051d2e7b85ca1f0f7b8d181f13161a5bf344865f60cbc88258548b776b32a",
+    "package-before.log": "315051d2e7b85ca1f0f7b8d181f13161a5bf344865f60cbc88258548b776b32a"
+  },
+  "qualifications": [
+    "Not warning-free: 18 non-proof-hole linter diagnostics",
+    "Uses official cached dependencies rather than recompiling Lean/mathlib from source",
+    "Does not rerun historical cross-revision preservation or certify complete v19 correspondence",
+    "Earlier expanded candidate failed two obsolete route assertions; failures preserved and exclusions independently reviewed; no proof changes"
+  ]
+}

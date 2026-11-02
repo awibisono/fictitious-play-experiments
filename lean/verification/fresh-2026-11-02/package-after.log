@@ -1,0 +1,4 @@
+PASS: 125 public files; 103 retained project Lean sources; six independent probes.
+PASS: all 95 mathematical library sources retained; two superseded audit harnesses explicitly omitted.
+PASS: 10 comment-only source changes; other mapped files unchanged.
+Integrity only: no build, mathematical, signature, or v19-correspondence claim.

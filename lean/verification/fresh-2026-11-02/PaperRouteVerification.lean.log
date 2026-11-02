@@ -1,0 +1,2084 @@
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.moment_coordinate_identity._simp_1_2
+∀ (w : ℕ), Karlin.S_mat w * Karlin.expN0 w (-1) = Karlin.B_mat w * Karlin.S_mat w
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_mono._simp_1_7
+∀ {α : Type u_1} {b : α} {α_1 : Type u_2} {x : Option α_1} {f : α_1 → Option α},
+  (x.bind f = Option.some b) = ∃ a, x = Option.some a ∧ f a = Option.some b
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.actual_correction_integral_by_differences
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (cref : ℚ) (j : Fin (k + 1)),
+  Karlin.FaithfulScale.IntegerMultiple 1
+    (Matrix.vecMul
+      (fun i =>
+        Polynomial.eval (↑(Karlin.FaithfulScaleClock.chosenScale P cref))
+          (Karlin.FaithfulScaleClock.correctionPolynomials P cref i))
+      (Karlin.S_inv_mat (k + 1)) j)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_remaining_run2._proof_1_2
+∀ (q h : ℕ), 3 * q + 5 + (3 * q + 6) + h - (3 * q + 5) = 3 * q + 6 + h → ¬3 * q + 6 ≤ 3 * q + 6 + h → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.exp_neg_fixed_iff
+∀ {M : Type u_1} [inst : AddCommGroup M] [inst_1 : _root_.Module ℚ M] (a : Module.End ℚ M) {n : ℕ},
+  0 < n → a ^ (n + 1) = 0 → ∀ (v : M), (IsNilpotent.exp (-a)) v = v ↔ a v = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerSumPoly_eval
+∀ (d n : ℕ), Polynomial.eval (↑n) (Karlin.FaithfulPaperAlgebra.powerSumPoly d) = ∑ j ∈ Finset.range n, ↑j ^ d
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree.eq_2
+∀ (c : Nat.Partrec.Code),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree (Nat.Partrec.Code.succ.pair c) =
+    Option.map Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic (Encodable.decode c.encodeCode)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.taylor_pred_coefficient._proof_1_4
+∀ (p : Polynomial ℝ), 1 + (p.natDegree - 1) = p.natDegree → ¬p.natDegree - (p.natDegree - 1) = 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_remaining_run0
+∀ (q h : ℕ), h ≤ 3 * q + 5 → Karlin.v_RPS ⬝ᵥ Karlin.wordCountVec (List.drop h (Karlin.rpsPhaseWord q)) = 1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.toCodeTree.eq_1
+∀ (c : ℕ),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.machine c).toCodeTree =
+    Nat.Partrec.Code.zero.pair (Nat.Partrec.Code.ofNatCode c)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._simp_1_6
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paperBinomialBasis_eq_existing
+∀ (k : ℕ) (hk : 0 < k),
+  Karlin.FaithfulPaperCokernel.paperBinomialKernelBasis k hk = Karlin.FaithfulCokernel.binomialKernelBasis k
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_first_run_at_least_eight._proof_1_1
+∀ (q : ℕ), 1 ≤ q → ¬8 ≤ 3 * q + 5 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_12
+∀ (w : ℕ) (c : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat w), c • Z * Matrix.transpose 0 = c • (Z * Matrix.transpose 0)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.universal_clock_contract
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P),
+  ∃ code,
+    ∀ (input : ℕ),
+      0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+        (∃ fuel,
+            Karlin.FaithfulEffectiveContract.UniversalProgram.executeCode code fuel input =
+              Option.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))) ∧
+          ∀ (q : ℕ),
+            P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input) ≤ q →
+              ∀ r ≤ (P.word q).length,
+                Karlin.FaithfulClock.height P.b (P.entry (q + 1)) -
+                    Karlin.FaithfulClock.height P.b (Karlin.wordScore P.A (P.entry q) (List.take r (P.word q))) ≤
+                  Karlin.FaithfulEffectiveContract.decodeRat input * ↑((P.word q).length - r) + P.Arem
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.instruction.eq_1
+∀ (op data : ℕ), Karlin.FaithfulEffectiveContract.instruction op data = Nat.pair op data
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_negative_no_return
+∀ a < 0,
+  ∀ (s : Fin 2 → ℚ) (W : ℕ → List (Fin 2)),
+    (∀ (t : ℕ), (W t).length = t) →
+      ∀ (b : ℕ → Fin 2),
+        (∀ (t : ℕ) (i : Fin 2),
+            Karlin.wordScore !![0, -a; a, 0] s (W t) i ≤ Karlin.wordScore !![0, -a; a, 0] s (W t) (b t)) →
+          ∀ (t u : ℕ), t < u → b t = 0 → b u = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.multiply.eq_1
+∀ (p q : Karlin.FaithfulEffectiveContract.Program),
+  Karlin.FaithfulEffectiveContract.multiply p q = p ++ q ++ [Karlin.FaithfulEffectiveContract.instruction 2 0]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.exp_neg_D_fixed_iff
+∀ (k : ℕ),
+  0 < k →
+    ∀ (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      Karlin.expN0 (k + 1) (-1) * Z * (Karlin.expN0 (k + 1) (-1)).transpose = Z ↔
+        (Karlin.FaithfulPaperCokernel.D (k + 1)) Z = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.backwardDifference.eq_1
+∀ (p : Polynomial ℝ), Karlin.FaithfulPaperAlgebra.backwardDifference p = p - (Polynomial.taylor (-1)) p
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_successor_ratio_error._simp_1_2
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.from_toCodeTree._simp_1_12
+Nat.Partrec.Code.encodeCode = Encodable.encode
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_binomial_kernel_eq_span
+∀ (k : ℕ),
+  0 < k → (Karlin.FaithfulCokernel.adjointLinear (Karlin.B_mat (k + 1))).ker = Karlin.FaithfulCokernel.testSpan k
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.phase_count_ordinary_coefficient_nonneg
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (i : Fin P.m),
+  0 ≤ (Karlin.FaithfulGrowthRecurrences.realRowPoly (P.countTable i)).coeff (k - 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_momentSection_solves
+∀ (k : ℕ) (F : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+  (∀ (h : ℕ), k ≤ h → h ≤ 2 * k → Even h → Karlin.matInnerProd (Karlin.Z_binom_concrete (k + 1) h) F = 0) →
+    Karlin.L_moment (Karlin.B_mat (k + 1)) ((Karlin.FaithfulCokernel.momentSection k) F) = F
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.machine_eval
+∀ (c : Nat.Partrec.Code) (eps : ℚ),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.machine (Encodable.encode c)).eval eps =
+    Part.map (fun n => ↑n) (c.eval (Karlin.FaithfulEffectiveContract.encodeRat eps))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.seven_iterate_remainder
+∀ (n : ℕ), (Karlin.FaithfulSevenFamily.iterate n).clock.Arem = ↑n + 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.binomial_row_integral_by_differences
+∀ {w : ℕ} (row : Fin w → ℚ),
+  (∀ q < w, Karlin.FaithfulScale.IntegerMultiple 1 (∑ i, row i * ↑(q.choose ↑i))) →
+    ∀ (j : Fin w), Karlin.FaithfulScale.IntegerMultiple 1 (row j)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.tick.eq_1
+∀ (token : ℕ) (eps : ℚ) (stack : List ℚ),
+  (Nat.unpair token).1 = 0 → Karlin.FaithfulEffectiveContract.tick token eps stack = eps :: stack
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_bound._simp_1_3
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.polynomial_bundle_remainder
+∀ {d : ℕ},
+  1 ≤ d →
+    ∀ (p : Polynomial ℝ),
+      p.natDegree ≤ d →
+        ∀ (tau : ℕ),
+          0 < tau →
+            (fun q =>
+                ∑ s ∈ Finset.Ico (tau * q) (2 * tau * q),
+                  (Polynomial.eval (↑s) p - p.coeff d * ↑s ^ d)) =O[Filter.atTop]
+              fun q => ↑q ^ d
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.divided_power_to_binomial_integral_by_differences._simp_1_7
+∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_factor_inverse
+∀ (k : ℕ),
+  0 < k →
+    have P := Karlin.FaithfulPaperCokernel.expFactor (Karlin.FaithfulPaperCokernel.D (k + 1)) (2 * k);
+    have K := P - 1;
+    P * ∑ j ∈ Finset.range (2 * k + 1), (-K) ^ j = 1 ∧ (∑ j ∈ Finset.range (2 * k + 1), (-K) ^ j) * P = 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerBundlePoly_eval
+∀ (d tau q : ℕ),
+  Polynomial.eval (↑q) (Karlin.FaithfulPaperAlgebra.powerBundlePoly d tau) =
+    ∑ j ∈ Finset.Ico (tau * q) (2 * tau * q), ↑j ^ d
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.runFuel_complete
+∀ (p : Karlin.FaithfulEffectiveContract.Program) (eps : ℚ) (s : List ℚ),
+  Karlin.FaithfulEffectiveContract.runFuel (List.length p) p eps s =
+    Option.some (Karlin.FaithfulEffectiveContract.run p eps s)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.earlier_reset_deficit._proof_1_2
+∀ {n : ℕ} (j i : Fin n), ↑i < ↑j → ∀ (ell : Fin n), ¬↑ell < ↑j → ¬↑i ≤ ↑ell → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_least_denominator
+Karlin.FaithfulParameters.AdmissibleParameters.lam Karlin.FaithfulSeedAdmissible.rpsAdmissible = 2
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.from_toCodeTree
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree p.toCodeTree = Option.some p
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.decodeInt.eq_1
+∀ (n : ℕ), Karlin.FaithfulEffectiveContract.decodeInt n = if n % 2 = 0 then Int.ofNat (n / 2) else Int.negSucc (n / 2)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.previous_counts_pos
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      ∀ (i : Karlin.FaithfulNextClock.Lift.Res),
+        0 < (Karlin.FaithfulNextClock.Lift.countRat A T1 T2).mulVec (Karlin.binomBasis (k + 1) (q - 1)) i
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_sound._simp_1_15
+∀ {α : Type u_1} {b : α} {α_1 : Type u_2} {x : Option α_1} {f : α_1 → Option α},
+  (x.bind f = Option.some b) = ∃ a, x = Option.some a ∧ f a = Option.some b
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.taylor_pred_coefficient._proof_1_1
+∀ (p : Polynomial ℝ), 0 < p.natDegree → ¬p.natDegree - (p.natDegree - 1) < 2 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln.eq_def
+∀ (x : Karlin.FaithfulEffectiveContract.UniversalProgram) (x_1 : ℕ) (x_2 : ℚ),
+  x.evaln x_1 x_2 =
+    match x, x_1, x_2 with
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.machine c, fuel, eps =>
+      Option.map (fun n => ↑n)
+        (Nat.Partrec.Code.evaln fuel (Nat.Partrec.Code.ofNatCode c) (Karlin.FaithfulEffectiveContract.encodeRat eps))
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic p, x, eps =>
+      Option.some ((Karlin.FaithfulEffectiveContract.run p eps []).headD 0)
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.binary op p q, fuel, eps =>
+      (p.evaln fuel eps).bind fun x =>
+        Option.map (Karlin.FaithfulEffectiveContract.UniversalProgram.operation op x) (q.evaln fuel eps)
+    | p.round, fuel, eps => Option.map (fun x => ↑⌈x⌉₊) (p.evaln fuel eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.rpsFamily._proof_1
+∀ (k : ℕ), 2 ≤ k → ¬k - 2 + 2 = k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_5
+∀ (w : ℕ) (X Y : Karlin.FaithfulPaperCokernel.Mat w),
+  (X + Y) * Matrix.transpose 1 = X * Matrix.transpose 1 + Y * Matrix.transpose 1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_sound._simp_1_14
+∀ {α : Type u_1} {a b : α}, (b ∈ Part.some a) = (b = a)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.height_expansion_by_degree_drop
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ),
+  0 < tau →
+    ∀ (c : ℝ) (z : Polynomial ℝ),
+      (∀ (q : ℕ),
+          1 ≤ q →
+            Polynomial.eval (↑q) z - Polynomial.eval (↑q - 1) z =
+              ↑(P.entry (2 * tau * q) P.b) - ↑(P.entry (tau * q) P.b) + c) →
+        (fun q =>
+            Polynomial.eval (↑q) z -
+              ↑(Karlin.FaithfulGrowthRecurrences.liftHeightLeading P tau) * ↑q ^ k) =O[Filter.atTop]
+          fun q => ↑q ^ (k - 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_bound._simp_1_5
+∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D_pow_zero._proof_1_1
+∀ (k : ℕ), ¬k + 1 + (k + 1) ≤ 2 * k + 1 + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.binomial_row_eq_forward_difference
+∀ {w : ℕ} (row : Fin w → ℚ) (j : Fin w), row j = (fwdDiff 1)^[↑j] (fun q => ∑ i, row i * ↑(q.choose ↑i)) 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.remaining_marker_eq_one
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q r : ℕ),
+  r < (Karlin.FaithfulNextClock.Lift.word A T1 T2 q).length →
+    Karlin.FaithfulNextClock.Lift.counter ⬝ᵥ
+        Karlin.wordCountVec (List.drop r (Karlin.FaithfulNextClock.Lift.word A T1 T2 q)) =
+      1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_complete._simp_1_8
+∀ {α : Type u_1} {β : Type u_2} (f : α → β) {o : Part α} {b : β}, (b ∈ Part.map f o) = ∃ a ∈ o, f a = b
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree.eq_5
+∀ (x : Nat.Partrec.Code),
+  (∀ (c : Nat.Partrec.Code), x = Nat.Partrec.Code.zero.pair c → False) →
+    (∀ (c : Nat.Partrec.Code), x = Nat.Partrec.Code.succ.pair c → False) →
+      (∀ (c p q : Nat.Partrec.Code), x = (Nat.Partrec.Code.left.pair c).pair (p.pair q) → False) →
+        (∀ (p : Nat.Partrec.Code), x = Nat.Partrec.Code.right.pair p → False) →
+          Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree x = Option.none
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.phase_length_ordinary_coefficient_positive._proof_1_1
+∀ {k : ℕ}, 2 ≤ k → ¬k - 1 < k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_bound._simp_1_6
+∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers._proof_1_2
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ), 2 ≤ k → ¬k - 1 < k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_no_strict_alternation
+∀ (a : ℚ) (s : Fin 2 → ℚ) (W : ℕ → List (Fin 2)),
+  (∀ (t : ℕ), (W t).length = t) →
+    ∀ (t u v : ℕ),
+      t < u →
+        u < v →
+          have d := fun n => Karlin.wordScore !![0, -a; a, 0] s (W n) 1 - Karlin.wordScore !![0, -a; a, 0] s (W n) 0;
+          ¬(d t < 0 ∧ 0 < d u ∧ d v < 0 ∨ 0 < d t ∧ d u < 0 ∧ 0 < d v)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.phase_count_ordinary_coefficient_nonneg._proof_1_1
+∀ {k : ℕ}, 2 ≤ k → ¬k - 1 < k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios._proof_1_4
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k),
+  2 ≤ k →
+    k - 1 + 1 = k →
+      (Karlin.FaithfulRateError.phaseTimePoly (Karlin.FaithfulRealization.countCoeff P) (k - 1) P.Q).natDegree = k →
+        (Karlin.FaithfulRateError.phaseHeightPoly (Karlin.FaithfulRealization.scoreCoeff P) (k - 1) P.Q
+                ↑(Karlin.FaithfulRealization.bias P P.b + Karlin.FaithfulRealization.shift P)).natDegree =
+            k - 1 →
+          ¬0 < k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.lift_every_partrec_parent
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (f : ℕ → Part ℕ),
+  Nat.Partrec f →
+    (∀ (eps : ℚ), 0 < eps → f (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+      Nonempty (Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer (Karlin.FaithfulLift.nextClock A))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.derivation_intertwine
+∀ (k : ℕ),
+  0 < k →
+    ∀ (t : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      (Karlin.FaithfulPaperCokernel.D (k + 1)) Z = 0 →
+        Z * (Karlin.expN0 (k + 1) t).transpose = Karlin.expN0 (k + 1) (-t) * Z
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.execute.eq_1
+∀ (programCode inputCode : ℕ),
+  Karlin.FaithfulEffectiveContract.execute programCode inputCode = do
+    let p ← Encodable.decode programCode
+    Pure.pure
+        ⌈(Karlin.FaithfulEffectiveContract.run p (Karlin.FaithfulEffectiveContract.decodeRat inputCode) []).headD 0⌉₊
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.compile.eq_1
+∀ {k : ℕ} (d : Karlin.FaithfulEffectiveThreshold.Data k) (parent : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.compile d parent =
+    Karlin.FaithfulEffectiveContract.UniversalProgram.binary 2
+      (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic
+        (Karlin.FaithfulEffectiveContract.constant ↑d.outerOnset))
+      (Karlin.FaithfulEffectiveContract.UniversalProgram.binary 2
+        (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic
+          (Karlin.FaithfulEffectiveContract.rowProgram d.resetLength d.resetGain k))
+        (Karlin.FaithfulEffectiveContract.UniversalProgram.binary 1
+            (Karlin.FaithfulEffectiveContract.UniversalProgram.binary 2 parent
+              (Karlin.FaithfulEffectiveContract.UniversalProgram.binary 2
+                (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic
+                  (Karlin.FaithfulEffectiveContract.constant ↑d.parentOnset))
+                (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic
+                  (Karlin.FaithfulEffectiveContract.rowProgram d.parentLength d.parentGain (k - 1)))))
+            (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic
+              (Karlin.FaithfulEffectiveContract.constant ↑d.scale))).round)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_dp_linearIndependent
+∀ (k : ℕ), LinearIndependent ℚ fun h => Karlin.Z_DP (k + 1) ↑h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_bound._simp_1_7
+∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.full_rank_interpolation
+∀ {m : Type u_1} {n : Type u_2} {w : Type u_3} [inst : Fintype m] [inst_1 : Fintype n] [inst_2 : Fintype w]
+  [DecidableEq w] (X : Matrix m w ℚ) (M : Matrix n w ℚ) (D : Matrix m w ℚ) (Q : Matrix n w ℚ),
+  (Function.Injective fun x => X.mulVec x) →
+    (Function.Injective fun x => M.mulVec x) →
+      ((∃ P, P * M = D ∧ P.transpose * X = Q) ↔ D.transpose * X = M.transpose * Q)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_remaining_run0._proof_1_2
+∀ (q h : ℕ), h ≤ 3 * q + 5 → ¬h - (3 * q + 5 + (3 * q + 6)) = 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.divided_power_to_binomial_integral_by_differences._simp_1_3
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_difference_strictAnti._simp_1_1
+∀ (a : ℚ) (s : Fin 2 → ℚ) (W : List (Fin 2)),
+  Karlin.wordScore !![0, -a; a, 0] s W 1 - Karlin.wordScore !![0, -a; a, 0] s W 0 = s 1 - s 0 + a * ↑W.length
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion._proof_1_2
+∀ (k : ℕ) (i j : Fin (k + 1)), ↑i + ↑j < k → ∀ (h : Karlin.FaithfulCokernel.TestIndex k), k ≤ ↑h → ↑i + ↑j = ↑h → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.rowProgram_computes
+∀ {n : ℕ} (c g : Fin n → ℚ) (d : ℕ),
+  Karlin.FaithfulEffectiveContract.Computes (Karlin.FaithfulEffectiveContract.rowProgram c g d) fun eps =>
+    ↑(Karlin.FaithfulGrowth.rowDominationThreshold c g d eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.future_reset_deficit._proof_1_3
+∀ {n : ℕ} (j i ell : Fin n), ¬↑ell < ↑j → ↑ell ≠ ↑j → ¬↑j < ↑ell → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.chosenCorrection_cast_by_differences
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (cref : ℚ) (j : Fin (k + 1)),
+  ↑(Karlin.FaithfulScaleClock.chosenCorrection P cref j) =
+    Matrix.vecMul
+      (fun i =>
+        Polynomial.eval (↑(Karlin.FaithfulScaleClock.chosenScale P cref))
+          (Karlin.FaithfulScaleClock.correctionPolynomials P cref i))
+      (Karlin.S_inv_mat (k + 1)) j
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paperDividedPowerKernelBasis._proof_1
+∀ (k : ℕ),
+  0 < k → Karlin.FaithfulCokernel.dpTestSpan k = (Karlin.FaithfulCokernel.adjointLinear (Karlin.expN0 (k + 1) (-1))).ker
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.N0_pow_entry
+∀ (w n : ℕ) (i j : Fin w), (Karlin.N0_mat w ^ n) i j = if ↑i = ↑j + n then 1 else 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.chosen_strictness
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P),
+  have T1 := Karlin.FaithfulController.firstScale A;
+  have T2 := Karlin.FaithfulController.secondScale A T1;
+  ∀ (q : ℕ),
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      have h :=
+        Karlin.FaithfulTables.parentTranslation P A.tau
+          (Karlin.FaithfulGain.AdmissibleGain.selectedGain A (Karlin.FaithfulParameters.AdmissibleParameters.lam A) T1)
+          (Karlin.FaithfulAdmissible.baseline P) q;
+      have W := Karlin.FaithfulWindow.consecutiveWord P.word (A.tau * q) (A.tau * q);
+      (∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+          ↑j + 1 < k + 1 + (k + 1) →
+            Karlin.FaithfulActualWaiting.pullState A T1 T2 q (Sum.inr j) < P.entry (A.tau * q) P.b + h) ∧
+        (∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+            ↑j + 1 = k + 1 + (k + 1) →
+              Karlin.FaithfulActualWaiting.pullState A T1 T2 q (Sum.inr j) = P.entry (A.tau * q) P.b + h) ∧
+          ∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+            k + 1 ≤ ↑j →
+              ∀ (r : ℕ),
+                0 < r →
+                  r ≤ W.length →
+                    Karlin.wordScore
+                        (Karlin.liftedGameMat (Karlin.FaithfulGateway.game P)
+                          (Karlin.FaithfulActualWaiting.pullCoupling A T1 T2) (Karlin.FaithfulNextClock.Lift.J A T1 T2))
+                        (Karlin.FaithfulActualWaiting.pullState A T1 T2 q)
+                        (Karlin.FaithfulWaiting.parentStage P (List.take r W)) (Sum.inr j) <
+                      Karlin.FaithfulClock.height P.b (Karlin.wordScore P.A (P.entry (A.tau * q)) (List.take r W)) + h
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.mk.sizeOf_spec
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (program : Karlin.FaithfulEffectiveContract.Program)
+  (computes :
+    ∀ (eps : ℚ),
+      0 < eps → ∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run program eps s = ↑(P.threshold eps) :: s),
+  SizeOf.sizeOf { program := program, computes := computes } = 1 + SizeOf.sizeOf program
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.terminates_correct
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (input : ℕ),
+  0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+    Karlin.FaithfulEffectiveContract.runFuel (List.length E.program) E.program
+        (Karlin.FaithfulEffectiveContract.decodeRat input) [] =
+      Option.some [↑(P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_normalized_isBigO
+∀ (P : Polynomial ℝ) {d : ℕ},
+  0 < d → P.natDegree = d → (fun q => Polynomial.eval (↑q) P / ↑q ^ d - P.leadingCoeff) =O[Filter.atTop] fun q => 1 / ↑q
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_sound._simp_1_16
+∀ {α : Type u_1} {β : Type u_2} {f : Part α} {g : α → Part β} {b : β}, (b ∈ f.bind g) = ∃ a ∈ f, b ∈ g a
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_remaining_run2
+∀ (q h : ℕ),
+  h ≤ 3 * q + 7 →
+    Karlin.v_RPS ⬝ᵥ Karlin.wordCountVec (List.drop (3 * q + 5 + (3 * q + 6) + h) (Karlin.rpsPhaseWord q)) =
+      3 * ↑q + 7 - ↑h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.antidiagonal_linearIndependent
+∀ (k : ℕ), LinearIndependent ℚ fun h => Karlin.V_antidiag (k + 1) ↑h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.forward_difference_choose_zero
+∀ (m j : ℕ), (fwdDiff 1)^[j] (fun q => ↑(q.choose m)) 0 = if j = m then 1 else 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerSumPoly_top
+∀ (d : ℕ), (Karlin.FaithfulPaperAlgebra.powerSumPoly d).coeff (d + 1) = 1 / (↑d + 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D._proof_2
+∀ (w : ℕ), IsScalarTower ℚ ℚ (Karlin.FaithfulPaperCokernel.Mat w)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_15
+∀ (w : ℕ) (A B : Karlin.FaithfulPaperCokernel.Mat w) (c : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat w),
+  c • Z * Matrix.transpose (A + B) = c • (Z * Matrix.transpose (A + B))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.tick.eq_3
+∀ (token : ℕ) (eps y x_1 : ℚ) (s : List ℚ),
+  (Nat.unpair token).1 = 2 → Karlin.FaithfulEffectiveContract.tick token eps (y :: x_1 :: s) = x_1 * y :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.backwardDifference_degree_and_leading
+∀ (p : Polynomial ℝ),
+  0 < p.natDegree →
+    (Karlin.FaithfulPaperAlgebra.backwardDifference p).natDegree = p.natDegree - 1 ∧
+      (Karlin.FaithfulPaperAlgebra.backwardDifference p).leadingCoeff = ↑p.natDegree * p.leadingCoeff
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.height_polynomial_degree_by_backward_difference._proof_1_4
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ) (c : ℝ) (z : Polynomial ℝ),
+  2 ≤ k → 0 < z.natDegree → k - 1 = z.natDegree - 1 → ¬z.natDegree = k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ),
+  0 < tau →
+    ∀ (c : ℝ),
+      (Karlin.FaithfulPaperAlgebra.heightDifferencePoly P tau c).natDegree = k - 1 ∧
+        (Karlin.FaithfulPaperAlgebra.heightDifferencePoly P tau c).leadingCoeff =
+          ↑k * ↑(Karlin.FaithfulGrowthRecurrences.liftHeightLeading P tau)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.binomial_row_integral_by_differences._proof_1_1
+∀ {w : ℕ} (j : Fin w), ∀ h < ↑j + 1, ¬h < w → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.reset_run_is_prefix
+∀ {m n : ℕ} (count : Fin n → ℕ) (j : Fin n),
+  ∀ h ≤ count j,
+    ∃ tail,
+      Karlin.FaithfulChronology.resetWord count =
+        Karlin.FaithfulChronology.resetPrefix count ↑j ++ List.replicate h (Sum.inr j) ++ tail
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.tick.eq_4
+∀ (token : ℕ) (eps y x_1 : ℚ) (s : List ℚ),
+  (Nat.unpair token).1 = 3 → Karlin.FaithfulEffectiveContract.tick token eps (y :: x_1 :: s) = x_1 / y :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.family_remainder
+∀ (k : ℕ) (hk : 2 ≤ k), (Karlin.FaithfulMain.clock k hk).Arem = ↑k - 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_first_run_at_least_eight
+∀ (q : ℕ), 1 ≤ q → 8 ≤ 3 * q + 5
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_2
+∀ (w : ℕ), IsScalarTower ℚ ℚ (Karlin.FaithfulPaperCokernel.Mat w)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.transportRealizer._proof_1
+∀ {a : ℕ} (h : a = a), h ≍ ⋯ → ⋯ = h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.antidiagonal_linearIndependent._proof_1_1
+∀ (k : ℕ) (h : Karlin.FaithfulCokernel.TestIndex k) (m : ℕ), ↑h = m + m → ↑h ≤ 2 * k → ¬m < k + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.run_append
+∀ (p q : Karlin.FaithfulEffectiveContract.Program) (eps : ℚ) (s : List ℚ),
+  Karlin.FaithfulEffectiveContract.run (p ++ q) eps s =
+    Karlin.FaithfulEffectiveContract.run q eps (Karlin.FaithfulEffectiveContract.run p eps s)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.derivation_intertwine._simp_1_1
+∀ {l : Type u_1} {m : Type u_2} {n : Type u_3} {o : Type u_4} {α : Type v} [inst : NonUnitalSemiring α]
+  [inst_1 : Fintype m] [inst_2 : Fintype n] (L : Matrix l m α) (M : Matrix m n α) (N : Matrix n o α),
+  L * (M * N) = L * M * N
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion._proof_1_4
+∀ (k : ℕ) (i j : Fin (k + 1)), ¬↑i + ↑j ≤ 2 * k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._proof_1_12
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ) (c : ℝ), 2 ≤ k → k = 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_sound._simp_1_6
+∀ {α : Type u_1} {b : α} {α_1 : Type u_2} {x : Option α_1} {f : α_1 → α},
+  (Option.map f x = Option.some b) = ∃ a, x = Option.some a ∧ f a = b
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+∀ (k : ℕ),
+  0 < k →
+    ∀ (F : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      (∃ E, Karlin.L_moment (Karlin.B_mat (k + 1)) E = F) ↔
+        ∀ (h : ℕ), k ≤ h → h ≤ 2 * k → Even h → Karlin.matInnerProd (Karlin.Z_binom_concrete (k + 1) h) F = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_factorization
+∀ (k : ℕ),
+  1 - IsNilpotent.exp (-Karlin.FaithfulPaperCokernel.D (k + 1)) =
+    Karlin.FaithfulPaperCokernel.D (k + 1) *
+      Karlin.FaithfulPaperCokernel.expFactor (Karlin.FaithfulPaperCokernel.D (k + 1)) (2 * k)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expFactor_sub_one_pow_zero
+∀ {R : Type u_1} [inst : Ring R] [inst_1 : Algebra ℚ R] (a : R) {n r : ℕ},
+  0 < n → a ^ r = 0 → (Karlin.FaithfulPaperCokernel.expFactor a n - 1) ^ r = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.N0_pow_entry._proof_1_3
+∀ (w n : ℕ) (i j : Fin w), ¬0 < ↑i → ↑i = ↑j + (n + 1) → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.eval.eq_4
+∀ (x : ℚ) (p : Karlin.FaithfulEffectiveContract.UniversalProgram), p.round.eval x = Part.map (fun x => ↑⌈x⌉₊) (p.eval x)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.lift_every_partrec_parent_program
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (f : ℕ → Part ℕ),
+  Nat.Partrec f →
+    (∀ (eps : ℚ), 0 < eps → f (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+      ∃ code,
+        ∀ (input : ℕ),
+          0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+            Karlin.FaithfulEffectiveContract.UniversalProgram.runCode code input =
+              Part.some ((Karlin.FaithfulLift.nextClock A).threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_1
+∀ (w : ℕ), SMulCommClass ℚ ℚ (Karlin.FaithfulPaperCokernel.Mat w)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_bound
+∀ {r : Type u_1} {w : Type u_2} [inst : Fintype r] [inst_1 : Fintype w] [inst_2 : Nonempty r] [inst_3 : Nonempty w]
+  (Z : Matrix r w ℚ) (L : Matrix r r ℚ) (B : Matrix w w ℚ) (T1 T2 C : ℚ),
+  0 < T1 →
+    0 < T2 →
+      Karlin.FaithfulAppendix.normStar Z ≤ T2 * C →
+        Karlin.FaithfulAppendix.normStar ((1 / (T1 * T2 ^ 2)) • (L * Z)) +
+            Karlin.FaithfulAppendix.normStar ((1 / (T1 * T2 ^ 2)) • (L.transpose * Z * B)) ≤
+          Karlin.FaithfulAppendix.normStar L * C * (1 + Karlin.FaithfulAppendix.normStar B) / (T1 * T2)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_old_totals
+Karlin.FaithfulGain.AdmissibleGain.oldTotals Karlin.FaithfulSeedAdmissible.rpsAdmissible = ![1, 27, 27]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_remaining_run1
+∀ (q h : ℕ),
+  h ≤ 3 * q + 6 → Karlin.v_RPS ⬝ᵥ Karlin.wordCountVec (List.drop (3 * q + 5 + h) (Karlin.rpsPhaseWord q)) = 1 + ↑h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_successor_ratio_error._simp_1_3
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.executeCode.eq_1
+∀ (code fuel inputCode : ℕ),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.executeCode code fuel inputCode =
+    (Karlin.FaithfulEffectiveContract.UniversalProgram.decode code).bind fun p => p.execute fuel inputCode
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.taylor_pred_coefficient
+∀ (p : Polynomial ℝ),
+  0 < p.natDegree →
+    ∀ (r : ℝ),
+      ((Polynomial.taylor r) p).coeff (p.natDegree - 1) = p.coeff (p.natDegree - 1) + ↑p.natDegree * p.leadingCoeff * r
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.height_polynomial_degree_by_backward_difference._proof_1_1
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ) (c : ℝ) (z : Polynomial ℝ),
+  ¬0 < z.natDegree → ¬z.natDegree ≤ 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.pre_gateway_gain
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      have H :=
+        Karlin.FaithfulInheritance.scoreHeight Karlin.FaithfulNextClock.Lift.base
+          (Karlin.wordScore (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+            (Karlin.FaithfulNextClockAssembly.rotatedScore A T1 T2 q)
+            (List.take ((Karlin.FaithfulNextClock.Lift.word A T1 T2 q).length - 1)
+              (Karlin.FaithfulNextClock.Lift.word A T1 T2 q)));
+      Karlin.FaithfulNextClock.Lift.zeta A T1 ⬝ᵥ Karlin.binomBasis (k + 1) (q + 1) - H =
+          Karlin.FaithfulGain.AdmissibleGain.selectedGain A (Karlin.FaithfulParameters.AdmissibleParameters.lam A) T1 -
+            Karlin.FaithfulSynthesis.endpointMargin A (Karlin.FaithfulParameters.AdmissibleParameters.lam A) T1 ∧
+        0 < Karlin.FaithfulNextClock.Lift.zeta A T1 ⬝ᵥ Karlin.binomBasis (k + 1) (q + 1) - H ∧
+          Karlin.FaithfulNextClock.Lift.zeta A T1 ⬝ᵥ Karlin.binomBasis (k + 1) (q + 1) - H < 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.actual_earlier_reset_deficit
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      ∀ (j i : Karlin.FaithfulNextClock.Lift.Res),
+        ↑i < ↑j →
+          ∀ (h : ℕ),
+            Karlin.FaithfulNextClock.Lift.zeta A T1 ⬝ᵥ Karlin.binomBasis (k + 1) q -
+                Karlin.wordScore (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+                  (Karlin.FaithfulNextClockAssembly.rotatedScore A T1 T2 q)
+                  (Karlin.FaithfulChronology.resetPrefix (Karlin.FaithfulNextClock.Lift.count A T1 T2 q) ↑j ++
+                    List.replicate h (Sum.inr j))
+                  (Sum.inr i) =
+              Karlin.FaithfulNextClock.Lift.J A T1 T2 j i * ↑h +
+                ∑ ell,
+                  if ↑i < ↑ell ∧ ↑ell < ↑j then
+                    Karlin.FaithfulNextClock.Lift.J A T1 T2 ell i * ↑(Karlin.FaithfulNextClock.Lift.count A T1 T2 q ell)
+                  else 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly.eq_1
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ) (c : ℝ),
+  Karlin.FaithfulPaperAlgebra.heightDifferencePoly P tau c =
+    (Karlin.FaithfulGrowthRecurrences.realRowPoly (P.R P.b)).comp (Polynomial.C (2 * ↑tau) * Polynomial.X) -
+        (Karlin.FaithfulGrowthRecurrences.realRowPoly (P.R P.b)).comp (Polynomial.C ↑tau * Polynomial.X) +
+      Polynomial.C c
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paperBinomialKernelBasis._proof_1
+∀ (k : ℕ),
+  0 < k → Karlin.FaithfulCokernel.testSpan k = (Karlin.FaithfulCokernel.adjointLinear (Karlin.B_mat (k + 1))).ker
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_6
+∀ (w : ℕ) (c : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat w), c • Z * Matrix.transpose 1 = c • (Z * Matrix.transpose 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.seven._proof_1
+∀ (eps : ℚ),
+  0 < eps →
+    ∀ (s : List ℚ),
+      Karlin.FaithfulEffectiveContract.run
+          (Karlin.FaithfulEffectiveContract.maximum (Karlin.FaithfulEffectiveContract.constant 20)
+            (Karlin.FaithfulEffectiveContract.ceiling
+              (Karlin.FaithfulEffectiveContract.divide (Karlin.FaithfulEffectiveContract.constant 1)
+                Karlin.FaithfulEffectiveContract.input)))
+          eps s =
+        ↑(Karlin.FaithfulSevenSeed.sevenClock.threshold eps) :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_mono._simp_1_6
+∀ {α : Type u_1} {b : α} {α_1 : Type u_2} {x : Option α_1} {f : α_1 → α},
+  (Option.map f x = Option.some b) = ∃ a, x = Option.some a ∧ f a = b
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_eval
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau q : ℕ) (c : ℝ),
+  Polynomial.eval (↑q) (Karlin.FaithfulPaperAlgebra.heightDifferencePoly P tau c) =
+    ↑(P.entry (2 * tau * q) P.b) - ↑(P.entry (tau * q) P.b) + c
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paperBinomialKernelBasis.eq_1
+∀ (k : ℕ) (hk : 0 < k),
+  Karlin.FaithfulPaperCokernel.paperBinomialKernelBasis k hk =
+    (Module.Basis.span ⋯).map
+      (LinearEquiv.ofEq (Karlin.FaithfulCokernel.testSpan k)
+        (Karlin.FaithfulCokernel.adjointLinear (Karlin.B_mat (k + 1))).ker ⋯)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paperDividedPowerKernelBasis.eq_1
+∀ (k : ℕ) (hk : 0 < k),
+  Karlin.FaithfulPaperCokernel.paperDividedPowerKernelBasis k hk =
+    (Module.Basis.span ⋯).map
+      (LinearEquiv.ofEq (Karlin.FaithfulCokernel.dpTestSpan k)
+        (Karlin.FaithfulCokernel.adjointLinear (Karlin.expN0 (k + 1) (-1))).ker ⋯)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.run.eq_def
+∀ (x : Karlin.FaithfulEffectiveContract.Program) (x_1 : ℚ) (x_2 : List ℚ),
+  Karlin.FaithfulEffectiveContract.run x x_1 x_2 =
+    match x, x_1, x_2 with
+    | [], x, s => s
+    | t :: p, eps, s => Karlin.FaithfulEffectiveContract.run p eps (Karlin.FaithfulEffectiveContract.tick t eps s)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_difference
+∀ (a : ℚ) (s : Fin 2 → ℚ) (W : List (Fin 2)),
+  have A := !![0, -a; a, 0];
+  Karlin.wordScore A s W 1 - Karlin.wordScore A s W 0 = s 1 - s 0 + a * ↑W.length
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion._proof_1_5
+∀ (k : ℕ) (i j : Fin (k + 1)), ¬↑i + ↑j < k → ∀ (m : ℕ), ↑i + ↑j = m + m → ¬m < k + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.moment_coordinate_identity
+∀ (w : ℕ) (E : Karlin.FaithfulPaperCokernel.Mat w),
+  Karlin.L_moment (Karlin.expN0 w (-1)) ((Karlin.S_mat w).transpose * E * Karlin.S_mat w) =
+    (Karlin.S_mat w).transpose * Karlin.L_moment (Karlin.B_mat w) E * Karlin.S_mat w
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.universal_actual_lift_preserves
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P)
+  (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P) (input : ℕ),
+  0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+    ∃ fuel,
+      (Karlin.FaithfulEffectiveContract.universalLift A E).program.execute fuel input =
+        Option.some ((Karlin.FaithfulLift.nextClock A).threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.chosenCorrection_forward_difference_formula
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (cref : ℚ) (j : Fin (k + 1)),
+  ↑(Karlin.FaithfulScaleClock.chosenCorrection P cref j) =
+    ∑ h ∈ Finset.range (↑j + 1),
+      (-1) ^ (↑j - h) * ↑((↑j).choose h) *
+        ∑ i,
+          Polynomial.eval (↑(Karlin.FaithfulScaleClock.chosenScale P cref))
+              (Karlin.FaithfulScaleClock.correctionPolynomials P cref i) *
+            (↑h ^ ↑i / ↑(↑i).factorial)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.binary.injEq
+∀ (a : ℕ) (a_1 a_2 : Karlin.FaithfulEffectiveContract.UniversalProgram) (a_3 : ℕ)
+  (a_4 a_5 : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.binary a a_1 a_2 =
+      Karlin.FaithfulEffectiveContract.UniversalProgram.binary a_3 a_4 a_5) =
+    (a = a_3 ∧ a_1 = a_4 ∧ a_2 = a_5)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D.eq_1
+∀ (w : ℕ),
+  Karlin.FaithfulPaperCokernel.D w =
+    (Algebra.lmul ℚ (Karlin.FaithfulPaperCokernel.Mat w)) (Karlin.N0_mat w) +
+      (Karlin.FaithfulPaperCokernel.rightTranspose w) (Karlin.N0_mat w)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.correct
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (input : ℕ),
+  0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+    Karlin.FaithfulEffectiveContract.execute E.code input =
+      Option.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios._proof_1_3
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k),
+  2 ≤ k →
+    k - 1 + 1 = k →
+      (Karlin.FaithfulRateError.phaseTimePoly (Karlin.FaithfulRealization.countCoeff P) (k - 1) P.Q).natDegree =
+          k - 1 + 1 →
+        ¬0 < k - 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.forward_difference_formula
+∀ (f : ℕ → ℚ) (j : ℕ), (fwdDiff 1)^[j] f 0 = ∑ h ∈ Finset.range (j + 1), (-1) ^ (j - h) * ↑(j.choose h) * f h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.earlier_reset_deficit
+∀ {n : ℕ} (J : Matrix (Fin n) (Fin n) ℚ) (m : Fin n → ℚ) (z h : ℚ) (j i : Fin n),
+  ↑i < ↑j →
+    (∀ (a b : Fin n), ↑a ≤ ↑b → J a b = 0) →
+      z - Karlin.scoreVec (J - J.transpose) (Karlin.resetEntryScore J m z) (Karlin.resetPrefixCount j m h) i =
+        J j i * h + ∑ ell, if ↑i < ↑ell ∧ ↑ell < ↑j then J ell i * m ell else 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ),
+  0 < tau →
+    (fun q =>
+        ∑ s ∈ Finset.Ico (tau * q) (2 * tau * q), ↑(P.word s).length -
+          ↑(Karlin.FaithfulGrowthRecurrences.bundleLeading P tau) * ↑q ^ k) =O[Filter.atTop]
+      fun q => ↑q ^ (k - 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_dp_kernel_eq_span
+∀ (k : ℕ),
+  0 < k → (Karlin.FaithfulCokernel.adjointLinear (Karlin.expN0 (k + 1) (-1))).ker = Karlin.FaithfulCokernel.dpTestSpan k
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.encodeProgram.eq_1
+∀ (p : Karlin.FaithfulEffectiveContract.Program), Karlin.FaithfulEffectiveContract.encodeProgram p = Encodable.encode p
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.represents_every_partrec
+∀ {f : ℕ → Part ℕ},
+  Nat.Partrec f →
+    ∃ p, ∀ (eps : ℚ), p.eval eps = Part.map (fun n => ↑n) (f (Karlin.FaithfulEffectiveContract.encodeRat eps))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_bound._simp_1_4
+∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_sound._simp_1_13
+∀ {α : Sort u_1} {a b : α}, (a = b) = (b = a)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.antidiagonal_linearIndependent._proof_1_2
+∀ (k : ℕ) (h : Karlin.FaithfulCokernel.TestIndex k) (m : ℕ), ↑h = m + m → ¬m + m = ↑h → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.correction_integral_by_differences
+∀ (k : ℕ) (L : Fin (k + 1) → Polynomial ℚ),
+  L ⟨0, ⋯⟩ = 0 →
+    (∀ (i : Fin (k + 1)), ∀ r < ↑i, (L i).coeff r = 0) →
+      ∀ (j : Fin (k + 1)),
+        Karlin.FaithfulScale.IntegerMultiple 1
+          (Matrix.vecMul (fun i => Polynomial.eval (↑(Karlin.FaithfulScale.integerScale k L)) (L i))
+            (Karlin.S_inv_mat (k + 1)) j)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.transportRealizer._proof_2
+∀ {a b : ℕ} (h : a = b), h ≍ h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.left_right_commute
+∀ (w : ℕ) (A B : Karlin.FaithfulPaperCokernel.Mat w),
+  Commute ((Algebra.lmul ℚ (Karlin.FaithfulPaperCokernel.Mat w)) A) ((Karlin.FaithfulPaperCokernel.rightTranspose w) B)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.taylor_pred_coefficient._proof_1_2
+∀ (p : Polynomial ℝ), 0 < p.natDegree → ¬1 + (p.natDegree - 1) = p.natDegree → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.future_reset_deficit._proof_1_2
+∀ {n : ℕ} (j i ell : Fin n), ↑ell < ↑j → ↑j < ↑ell → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.lift_every_partrec_parent_contract
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (f : ℕ → Part ℕ),
+  Nat.Partrec f →
+    (∀ (eps : ℚ), 0 < eps → f (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+      ∃ code,
+        ∀ (input : ℕ),
+          0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+            ∃ fuel,
+              Karlin.FaithfulEffectiveContract.UniversalProgram.executeCode code fuel input =
+                Option.some
+                  ((Karlin.FaithfulLift.nextClock A).threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.seven_literal_simultaneous
+∀ (k : ℕ) (hk : 3 ≤ k),
+  have M := Karlin.FaithfulSevenFamily.matrix k hk;
+  have a := Karlin.FaithfulSevenFamily.trajectory k hk;
+  ∀ (t : ℕ),
+    1 ≤ t →
+      (∀ (i : Fin ((Karlin.FaithfulSevenFamily.clock k hk).m + 1)),
+          i ≠ a t → ∑ s ∈ Finset.range t, M i (a s) < ∑ s ∈ Finset.range t, M (a t) (a s)) ∧
+        ∀ (j : Fin ((Karlin.FaithfulSevenFamily.clock k hk).m + 1)),
+          j ≠ a t → ∑ s ∈ Finset.range t, M (a s) (a t) < ∑ s ∈ Finset.range t, M (a s) j
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.lift._proof_1
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P)
+  (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (eps : ℚ),
+  0 < eps →
+    ∀ (s : List ℚ),
+      Karlin.FaithfulEffectiveContract.run
+          (Karlin.FaithfulEffectiveContract.compile
+            (Karlin.FaithfulEffectiveThreshold.fromClock P A.tau
+              (Karlin.FaithfulController.outerOnset A (Karlin.FaithfulController.firstScale A)
+                (Karlin.FaithfulController.secondScale A (Karlin.FaithfulController.firstScale A)))
+              (Karlin.FaithfulGain.AdmissibleGain.selectedGain A (Karlin.FaithfulParameters.AdmissibleParameters.lam A)
+                (Karlin.FaithfulController.firstScale A))
+              (Karlin.FaithfulAdmissible.baseline P))
+            E.program)
+          eps s =
+        ↑((Karlin.FaithfulEffectiveLift.liftClock A).threshold eps) :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.N0_pow_entry._simp_1_1
+∀ {n : ℕ} {a b : Fin n}, (a = b) = (↑a = ↑b)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_selected_gain
+∀ (T : ℕ),
+  Karlin.FaithfulGain.AdmissibleGain.selectedGain Karlin.FaithfulSeedAdmissible.rpsAdmissible
+      (Karlin.FaithfulParameters.AdmissibleParameters.lam Karlin.FaithfulSeedAdmissible.rpsAdmissible) T =
+    1 / 2 + 27 / (8 * ↑T + 18)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.encode.eq_1
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram), p.encode = Encodable.encode p.toCodeTree
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.decode_encode
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.decode p.encode = Option.some p
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln.eq_4
+∀ (x : ℕ) (x_1 : ℚ) (p : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  p.round.evaln x x_1 = Option.map (fun x => ↑⌈x⌉₊) (p.evaln x x_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic.injEq
+∀ (a a_1 : Karlin.FaithfulEffectiveContract.Program),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic a =
+      Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic a_1) =
+    (a = a_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_gain_lt_one_iff
+∀ (T : ℚ), 0 ≤ T → (1 / 2 + 27 / (8 * T + 18) < 1 ↔ 9 / 2 < T)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.reset_run_score
+∀ {m n : ℕ} (G : Matrix (Fin m) (Fin m) ℚ) (C : Matrix (Fin m) (Fin n) ℚ) (J : Matrix (Fin n) (Fin n) ℚ)
+  (s : Fin m ⊕ Fin n → ℚ) (count : Fin n → ℕ) (z : ℚ),
+  (∀ (i : Fin n), s (Sum.inr i) = Karlin.resetEntryScore J (fun j => ↑(count j)) z i) →
+    ∀ (j i : Fin n) (h : ℕ),
+      Karlin.wordScore (Karlin.liftedGameMat G C J) s
+          (Karlin.FaithfulChronology.resetPrefix count ↑j ++ List.replicate h (Sum.inr j)) (Sum.inr i) =
+        Karlin.scoreVec (J - J.transpose) (Karlin.resetEntryScore J (fun a => ↑(count a)) z)
+          (Karlin.resetPrefixCount j (fun a => ↑(count a)) ↑h) i
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.word_gateway_count
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.wordCountVec (Karlin.FaithfulNextClock.Lift.word A T1 T2 q) Karlin.FaithfulNextClock.Lift.gateway = 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_remaining_run1._proof_1_1
+∀ (q h : ℕ), h ≤ 3 * q + 6 → ¬3 * q + 5 + h - (3 * q + 5 + (3 * q + 6)) = 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.divide_computes
+∀ {p q : Karlin.FaithfulEffectiveContract.Program} {f g : ℚ → ℚ},
+  Karlin.FaithfulEffectiveContract.Computes p f →
+    Karlin.FaithfulEffectiveContract.Computes q g →
+      Karlin.FaithfulEffectiveContract.Computes (Karlin.FaithfulEffectiveContract.divide p q) fun eps => f eps / g eps
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_14
+∀ (w : ℕ) (A B X Y : Karlin.FaithfulPaperCokernel.Mat w),
+  (X + Y) * Matrix.transpose (A + B) = X * Matrix.transpose (A + B) + Y * Matrix.transpose (A + B)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_successor_ratio_error._simp_1_4
+∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_momentSection_solves._proof_1_1
+¬0 ≤ 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expN0_eq_sum._proof_1_1
+∀ (w : ℕ) (i j : Fin w), ↑j ≤ ↑i → ∀ (b : ℕ), b ≠ ↑i - ↑j → ↑i = ↑j + b → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.antidiagonalCoefficient.eq_1
+∀ (k : ℕ) (V : Karlin.FaithfulPaperCokernel.Mat (k + 1)) (h : Karlin.FaithfulCokernel.TestIndex k),
+  Karlin.FaithfulPaperCokernel.antidiagonalCoefficient k V h = (-1) ^ (↑h / 2) * V ⟨↑h / 2, ⋯⟩ ⟨↑h / 2, ⋯⟩
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.mk.sizeOf_spec
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (program : Karlin.FaithfulEffectiveContract.UniversalProgram)
+  (computes : ∀ (eps : ℚ), 0 < eps → program.eval eps = Part.some ↑(P.threshold eps)),
+  SizeOf.sizeOf { program := program, computes := computes } = 1 + SizeOf.sizeOf program
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.runFuel.eq_1
+∀ (x : ℕ) (x_1 : ℚ) (x_2 : List ℚ), Karlin.FaithfulEffectiveContract.runFuel x [] x_1 x_2 = Option.some x_2
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.multiply_computes
+∀ {p q : Karlin.FaithfulEffectiveContract.Program} {f g : ℚ → ℚ},
+  Karlin.FaithfulEffectiveContract.Computes p f →
+    Karlin.FaithfulEffectiveContract.Computes q g →
+      Karlin.FaithfulEffectiveContract.Computes (Karlin.FaithfulEffectiveContract.multiply p q) fun eps => f eps * g eps
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.universalLift._proof_1
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P)
+  (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P) (eps : ℚ),
+  0 < eps →
+    (Karlin.FaithfulEffectiveContract.UniversalProgram.compile
+            (Karlin.FaithfulEffectiveThreshold.fromClock P A.tau
+              (Karlin.FaithfulController.outerOnset A (Karlin.FaithfulController.firstScale A)
+                (Karlin.FaithfulController.secondScale A (Karlin.FaithfulController.firstScale A)))
+              (Karlin.FaithfulGain.AdmissibleGain.selectedGain A (Karlin.FaithfulParameters.AdmissibleParameters.lam A)
+                (Karlin.FaithfulController.firstScale A))
+              (Karlin.FaithfulAdmissible.baseline P))
+            E.program).eval
+        eps =
+      Part.some ↑((Karlin.FaithfulEffectiveLift.liftClock A).threshold eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.divided_power_to_binomial_integral_by_differences._simp_1_4
+∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.encodeInt.eq_2
+∀ (n : ℕ), Karlin.FaithfulEffectiveContract.encodeInt (Int.negSucc n) = 2 * n + 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expFactor_sub_one_nilpotent._proof_1_2
+∀ (m i : ℕ), i + 1 = 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D_entry
+∀ (w : ℕ) (V : Karlin.FaithfulPaperCokernel.Mat w) (i j : Fin w),
+  (Karlin.FaithfulPaperCokernel.D w) V i j =
+    (if hi : 0 < ↑i then V ⟨↑i - 1, ⋯⟩ j else 0) + if hj : 0 < ↑j then V i ⟨↑j - 1, ⋯⟩ else 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_positive_no_return
+∀ (a : ℚ),
+  0 < a →
+    ∀ (s : Fin 2 → ℚ) (W : ℕ → List (Fin 2)),
+      (∀ (t : ℕ), (W t).length = t) →
+        ∀ (b : ℕ → Fin 2),
+          (∀ (t : ℕ) (i : Fin 2),
+              Karlin.wordScore !![0, -a; a, 0] s (W t) i ≤ Karlin.wordScore !![0, -a; a, 0] s (W t) (b t)) →
+            ∀ (t u : ℕ), t < u → b t = 1 → b u = 1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.compile_eval
+∀ {k : ℕ} (d : Karlin.FaithfulEffectiveThreshold.Data k) (parent : Karlin.FaithfulEffectiveContract.UniversalProgram)
+  (eps : ℚ) (v : ℕ),
+  parent.eval eps = Part.some ↑v →
+    (Karlin.FaithfulEffectiveContract.UniversalProgram.compile d parent).eval eps =
+      Part.some ↑(Karlin.FaithfulEffectiveThreshold.program d v eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.computes
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (self : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P)
+  (eps : ℚ), 0 < eps → self.program.eval eps = Part.some ↑(P.threshold eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._simp_1_8
+∀ {M₀ : Type u_1} [inst : Mul M₀] [inst_1 : Zero M₀] [NoZeroDivisors M₀] {a b : M₀}, a ≠ 0 → b ≠ 0 → (a * b = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_binomial_kernel_mem_span
+∀ (k : ℕ),
+  0 < k →
+    ∀ (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      Karlin.L_adjoint (Karlin.B_mat (k + 1)) Z = 0 → Z ∈ Karlin.FaithfulCokernel.testSpan k
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.accepts_every_partrec
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (f : ℕ → Part ℕ),
+  Nat.Partrec f →
+    (∀ (eps : ℚ), 0 < eps → f (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+      Nonempty (Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_binomial_linearIndependent
+∀ (k : ℕ), LinearIndependent ℚ fun h => Karlin.Z_binom_concrete (k + 1) ↑h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.iterate_remainder
+∀ (n : ℕ), (Karlin.FaithfulFamily.iterate Karlin.FaithfulMain.step n).clock.Arem = ↑n + 1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.runCode_correct
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P)
+  (input : ℕ),
+  0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+    Karlin.FaithfulEffectiveContract.UniversalProgram.runCode E.code input =
+      Part.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.run.eq_1
+∀ (x : ℚ) (x_1 : List ℚ), Karlin.FaithfulEffectiveContract.run [] x x_1 = x_1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.toCodeTree.eq_def
+∀ (x : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  x.toCodeTree =
+    match x with
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.machine c =>
+      Nat.Partrec.Code.zero.pair (Nat.Partrec.Code.ofNatCode c)
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic p =>
+      Nat.Partrec.Code.succ.pair (Nat.Partrec.Code.ofNatCode (Karlin.FaithfulEffectiveContract.encodeProgram p))
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.binary op p q =>
+      (Nat.Partrec.Code.left.pair (Nat.Partrec.Code.ofNatCode op)).pair (p.toCodeTree.pair q.toCodeTree)
+    | p.round => Nat.Partrec.Code.right.pair p.toCodeTree
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_difference_strictMono
+∀ (a : ℚ),
+  0 < a →
+    ∀ (s : Fin 2 → ℚ) (W : ℕ → List (Fin 2)),
+      (∀ (t : ℕ), (W t).length = t) →
+        StrictMono fun t => Karlin.wordScore !![0, -a; a, 0] s (W t) 1 - Karlin.wordScore !![0, -a; a, 0] s (W t) 0
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic.inj
+∀ {a a_1 : Karlin.FaithfulEffectiveContract.Program},
+  Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic a =
+      Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic a_1 →
+    a = a_1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_successor_ratio_error._simp_1_1
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.machine_eval._simp_1_6
+Nat.Partrec.Code.ofNatCode = Denumerable.ofNat Nat.Partrec.Code
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.push_pull_congruence
+∀ (w : ℕ) (Z : Karlin.FaithfulPaperCokernel.Mat w),
+  (Karlin.FaithfulCokernel.congruenceLinear (Karlin.S_mat w))
+      ((Karlin.FaithfulCokernel.congruenceLinear (Karlin.S_inv_mat w)) Z) =
+    Z
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D_entry._proof_1
+∀ (w : ℕ) (i : Fin w), 0 < ↑i → ¬↑i - 1 < w → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_K_pow_zero._proof_1_1
+∀ (k : ℕ), 0 < k → ¬0 < 2 * k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.divided_power_to_binomial_integral_by_differences._simp_1_6
+∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_sound
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram) {fuel : ℕ} {eps x : ℚ},
+  p.evaln fuel eps = Option.some x → x ∈ p.eval eps
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.runFuel.eq_3
+∀ (x : ℚ) (x_1 : List ℚ) (fuel t : ℕ) (p : List ℕ),
+  Karlin.FaithfulEffectiveContract.runFuel fuel.succ (t :: p) x x_1 =
+    Karlin.FaithfulEffectiveContract.runFuel fuel p x (Karlin.FaithfulEffectiveContract.tick t x x_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_9
+∀ (w : ℕ) (A B : Karlin.FaithfulPaperCokernel.Mat w) (c : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat w),
+  c • Z * Matrix.transpose (A * B) = c • (Z * Matrix.transpose (A * B))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.sevenFamily_correct
+∀ (k : ℕ) (hk : 3 ≤ k) (eps : ℚ),
+  0 < eps →
+    Karlin.FaithfulEffectiveContract.execute (Karlin.FaithfulEffectiveContract.sevenFamily k hk).code
+        (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+      Option.some (Karlin.FaithfulSevenFamily.threshold k hk eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree.eq_def
+∀ (x : Nat.Partrec.Code),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree x =
+    match x with
+    | Nat.Partrec.Code.zero.pair c =>
+      Option.some (Karlin.FaithfulEffectiveContract.UniversalProgram.machine c.encodeCode)
+    | Nat.Partrec.Code.succ.pair c =>
+      Option.map Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic (Encodable.decode c.encodeCode)
+    | (Nat.Partrec.Code.left.pair c).pair (p.pair q) => do
+      let p' ← Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree p
+      let q' ← Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree q
+      Pure.pure (Karlin.FaithfulEffectiveContract.UniversalProgram.binary c.encodeCode p' q')
+    | Nat.Partrec.Code.right.pair p =>
+      Option.map Karlin.FaithfulEffectiveContract.UniversalProgram.round
+        (Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree p)
+    | x => Option.none
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.divided_power_to_binomial_integral_by_differences._simp_1_2
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.terminates_correct
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P)
+  (input : ℕ),
+  0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+    ∃ fuel, E.program.execute fuel input = Option.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.decode_encode_int
+∀ (z : ℤ), Karlin.FaithfulEffectiveContract.decodeInt (Karlin.FaithfulEffectiveContract.encodeInt z) = z
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_difference_strictAnti
+∀ a < 0,
+  ∀ (s : Fin 2 → ℚ) (W : ℕ → List (Fin 2)),
+    (∀ (t : ℕ), (W t).length = t) →
+      StrictAnti fun t => Karlin.wordScore !![0, -a; a, 0] s (W t) 1 - Karlin.wordScore !![0, -a; a, 0] s (W t) 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion._proof_1_1
+∀ (k : ℕ) (i j : Fin (k + 1)), ↑i + ↑j < k → ¬↑i + ↑j + 1 < k + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_complete._simp_1_15
+∀ {α : Type u_1} {β : Type u_2} {f : Part α} {g : α → Part β} {b : β}, (b ∈ f.bind g) = ∃ a ∈ f, b ∈ g a
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_old_totals._proof_1_1
+Matrix.vecMul (fun x => 1)
+    (({ order_ge_two := Karlin.FaithfulSeed.rpsClock._proof_1, m := 3, A := Karlin.A_RPS, skew := Karlin.A_RPS_skew,
+              rank := Equiv.refl (Fin 3), R := Karlin.R2, C := !![5, 3; 6, 3; 7, 3], b := 0, v := Karlin.v_RPS, Q := 1,
+              onset_pos := Karlin.FaithfulSeed.rpsClock._proof_3, word := Karlin.rpsPhaseWord, delta0 := 1,
+              marker_pos := Karlin.FaithfulSeed.rpsClock._proof_4, Arem := 1,
+              remainder_nonneg := Karlin.FaithfulSeed.rpsClock._proof_5, threshold := fun x => 1,
+              threshold_onset := Karlin.FaithfulSeed.rpsClock._proof_6,
+              clock_eq := Karlin.FaithfulSeed.rpsClock._proof_7,
+              full_column_rank := Karlin.FaithfulSeed.rpsClock._proof_8,
+              leading_height := Karlin.FaithfulSeed.rpsClock._proof_10, valid := Karlin.FaithfulSeed.rpsClock._proof_11,
+              counts := Karlin.FaithfulSeed.rpsClock._proof_12, begins_twice := ⋯,
+              counter_entry := Karlin.FaithfulSeed.rpsClock._proof_13,
+              counter_table := Karlin.FaithfulSeed.rpsClock._proof_14, marker := ⋯,
+              support_safe := Karlin.FaithfulSeed.rps_support_safe, suffix := ⋯ }.countTable *
+          Karlin.F_tau_mat 2 1).fromRows
+      fun x => Karlin.e0_row 3) =
+  ![1, 27, 27]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D_apply
+∀ (w : ℕ) (Z : Karlin.FaithfulPaperCokernel.Mat w),
+  (Karlin.FaithfulPaperCokernel.D w) Z = Karlin.N0_mat w * Z + Z * (Karlin.N0_mat w).transpose
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.encoded_terminates_correct
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P)
+  (input : ℕ),
+  0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+    ∃ fuel,
+      Karlin.FaithfulEffectiveContract.UniversalProgram.executeCode E.code fuel input =
+        Option.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.clock_contract
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P),
+  ∃ code fuel,
+    ∀ (input : ℕ),
+      0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+        Karlin.FaithfulEffectiveContract.execute code input =
+            Option.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input)) ∧
+          Karlin.FaithfulEffectiveContract.runFuel fuel E.program (Karlin.FaithfulEffectiveContract.decodeRat input)
+                [] =
+              Option.some [↑(P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))] ∧
+            ∀ (q : ℕ),
+              P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input) ≤ q →
+                ∀ r ≤ (P.word q).length,
+                  Karlin.FaithfulClock.height P.b (P.entry (q + 1)) -
+                      Karlin.FaithfulClock.height P.b (Karlin.wordScore P.A (P.entry q) (List.take r (P.word q))) ≤
+                    Karlin.FaithfulEffectiveContract.decodeRat input * ↑((P.word q).length - r) + P.Arem
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.input_computes._simp_1
+Karlin.FaithfulEffectiveContract.Computes Karlin.FaithfulEffectiveContract.input id = True
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree.eq_3
+∀ (c p q : Nat.Partrec.Code),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree ((Nat.Partrec.Code.left.pair c).pair (p.pair q)) = do
+    let p' ← Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree p
+    let q' ← Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree q
+    Pure.pure (Karlin.FaithfulEffectiveContract.UniversalProgram.binary c.encodeCode p' q')
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.exp_D_fixed._proof_1_1
+∀ (k : ℕ), 0 < k → ¬0 < 2 * k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_bound._simp_1_2
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 3] [NeZero 3], (3 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D_exp_left
+∀ (w : ℕ) (t : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat w),
+  (Karlin.FaithfulPaperCokernel.D w) (Karlin.expN0 w t * Z) = Karlin.expN0 w t * (Karlin.FaithfulPaperCokernel.D w) Z
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_mono
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram) {a b : ℕ},
+  a ≤ b → ∀ {eps x : ℚ}, p.evaln a eps = Option.some x → p.evaln b eps = Option.some x
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.divided_power_to_binomial_integral_by_differences
+∀ (w : ℕ) (ellhat : Fin w → ℚ),
+  (∀ (i : Fin w), Karlin.FaithfulScale.IntegerMultiple (↑i).factorial (ellhat i)) →
+    ∀ (j : Fin w), Karlin.FaithfulScale.IntegerMultiple 1 (Matrix.vecMul ellhat (Karlin.S_inv_mat w) j)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios._proof_1_1
+∀ {k : ℕ}, 2 ≤ k → ¬k - 1 + 1 = k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_support_gaps
+∀ (q : ℚ),
+  Karlin.r2Vec q 0 + Karlin.A_RPS 0 0 - Karlin.v_RPS 0 - (Karlin.r2Vec q 1 + Karlin.A_RPS 1 0 - Karlin.v_RPS 1) =
+      3 * q + 8 / 3 ∧
+    Karlin.r2Vec q 0 + Karlin.A_RPS 0 0 - Karlin.v_RPS 0 - (Karlin.r2Vec q 2 + Karlin.A_RPS 2 0 - Karlin.v_RPS 2) =
+      7 / 3
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_successor_ratio_error._simp_1_7
+∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.count_block_internal_bounds
+∀ (k : ℕ) (T1 T2 lam : ℚ) (z ell : Fin (k + 1) → ℚ) (L B : Matrix (Fin (k + 1)) (Fin (k + 1)) ℚ),
+  0 < T1 →
+    T1 ≤ T2 →
+      ∀ Z ∈ {Karlin.W_concrete k T1 T2 lam z, Karlin.WE_concrete k T1 T2 lam z (Karlin.Faithful.earlyUnit k) ell},
+        Karlin.FaithfulAppendix.normStar ((1 / (T1 * T2 ^ 2)) • (L * Z)) +
+              Karlin.FaithfulAppendix.normStar ((1 / (T1 * T2 ^ 2)) • (L.transpose * Z * B)) ≤
+            Karlin.FaithfulAppendix.normStar L * Karlin.FaithfulAppendix.bC k T1 lam z ell *
+                (1 + Karlin.FaithfulAppendix.normStar B) /
+              (T1 * T2) ∧
+          Karlin.FaithfulAppendix.normStar ((1 / (T1 * T2 ^ 2)) • (L * Z)) +
+              Karlin.FaithfulAppendix.normStar ((1 / (T1 * T2 ^ 2)) • (L.transpose * Z * B)) ≤
+            Karlin.FaithfulAppendix.normStar L * Karlin.FaithfulAppendix.bC k T1 lam z ell *
+                (1 + Karlin.FaithfulAppendix.normStar B) /
+              T1 ^ 2
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree.eq_1
+∀ (c : Nat.Partrec.Code),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree (Nat.Partrec.Code.zero.pair c) =
+    Option.some (Karlin.FaithfulEffectiveContract.UniversalProgram.machine c.encodeCode)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._simp_1_7
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 4] [NeZero 4], (4 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.round.sizeOf_spec
+∀ (a : Karlin.FaithfulEffectiveContract.UniversalProgram), SizeOf.sizeOf a.round = 1 + SizeOf.sizeOf a
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.tick.eq_5
+∀ (token : ℕ) (eps y x_1 : ℚ) (s : List ℚ),
+  (Nat.unpair token).1 = 4 → Karlin.FaithfulEffectiveContract.tick token eps (y :: x_1 :: s) = Max.max x_1 y :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expFactor_isUnit
+∀ {R : Type u_1} [inst : Ring R] [inst_1 : Algebra ℚ R] {a : R},
+  IsNilpotent a → ∀ {n : ℕ}, 0 < n → IsUnit (Karlin.FaithfulPaperCokernel.expFactor a n)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.rational_input
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (eps : ℚ),
+  0 < eps →
+    Karlin.FaithfulEffectiveContract.execute E.code (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+      Option.some (P.threshold eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.correction_integral_by_differences._proof_1
+∀ (k : ℕ), ¬0 < k + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.constant.eq_1
+∀ (q : ℚ),
+  Karlin.FaithfulEffectiveContract.constant q =
+    [Karlin.FaithfulEffectiveContract.instruction 1 (Karlin.FaithfulEffectiveContract.encodeRat q)]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expFactor.eq_1
+∀ {R : Type u_1} [inst : Ring R] [inst_1 : Algebra ℚ R] (a : R) (n : ℕ),
+  Karlin.FaithfulPaperCokernel.expFactor a n = ∑ j ∈ Finset.range n, ((-1) ^ j / ↑(j + 1).factorial) • a ^ j
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._proof_1_4
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ) (c : ℝ), 2 ≤ k → k - 1 = 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_successor_ratio_error._simp_1_5
+∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.divided_power_to_binomial_integral_by_differences._simp_1_1
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.mk.inj
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} {program : Karlin.FaithfulEffectiveContract.UniversalProgram}
+  {computes : ∀ (eps : ℚ), 0 < eps → program.eval eps = Part.some ↑(P.threshold eps)}
+  {program_1 : Karlin.FaithfulEffectiveContract.UniversalProgram}
+  {computes_1 : ∀ (eps : ℚ), 0 < eps → program_1.eval eps = Part.some ↑(P.threshold eps)},
+  { program := program, computes := computes } = { program := program_1, computes := computes_1 } → program = program_1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios._proof_1_2
+∀ {k : ℕ}, k - 1 + 1 = k → ¬k - 1 < k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerSumPoly.eq_1
+∀ (d : ℕ),
+  Karlin.FaithfulPaperAlgebra.powerSumPoly d =
+    ∑ i ∈ Finset.range (d + 1), (Polynomial.monomial (d + 1 - i)) (↑(bernoulli i) * ↑((d + 1).choose i) / (↑d + 1))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.encodeRat.eq_1
+∀ (q : ℚ),
+  Karlin.FaithfulEffectiveContract.encodeRat q = Nat.pair (Karlin.FaithfulEffectiveContract.encodeInt q.num) q.den
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paperBasis_eq_existing
+∀ (k : ℕ) (hk : 0 < k),
+  Karlin.FaithfulPaperCokernel.paperDividedPowerKernelBasis k hk = Karlin.FaithfulCokernel.dividedPowerKernelBasis k
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly._proof_1
+(1 + 1).AtLeastTwo
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.runFuel.eq_def
+∀ (x : ℕ) (x_1 : Karlin.FaithfulEffectiveContract.Program) (x_2 : ℚ) (x_3 : List ℚ),
+  Karlin.FaithfulEffectiveContract.runFuel x x_1 x_2 x_3 =
+    match x, x_1, x_2, x_3 with
+    | x, [], x_4, s => Option.some s
+    | 0, head :: tail, x, x_4 => Option.none
+    | fuel.succ, t :: p, eps, s =>
+      Karlin.FaithfulEffectiveContract.runFuel fuel p eps (Karlin.FaithfulEffectiveContract.tick t eps s)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.code.eq_1
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P),
+  E.code = Karlin.FaithfulEffectiveContract.encodeProgram E.program
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.binary.sizeOf_spec
+∀ (a : ℕ) (a_1 a_2 : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  SizeOf.sizeOf (Karlin.FaithfulEffectiveContract.UniversalProgram.binary a a_1 a_2) =
+    1 + SizeOf.sizeOf a + SizeOf.sizeOf a_1 + SizeOf.sizeOf a_2
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.exp_neg_D_fixed_iff._proof_1_1
+∀ (k : ℕ), 0 < k → ¬0 < 2 * k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_11
+∀ (w : ℕ) (X Y : Karlin.FaithfulPaperCokernel.Mat w),
+  (X + Y) * Matrix.transpose 0 = X * Matrix.transpose 0 + Y * Matrix.transpose 0
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.machine.injEq
+∀ (a a_1 : ℕ),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.machine a =
+      Karlin.FaithfulEffectiveContract.UniversalProgram.machine a_1) =
+    (a = a_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expFactor_geometric_inverse
+∀ {R : Type u_1} [inst : Ring R] [inst_1 : Algebra ℚ R] (a : R) {n r : ℕ},
+  0 < n →
+    a ^ r = 0 →
+      have K := Karlin.FaithfulPaperCokernel.expFactor a n - 1;
+      Karlin.FaithfulPaperCokernel.expFactor a n * ∑ j ∈ Finset.range r, (-K) ^ j = 1 ∧
+        (∑ j ∈ Finset.range r, (-K) ^ j) * Karlin.FaithfulPaperCokernel.expFactor a n = 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expFactor_sub_one_nilpotent
+∀ {R : Type u_1} [inst : Ring R] [inst_1 : Algebra ℚ R] {a : R},
+  IsNilpotent a → ∀ {n : ℕ}, 0 < n → IsNilpotent (Karlin.FaithfulPaperCokernel.expFactor a n - 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.universal_sevenFamily_correct
+∀ (k : ℕ) (hk : 3 ≤ k) (eps : ℚ),
+  0 < eps →
+    ∃ fuel,
+      (Karlin.FaithfulEffectiveContract.universalSevenFamily k hk).program.execute fuel
+          (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+        Option.some (Karlin.FaithfulSevenFamily.threshold k hk eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln.eq_1
+∀ (x : ℕ) (x_1 : ℚ) (c : ℕ),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.machine c).evaln x x_1 =
+    Option.map (fun n => ↑n)
+      (Nat.Partrec.Code.evaln x (Nat.Partrec.Code.ofNatCode c) (Karlin.FaithfulEffectiveContract.encodeRat x_1))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.actual_lift_preserves
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P)
+  (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (eps : ℚ),
+  0 < eps →
+    Karlin.FaithfulEffectiveContract.execute (Karlin.FaithfulEffectiveContract.lift A E).code
+        (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+      Option.some ((Karlin.FaithfulLift.nextClock A).threshold eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.height_polynomial_degree_by_backward_difference._proof_1_3
+∀ {k : ℕ} (tau : ℕ) (z : Polynomial ℝ), 2 ≤ k → 0 = k - 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_remaining_run2._proof_1_1
+∀ (q h : ℕ), h ≤ 3 * q + 7 → ¬3 * q + 5 + (3 * q + 6) + h - (3 * q + 5) = 3 * q + 6 + h → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.rps._proof_1
+∀ (eps : ℚ),
+  0 < eps →
+    ∀ (s : List ℚ),
+      Karlin.FaithfulEffectiveContract.run (Karlin.FaithfulEffectiveContract.constant 1) eps s =
+        ↑(Karlin.FaithfulSeed.rpsClock.threshold eps) :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_momentSection_solves._proof_1_3
+∀ (i : Fin (0 + 1)), ↑i < 0 + 1 → ¬↑i = ↑0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.future_reset_deficit._proof_1_1
+∀ {n : ℕ} (j i : Fin n), ↑j < ↑i → ∀ (ell : Fin n), ↑ell < ↑j → ¬↑ell ≤ ↑i → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.decodeRat.eq_1
+∀ (n : ℕ),
+  Karlin.FaithfulEffectiveContract.decodeRat n =
+    ↑(Karlin.FaithfulEffectiveContract.decodeInt (Nat.unpair n).1) / ↑(Nat.unpair n).2
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.exp_D_finite
+∀ (k : ℕ) (t : ℚ),
+  IsNilpotent.exp (t • Karlin.FaithfulPaperCokernel.D (k + 1)) =
+    ∑ n ∈ Finset.range (2 * k + 1), (t ^ n / ↑n.factorial) • Karlin.FaithfulPaperCokernel.D (k + 1) ^ n
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.from_toCodeTree._simp_1_13
+Nat.Partrec.Code.ofNatCode = Denumerable.ofNat Nat.Partrec.Code
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_factor_inverse._proof_1_1
+∀ (k : ℕ), 0 < k → ¬0 < 2 * k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion._proof_1_3
+∀ (k : ℕ) (i j : Fin (k + 1)), ¬↑i + ↑j < k → ¬k ≤ ↑i + ↑j → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_selected_gain_cancellation
+∀ (T : ℕ),
+  5 ≤ T →
+    have c :=
+      Karlin.FaithfulGain.AdmissibleGain.selectedGain Karlin.FaithfulSeedAdmissible.rpsAdmissible
+        (Karlin.FaithfulParameters.AdmissibleParameters.lam Karlin.FaithfulSeedAdmissible.rpsAdmissible) T;
+    0 < c ∧ c < 1 ∧ -81 / 2 + (c - 1 / 2) * (27 + 12 * ↑T) = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.raw_chronology
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      Karlin.IsValidPriorityWord (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+          (Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 q) Karlin.FaithfulNextClockAssembly.rank
+          (List.map Sum.inl (Karlin.FaithfulNextClock.Lift.old A q) ++
+            Karlin.FaithfulNextClockAssembly.reset A T1 T2 q) ∧
+        Karlin.wordScore (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+            (Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 q)
+            (List.map Sum.inl (Karlin.FaithfulNextClock.Lift.old A q) ++
+              Karlin.FaithfulNextClockAssembly.reset A T1 T2 q) =
+          Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 (q + 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.exp_D_fixed
+∀ (k : ℕ),
+  0 < k →
+    ∀ (t : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      (Karlin.FaithfulPaperCokernel.D (k + 1)) Z = 0 →
+        Karlin.expN0 (k + 1) t * Z * (Karlin.expN0 (k + 1) t).transpose = Z
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D._proof_1
+∀ (w : ℕ), SMulCommClass ℚ ℚ (Karlin.FaithfulPaperCokernel.Mat w)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_successor_ratio_error._simp_1_6
+∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.seven_family_remainder._proof_1_1
+∀ (k : ℕ), 3 ≤ k → ¬k = k - 3 + 3 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.backwardDifference_eval
+∀ (p : Polynomial ℝ) (x : ℝ),
+  Polynomial.eval x (Karlin.FaithfulPaperAlgebra.backwardDifference p) = Polynomial.eval x p - Polynomial.eval (x - 1) p
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree.eq_4
+∀ (p : Nat.Partrec.Code),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree (Nat.Partrec.Code.right.pair p) =
+    Option.map Karlin.FaithfulEffectiveContract.UniversalProgram.round
+      (Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree p)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers._proof_1_4
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ), 2 ≤ k → ∀ (q s : ℕ), ¬0 < k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_gain_forms
+∀ (T : ℚ), 0 ≤ T → 1 / 2 + 27 / (8 * T + 18) = 2 * (T + 9) / (4 * T + 9)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.execute_encode
+∀ (p : Karlin.FaithfulEffectiveContract.Program) (input : ℕ),
+  Karlin.FaithfulEffectiveContract.execute (Karlin.FaithfulEffectiveContract.encodeProgram p) input =
+    Option.some
+      ⌈(Karlin.FaithfulEffectiveContract.run p (Karlin.FaithfulEffectiveContract.decodeRat input) []).headD 0⌉₊
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.result_unique
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P)
+  (input fuel n : ℕ),
+  0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+    E.program.execute fuel input = Option.some n → n = P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.code.eq_1
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P),
+  E.code = E.program.encode
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.polynomial_eq_of_eval_pos_nat._proof_1_1
+∀ (n : ℕ), ¬1 ≤ n + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion
+∀ (k : ℕ) (V : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+  Matrix.transpose V = V →
+    (Karlin.FaithfulPaperCokernel.D (k + 1)) V = 0 →
+      V = ∑ h, Karlin.FaithfulPaperCokernel.antidiagonalCoefficient k V h • Karlin.V_antidiag (k + 1) ↑h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._simp_1_11
+∀ {R : Type u_1} [inst : AddMonoidWithOne R] [CharZero R] (n : ℕ), (↑n + 1 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.maximum_computes
+∀ {p q : Karlin.FaithfulEffectiveContract.Program} {f g : ℚ → ℚ},
+  Karlin.FaithfulEffectiveContract.Computes p f →
+    Karlin.FaithfulEffectiveContract.Computes q g →
+      Karlin.FaithfulEffectiveContract.Computes (Karlin.FaithfulEffectiveContract.maximum p q) fun eps =>
+        Max.max (f eps) (g eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.actual_late_strict_after_first
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      ∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+        k + 1 ≤ ↑j →
+          ∀ (r : ℕ),
+            0 < r →
+              r ≤ (Karlin.FaithfulWindow.consecutiveWord P.word (A.tau * q) (A.tau * q)).length →
+                Karlin.wordScore
+                    (Karlin.liftedGameMat (Karlin.FaithfulGateway.game P)
+                      (Karlin.FaithfulActualWaiting.pullCoupling A T1 T2) (Karlin.FaithfulNextClock.Lift.J A T1 T2))
+                    (Karlin.FaithfulActualWaiting.pullState A T1 T2 q)
+                    (Karlin.FaithfulWaiting.parentStage P
+                      (List.take r (Karlin.FaithfulWindow.consecutiveWord P.word (A.tau * q) (A.tau * q))))
+                    (Sum.inr j) <
+                  Karlin.FaithfulClock.height P.b
+                      (Karlin.wordScore P.A (P.entry (A.tau * q))
+                        (List.take r (Karlin.FaithfulWindow.consecutiveWord P.word (A.tau * q) (A.tau * q)))) +
+                    Karlin.FaithfulTables.parentTranslation P A.tau
+                      (Karlin.FaithfulGain.AdmissibleGain.selectedGain A
+                        (Karlin.FaithfulParameters.AdmissibleParameters.lam A) T1)
+                      (Karlin.FaithfulAdmissible.baseline P) q
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose.eq_1
+∀ (w : ℕ),
+  Karlin.FaithfulPaperCokernel.rightTranspose w =
+    { toFun := fun A => { toFun := fun Z => Z * Matrix.transpose A, map_add' := ⋯, map_smul' := ⋯ }, map_one' := ⋯,
+      map_mul' := ⋯, map_zero' := ⋯, map_add' := ⋯, commutes' := ⋯ }
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.mk.injEq
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (program : Karlin.FaithfulEffectiveContract.Program)
+  (computes :
+    ∀ (eps : ℚ), 0 < eps → ∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run program eps s = ↑(P.threshold eps) :: s)
+  (program_1 : Karlin.FaithfulEffectiveContract.Program)
+  (computes_1 :
+    ∀ (eps : ℚ),
+      0 < eps → ∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run program_1 eps s = ↑(P.threshold eps) :: s),
+  ({ program := program, computes := computes } = { program := program_1, computes := computes_1 }) =
+    (program = program_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.N0_pow_entry._proof_1_2
+∀ (w n : ℕ) (i j : Fin w), 0 < ↑i → ¬(↑i - 1 = ↑j + n ↔ ↑i = ↑j + (n + 1)) → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerBundlePoly_top
+∀ (d tau : ℕ),
+  (Karlin.FaithfulPaperAlgebra.powerBundlePoly d tau).coeff (d + 1) = ↑tau ^ (d + 1) * (2 ^ (d + 1) - 1) / (↑d + 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.execute.eq_1
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram) (fuel inputCode : ℕ),
+  p.execute fuel inputCode = Option.map Nat.ceil (p.evaln fuel (Karlin.FaithfulEffectiveContract.decodeRat inputCode))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.unconjugate_symmetric
+∀ (k : ℕ),
+  0 < k →
+    ∀ (V : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      Matrix.transpose V = V →
+        (Karlin.FaithfulPaperCokernel.D (k + 1)) V = 0 →
+          Karlin.L_adjoint_DP (k + 1) (Karlin.expN0 (k + 1) (-1 / 2) * V) = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_difference_strictMono._simp_1_1
+∀ (a : ℚ) (s : Fin 2 → ℚ) (W : List (Fin 2)),
+  Karlin.wordScore !![0, -a; a, 0] s W 1 - Karlin.wordScore !![0, -a; a, 0] s W 0 = s 1 - s 0 + a * ↑W.length
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.antidiagonalCoefficient._proof_2
+∀ (k : ℕ) (h : Karlin.FaithfulCokernel.TestIndex k), ↑h / 2 < k + 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_K_pow_zero
+∀ (k : ℕ),
+  0 < k →
+    (Karlin.FaithfulPaperCokernel.expFactor (Karlin.FaithfulPaperCokernel.D (k + 1)) (2 * k) - 1) ^ (2 * k + 1) = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expN0_eq_sum._proof_1_3
+∀ (w : ℕ) (i j : Fin w), ¬↑j ≤ ↑i → ∀ (n : ℕ), ↑i = ↑j + n → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_sound._simp_1_12
+∀ {α : Type u_1} {β : Type u_2} (f : α → β) {o : Part α} {b : β}, (b ∈ Part.map f o) = ∃ a ∈ o, f a = b
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.decode_encode_int._proof_1_5
+∀ (a : ℕ), ¬(2 * a + 1) / 2 = a → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_dp_kernel_eq_span._proof_1_1
+∀ (k : ℕ) (h : Karlin.FaithfulCokernel.TestIndex k), k ≤ ↑h → ¬k + 1 ≤ ↑h + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_16
+∀ (w : ℕ) (A B : Karlin.FaithfulPaperCokernel.Mat w),
+  { toFun := fun Z => Z * Matrix.transpose (A + B), map_add' := ⋯, map_smul' := ⋯ } =
+    { toFun := fun Z => Z * Matrix.transpose A, map_add' := ⋯, map_smul' := ⋯ } +
+      { toFun := fun Z => Z * Matrix.transpose B, map_add' := ⋯, map_smul' := ⋯ }
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.taylor_pred_coefficient._proof_1_3
+∀ (p : Polynomial ℝ), 1 + (p.natDegree - 1) = p.natDegree → ¬p.natDegree - 1 ≤ p.natDegree → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.brecOn.eq
+∀ {motive : Karlin.FaithfulEffectiveContract.UniversalProgram → Sort u}
+  (t : Karlin.FaithfulEffectiveContract.UniversalProgram)
+  (F_1 :
+    (t : Karlin.FaithfulEffectiveContract.UniversalProgram) →
+      Karlin.FaithfulEffectiveContract.UniversalProgram.below t → motive t),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.brecOn t F_1 =
+    F_1 t (Karlin.FaithfulEffectiveContract.UniversalProgram.brecOn.go t F_1).2
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff._proof_1_1
+∀ (k hidx : ℕ), k ≤ hidx → ¬k + 1 ≤ hidx + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.tick.eq_2
+∀ (token : ℕ) (eps : ℚ) (stack : List ℚ),
+  (Nat.unpair token).1 = 1 →
+    Karlin.FaithfulEffectiveContract.tick token eps stack =
+      Karlin.FaithfulEffectiveContract.decodeRat (Nat.unpair token).2 :: stack
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_18
+∀ (w : ℕ) (c c_1 : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat w),
+  c_1 • Z * Matrix.transpose ((algebraMap ℚ (Karlin.FaithfulPaperCokernel.Mat w)) c) =
+    c_1 • (Z * Matrix.transpose ((algebraMap ℚ (Karlin.FaithfulPaperCokernel.Mat w)) c))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.runFuel.eq_2
+∀ (x : ℚ) (x_1 : List ℚ) (head : ℕ) (tail : List ℕ),
+  Karlin.FaithfulEffectiveContract.runFuel 0 (head :: tail) x x_1 = Option.none
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers._proof_1_3
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ), 2 ≤ k → ¬1 ≤ k - 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.rowProgram.eq_1
+∀ {n : ℕ} (c g : Fin n → ℚ) (d : ℕ),
+  Karlin.FaithfulEffectiveContract.rowProgram c g d =
+    Karlin.FaithfulEffectiveContract.maximum (Karlin.FaithfulEffectiveContract.constant 1)
+      (Karlin.FaithfulEffectiveContract.maximum
+        (Karlin.FaithfulEffectiveContract.constant
+          ↑⌈2 * Karlin.FaithfulGrowth.rowCoeffMass c d / Karlin.FaithfulGrowth.rowCoeff c d⌉₊)
+        (Karlin.FaithfulEffectiveContract.ceiling
+          (Karlin.FaithfulEffectiveContract.divide
+            (Karlin.FaithfulEffectiveContract.constant (2 * Karlin.FaithfulGrowth.rowCoeffMass g d))
+            (Karlin.FaithfulEffectiveContract.multiply Karlin.FaithfulEffectiveContract.input
+              (Karlin.FaithfulEffectiveContract.constant (Karlin.FaithfulGrowth.rowCoeff c d))))))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.decode.eq_1
+∀ (code : ℕ),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.decode code =
+    Karlin.FaithfulEffectiveContract.UniversalProgram.fromCodeTree (Nat.Partrec.Code.ofNatCode code)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.family_remainder._proof_1_1
+∀ (k : ℕ), 2 ≤ k → ¬k = k - 2 + 2 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.sevenFamily._proof_1
+∀ (k : ℕ), 3 ≤ k → ¬k - 3 + 3 = k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.mk.inj
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} {program : Karlin.FaithfulEffectiveContract.Program}
+  {computes :
+    ∀ (eps : ℚ), 0 < eps → ∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run program eps s = ↑(P.threshold eps) :: s}
+  {program_1 : Karlin.FaithfulEffectiveContract.Program}
+  {computes_1 :
+    ∀ (eps : ℚ),
+      0 < eps → ∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run program_1 eps s = ↑(P.threshold eps) :: s},
+  { program := program, computes := computes } = { program := program_1, computes := computes_1 } → program = program_1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._simp_1_5
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_7
+∀ (w : ℕ), { toFun := fun Z => Z * Matrix.transpose 1, map_add' := ⋯, map_smul' := ⋯ } = 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_least_denominator_minimal
+∀ (n : ℕ),
+  1 ≤ n → (∀ (j : Fin (2 + 1)), ∃ z, ↑z = ↑n * Karlin.FaithfulSeedAdmissible.rpsAdmissible.referenceHeight j) → 2 ≤ n
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.compile_computes
+∀ {k : ℕ} (d : Karlin.FaithfulEffectiveThreshold.Data k) {parent : Karlin.FaithfulEffectiveContract.Program}
+  {f : ℚ → ℕ},
+  (Karlin.FaithfulEffectiveContract.Computes parent fun eps => ↑(f eps)) →
+    Karlin.FaithfulEffectiveContract.Computes (Karlin.FaithfulEffectiveContract.compile d parent) fun eps =>
+      ↑(Karlin.FaithfulEffectiveThreshold.program d (f eps) eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._simp_1_10
+∀ {G₀ : Type u_3} [inst : GroupWithZero G₀] {a : G₀} (n : ℤ), a ≠ 0 → (a ^ n = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.input_computes
+Karlin.FaithfulEffectiveContract.Computes Karlin.FaithfulEffectiveContract.input id
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.sevenFamily._proof_2
+∀ (k : ℕ), 3 ≤ k → k - 3 + 3 = k
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.N0_pow_zero
+∀ (w : ℕ), Karlin.N0_mat w ^ w = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.tick.eq_6
+∀ (token : ℕ) (eps x_1 : ℚ) (s : List ℚ),
+  (Nat.unpair token).1 = 5 → Karlin.FaithfulEffectiveContract.tick token eps (x_1 :: s) = ↑⌈x_1⌉₊ :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.earlier_reset_deficit._proof_1_1
+∀ {n : ℕ} (j i ell : Fin n), ¬↑i < ↑ell → ¬↑ell ≤ ↑i → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expN0_eq_sum._proof_1_2
+∀ (w : ℕ) (i j : Fin w), ↑j ≤ ↑i → ¬↑i - ↑j < w → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.future_reset_deficit
+∀ {n : ℕ} (J : Matrix (Fin n) (Fin n) ℚ) (m : Fin n → ℚ) (z h : ℚ) (j i : Fin n),
+  ↑j < ↑i →
+    (∀ (a b : Fin n), ↑a ≤ ↑b → J a b = 0) →
+      z - Karlin.scoreVec (J - J.transpose) (Karlin.resetEntryScore J m z) (Karlin.resetPrefixCount j m h) i =
+        J i j * (m j - h) + ∑ ell, if ↑j < ↑ell ∧ ↑ell < ↑i then J i ell * m ell else 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_remaining_run0._proof_1_1
+∀ (q h : ℕ), h ≤ 3 * q + 5 → ¬h - (3 * q + 5) = 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.decode_encode._simp_1_3
+Nat.Partrec.Code.ofNatCode = Denumerable.ofNat Nat.Partrec.Code
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.machine.inj
+∀ {a a_1 : ℕ},
+  Karlin.FaithfulEffectiveContract.UniversalProgram.machine a =
+      Karlin.FaithfulEffectiveContract.UniversalProgram.machine a_1 →
+    a = a_1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.input.eq_1
+Karlin.FaithfulEffectiveContract.input = [Karlin.FaithfulEffectiveContract.instruction 0 0]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.conjugate_adjoint
+∀ (k : ℕ),
+  0 < k →
+    ∀ (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      Karlin.L_adjoint_DP (k + 1) Z = 0 →
+        (Karlin.expN0 (k + 1) (1 / 2) * Z).transpose = Karlin.expN0 (k + 1) (1 / 2) * Z ∧
+          (Karlin.FaithfulPaperCokernel.D (k + 1)) (Karlin.expN0 (k + 1) (1 / 2) * Z) = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerSumPoly_top._proof_1_2
+∀ (d i : ℕ), i ≠ 0 → i < d + 1 → d + 1 - i = d + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.adjoint_iff_symmetric_derivation
+∀ (k : ℕ),
+  0 < k →
+    ∀ (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      Karlin.L_adjoint_DP (k + 1) Z = 0 ↔
+        (Karlin.expN0 (k + 1) (1 / 2) * Z).transpose = Karlin.expN0 (k + 1) (1 / 2) * Z ∧
+          (Karlin.FaithfulPaperCokernel.D (k + 1)) (Karlin.expN0 (k + 1) (1 / 2) * Z) = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.ofCode._proof_1
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (c : Nat.Partrec.Code),
+  (∀ (eps : ℚ), 0 < eps → c.eval (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+    ∀ (eps : ℚ),
+      0 < eps →
+        (Karlin.FaithfulEffectiveContract.UniversalProgram.machine (Encodable.encode c)).eval eps =
+          Part.some ↑(P.threshold eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.eval.eq_def
+∀ (x : Karlin.FaithfulEffectiveContract.UniversalProgram) (x_1 : ℚ),
+  x.eval x_1 =
+    match x, x_1 with
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.machine c, eps =>
+      Part.map (fun n => ↑n) ((Nat.Partrec.Code.ofNatCode c).eval (Karlin.FaithfulEffectiveContract.encodeRat eps))
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic p, eps =>
+      Part.some ((Karlin.FaithfulEffectiveContract.run p eps []).headD 0)
+    | Karlin.FaithfulEffectiveContract.UniversalProgram.binary op p q, eps =>
+      (p.eval eps).bind fun x =>
+        Part.map (Karlin.FaithfulEffectiveContract.UniversalProgram.operation op x) (q.eval eps)
+    | p.round, eps => Part.map (fun x => ↑⌈x⌉₊) (p.eval eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ceiling.eq_1
+∀ (p : Karlin.FaithfulEffectiveContract.Program),
+  Karlin.FaithfulEffectiveContract.ceiling p = p ++ [Karlin.FaithfulEffectiveContract.instruction 5 0]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._simp_1_9
+∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.operation.eq_1
+∀ (op : ℕ) (x y : ℚ),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.operation op x y =
+    if op = 0 then x * y else if op = 1 then x / y else Max.max x y
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.polynomial_eq_of_eval_pos_nat
+∀ (p q : Polynomial ℝ), (∀ (n : ℕ), 1 ≤ n → Polynomial.eval (↑n) p = Polynomial.eval (↑n) q) → p = q
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_gain_correction_bound
+∀ (T : ℚ), 0 < T → 0 < 27 / (8 * T + 18) ∧ 27 / (8 * T + 18) ≤ 27 / 8 / T
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.selected_chronology
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P),
+  have T1 := Karlin.FaithfulController.firstScale A;
+  have T2 := Karlin.FaithfulController.secondScale A T1;
+  ∀ (q : ℕ),
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      Karlin.IsValidPriorityWord (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+          (Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 q) Karlin.FaithfulNextClockAssembly.rank
+          (List.map Sum.inl (Karlin.FaithfulNextClock.Lift.old A q) ++
+            Karlin.FaithfulNextClockAssembly.reset A T1 T2 q) ∧
+        Karlin.wordScore (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+              (Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 q)
+              (List.map Sum.inl (Karlin.FaithfulNextClock.Lift.old A q) ++
+                Karlin.FaithfulNextClockAssembly.reset A T1 T2 q) =
+            Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 (q + 1) ∧
+          ∀ r ≤ (Karlin.FaithfulNextClockAssembly.reset A T1 T2 q).length,
+            Karlin.FaithfulInheritance.scoreHeight Karlin.FaithfulNextClock.Lift.base
+                (Karlin.wordScore (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+                  (Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 q)
+                  (List.map Sum.inl (Karlin.FaithfulNextClock.Lift.old A q) ++
+                    List.take r (Karlin.FaithfulNextClockAssembly.reset A T1 T2 q))) =
+              Karlin.FaithfulNextClock.Lift.zeta A T1 ⬝ᵥ Karlin.binomBasis (k + 1) q
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.mk.injEq
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (program : Karlin.FaithfulEffectiveContract.UniversalProgram)
+  (computes : ∀ (eps : ℚ), 0 < eps → program.eval eps = Part.some ↑(P.threshold eps))
+  (program_1 : Karlin.FaithfulEffectiveContract.UniversalProgram)
+  (computes_1 : ∀ (eps : ℚ), 0 < eps → program_1.eval eps = Part.some ↑(P.threshold eps)),
+  ({ program := program, computes := computes } = { program := program_1, computes := computes_1 }) =
+    (program = program_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.compile.eq_1
+∀ {k : ℕ} (d : Karlin.FaithfulEffectiveThreshold.Data k) (parent : Karlin.FaithfulEffectiveContract.Program),
+  Karlin.FaithfulEffectiveContract.compile d parent =
+    Karlin.FaithfulEffectiveContract.maximum (Karlin.FaithfulEffectiveContract.constant ↑d.outerOnset)
+      (Karlin.FaithfulEffectiveContract.maximum
+        (Karlin.FaithfulEffectiveContract.rowProgram d.resetLength d.resetGain k)
+        (Karlin.FaithfulEffectiveContract.ceiling
+          (Karlin.FaithfulEffectiveContract.divide
+            (Karlin.FaithfulEffectiveContract.maximum parent
+              (Karlin.FaithfulEffectiveContract.maximum (Karlin.FaithfulEffectiveContract.constant ↑d.parentOnset)
+                (Karlin.FaithfulEffectiveContract.rowProgram d.parentLength d.parentGain (k - 1))))
+            (Karlin.FaithfulEffectiveContract.constant ↑d.scale))))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_eval._proof_1_2
+∀ {k : ℕ}, 2 ≤ k → ¬0 < k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.exp_D_apply
+∀ (k : ℕ) (t : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+  (IsNilpotent.exp (t • Karlin.FaithfulPaperCokernel.D (k + 1))) Z =
+    Karlin.expN0 (k + 1) t * Z * (Karlin.expN0 (k + 1) t).transpose
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.divided_power_to_binomial_integral_by_differences._simp_1_5
+∀ {M₀ : Type u_1} [inst : MonoidWithZero M₀] {a : M₀} [IsReduced M₀] (n : ℕ), a ≠ 0 → (a ^ n = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.N0_pow_zero._proof_1_2
+∀ (w : ℕ) (i j : Fin w), ↑i ≤ ↑j → ↑i = ↑j + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.toCodeTree.eq_2
+∀ (p : Karlin.FaithfulEffectiveContract.Program),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic p).toCodeTree =
+    Nat.Partrec.Code.succ.pair (Nat.Partrec.Code.ofNatCode (Karlin.FaithfulEffectiveContract.encodeProgram p))
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.polynomial_successor_ratio_error
+∀ (P : Polynomial ℝ) {d : ℕ},
+  0 < d →
+    P.natDegree = d →
+      0 < P.leadingCoeff →
+        (fun q => Polynomial.eval (↑q + 1) P / Polynomial.eval (↑q) P - 1) =O[Filter.atTop] fun q => 1 / ↑q
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.terminates
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (input : ℕ),
+  ∃ s,
+    Karlin.FaithfulEffectiveContract.runFuel (List.length E.program) E.program
+        (Karlin.FaithfulEffectiveContract.decodeRat input) [] =
+      Option.some s
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_complete
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram) {eps x : ℚ},
+  x ∈ p.eval eps ↔ ∃ fuel, p.evaln fuel eps = Option.some x
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.height_polynomial_degree_by_backward_difference
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ),
+  0 < tau →
+    ∀ (c : ℝ) (z : Polynomial ℝ),
+      (∀ (q : ℕ),
+          1 ≤ q →
+            Polynomial.eval (↑q) z - Polynomial.eval (↑q - 1) z =
+              ↑(P.entry (2 * tau * q) P.b) - ↑(P.entry (tau * q) P.b) + c) →
+        z.natDegree = k ∧ z.leadingCoeff = ↑(Karlin.FaithfulGrowthRecurrences.liftHeightLeading P tau)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.round.inj
+∀ {a a_1 : Karlin.FaithfulEffectiveContract.UniversalProgram}, a.round = a_1.round → a = a_1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_count_positive
+∀ (q : ℕ) (i : Fin 3), 0 < Karlin.C2.mulVec (Karlin.binomBasis 2 q) i
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion._proof_1_6
+∀ (k : ℕ) (i j : Fin (k + 1)), ¬↑i + ↑j < k → ∀ (m : ℕ), ↑i + ↑j = m + m → ¬(↑i + ↑j) / 2 = m → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln_complete._simp_1_14
+∀ {α : Type u_1} {a b : α}, (b ∈ Part.some a) = (b = a)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_19
+∀ (w : ℕ) (c : ℚ),
+  { toFun := fun Z => Z * Matrix.transpose ((algebraMap ℚ (Karlin.FaithfulPaperCokernel.Mat w)) c), map_add' := ⋯,
+      map_smul' := ⋯ } =
+    (algebraMap ℚ (Module.End ℚ (Karlin.FaithfulPaperCokernel.Mat w))) c
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.computes
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (self : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (eps : ℚ),
+  0 < eps → ∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run self.program eps s = ↑(P.threshold eps) :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.N0_commute_expN0
+∀ (w : ℕ) (t : ℚ), Commute (Karlin.N0_mat w) (Karlin.expN0 w t)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers._proof_1_5
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ), 2 ≤ k → ∀ (q : ℕ), ¬k - 1 + 1 = k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_whole_phase_gain
+∀ (eps : ℚ),
+  0 < eps →
+    ∀ (q : ℕ),
+      Karlin.FaithfulPaperSeeds.rpsBundleThreshold eps ≤ q →
+        Karlin.FaithfulClock.height 0 (Karlin.R2.mulVec (Karlin.binomBasis 2 (q + 1))) -
+            Karlin.FaithfulClock.height 0 (Karlin.R2.mulVec (Karlin.binomBasis 2 q)) ≤
+          eps * ↑(Karlin.rpsPhaseWord q).length
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.universal_clock_program
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P),
+  ∃ code,
+    ∀ (input : ℕ),
+      0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+        Karlin.FaithfulEffectiveContract.UniversalProgram.runCode code input =
+          Part.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.executeCode_encode
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram) (fuel input : ℕ),
+  Karlin.FaithfulEffectiveContract.UniversalProgram.executeCode p.encode fuel input = p.execute fuel input
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.compile_run
+∀ {k : ℕ} (d : Karlin.FaithfulEffectiveThreshold.Data k) (parent : Karlin.FaithfulEffectiveContract.Program) (eps : ℚ)
+  (v : ℕ),
+  (∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run parent eps s = ↑v :: s) →
+    ∀ (s : List ℚ),
+      Karlin.FaithfulEffectiveContract.run (Karlin.FaithfulEffectiveContract.compile d parent) eps s =
+        ↑(Karlin.FaithfulEffectiveThreshold.program d v eps) :: s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_3
+∀ (w : ℕ) (A X Y : Karlin.FaithfulPaperCokernel.Mat w),
+  (X + Y) * Matrix.transpose A = X * Matrix.transpose A + Y * Matrix.transpose A
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_bound._simp_1_1
+∀ {α : Type u_2} [inst : Zero α] [inst_1 : OfNat α 2] [NeZero 2], (2 = 0) = False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_bundle_suffix
+∀ (eps : ℚ),
+  0 < eps →
+    ∀ (a n r : ℕ),
+      Karlin.FaithfulPaperSeeds.rpsBundleThreshold eps ≤ a →
+        r ≤ (Karlin.FaithfulWindow.consecutiveWord Karlin.rpsPhaseWord a n).length →
+          Karlin.FaithfulClock.height 0 (Karlin.R2.mulVec (Karlin.binomBasis 2 (a + n))) -
+              Karlin.FaithfulClock.height 0
+                (Karlin.wordScore Karlin.A_RPS (Karlin.R2.mulVec (Karlin.binomBasis 2 a))
+                  (List.take r (Karlin.FaithfulWindow.consecutiveWord Karlin.rpsPhaseWord a n))) ≤
+            eps * ↑((Karlin.FaithfulWindow.consecutiveWord Karlin.rpsPhaseWord a n).length - r) + 1
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.previous_counts_pos._proof_1_1
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ)
+  (i : Karlin.FaithfulNextClock.Lift.Res),
+  2 ≤ Karlin.FaithfulParameters.phaseCounts (Karlin.FaithfulNextClock.Lift.countInt A T1 T2) (q - 1) i →
+    ¬0 < Karlin.FaithfulParameters.phaseCounts (Karlin.FaithfulNextClock.Lift.countInt A T1 T2) (q - 1) i → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.tick.eq_7
+∀ (token : ℕ) (eps : ℚ) (stack : List ℚ),
+  ((Nat.unpair token).1 = 0 → False) →
+    ((Nat.unpair token).1 = 1 → False) →
+      (∀ (y x : ℚ) (s : List ℚ), (Nat.unpair token).1 = 2 → stack = y :: x :: s → False) →
+        (∀ (y x : ℚ) (s : List ℚ), (Nat.unpair token).1 = 3 → stack = y :: x :: s → False) →
+          (∀ (y x : ℚ) (s : List ℚ), (Nat.unpair token).1 = 4 → stack = y :: x :: s → False) →
+            (∀ (x : ℚ) (s : List ℚ), (Nat.unpair token).1 = 5 → stack = x :: s → False) →
+              Karlin.FaithfulEffectiveContract.tick token eps stack = stack
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.backwardDifference_degree_and_leading._proof_1_2
+∀ (p : Polynomial ℝ), 0 < p.natDegree → ∀ (n : ℕ), p.natDegree - 1 < n → ¬n = p.natDegree → ¬p.natDegree < n → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.eval.eq_3
+∀ (x : ℚ) (op : ℕ) (p q : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.binary op p q).eval x =
+    (p.eval x).bind fun x_1 => Part.map (Karlin.FaithfulEffectiveContract.UniversalProgram.operation op x_1) (q.eval x)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.actual_future_reset_deficit
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      ∀ (j i : Karlin.FaithfulNextClock.Lift.Res),
+        ↑j < ↑i →
+          ∀ (h : ℕ),
+            Karlin.FaithfulNextClock.Lift.zeta A T1 ⬝ᵥ Karlin.binomBasis (k + 1) q -
+                Karlin.wordScore (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+                  (Karlin.FaithfulNextClockAssembly.rotatedScore A T1 T2 q)
+                  (Karlin.FaithfulChronology.resetPrefix (Karlin.FaithfulNextClock.Lift.count A T1 T2 q) ↑j ++
+                    List.replicate h (Sum.inr j))
+                  (Sum.inr i) =
+              Karlin.FaithfulNextClock.Lift.J A T1 T2 i j * (↑(Karlin.FaithfulNextClock.Lift.count A T1 T2 q j) - ↑h) +
+                ∑ ell,
+                  if ↑j < ↑ell ∧ ↑ell < ↑i then
+                    Karlin.FaithfulNextClock.Lift.J A T1 T2 i ell * ↑(Karlin.FaithfulNextClock.Lift.count A T1 T2 q ell)
+                  else 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_least_denominator._proof_1_1
+Karlin.FaithfulParameters.heightMultiplier ![4, 3 / 2, 1] = 2
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.binary.inj
+∀ {a : ℕ} {a_1 a_2 : Karlin.FaithfulEffectiveContract.UniversalProgram} {a_3 : ℕ}
+  {a_4 a_5 : Karlin.FaithfulEffectiveContract.UniversalProgram},
+  Karlin.FaithfulEffectiveContract.UniversalProgram.binary a a_1 a_2 =
+      Karlin.FaithfulEffectiveContract.UniversalProgram.binary a_3 a_4 a_5 →
+    a = a_3 ∧ a_1 = a_4 ∧ a_2 = a_5
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_binomial_kernel_eq_span._proof_1_1
+∀ (k : ℕ) (h : Karlin.FaithfulCokernel.TestIndex k), k ≤ ↑h → ¬k + 1 ≤ ↑h + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerSumPoly_degree_le
+∀ (d : ℕ), (Karlin.FaithfulPaperAlgebra.powerSumPoly d).natDegree ≤ d + 1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.toCodeTree.eq_4
+∀ (p : Karlin.FaithfulEffectiveContract.UniversalProgram), p.round.toCodeTree = Nat.Partrec.Code.right.pair p.toCodeTree
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.eval.eq_1
+∀ (x : ℚ) (c : ℕ),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.machine c).eval x =
+    Part.map (fun n => ↑n) ((Nat.Partrec.Code.ofNatCode c).eval (Karlin.FaithfulEffectiveContract.encodeRat x))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.divide.eq_1
+∀ (p q : Karlin.FaithfulEffectiveContract.Program),
+  Karlin.FaithfulEffectiveContract.divide p q = p ++ q ++ [Karlin.FaithfulEffectiveContract.instruction 3 0]
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.toCodeTree.eq_3
+∀ (op : ℕ) (p q : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.binary op p q).toCodeTree =
+    (Nat.Partrec.Code.left.pair (Nat.Partrec.Code.ofNatCode op)).pair (p.toCodeTree.pair q.toCodeTree)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.ofArithmetic._proof_1
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (eps : ℚ),
+  0 < eps → Part.some ((Karlin.FaithfulEffectiveContract.run E.program eps []).headD 0) = Part.some ↑(P.threshold eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_baseline_counts
+Karlin.FaithfulGain.AdmissibleGain.baselineCounts Karlin.FaithfulSeedAdmissible.rpsAdmissible
+    (Karlin.FaithfulParameters.AdmissibleParameters.lam Karlin.FaithfulSeedAdmissible.rpsAdmissible) =
+  ![48, 18, 12]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_no_strict_alternation._simp_1_1
+∀ (a : ℚ) (s : Fin 2 → ℚ) (W : List (Fin 2)),
+  Karlin.wordScore !![0, -a; a, 0] s W 1 - Karlin.wordScore !![0, -a; a, 0] s W 0 = s 1 - s 0 + a * ↑W.length
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_count_minor_det
+(Karlin.C2.submatrix (fun i => Fin.castLE ⋯ i) id).det = -3
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.constant_computes._simp_1
+∀ (q : ℚ), (Karlin.FaithfulEffectiveContract.Computes (Karlin.FaithfulEffectiveContract.constant q) fun x => q) = True
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_momentSection_solves._proof_1_2
+¬0 ≤ 2 * 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.actual_initial_last_eq
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      ∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+        ↑j + 1 = k + 1 + (k + 1) →
+          Karlin.FaithfulActualWaiting.pullState A T1 T2 q (Sum.inr j) =
+            P.entry (A.tau * q) P.b +
+              Karlin.FaithfulTables.parentTranslation P A.tau
+                (Karlin.FaithfulGain.AdmissibleGain.selectedGain A
+                  (Karlin.FaithfulParameters.AdmissibleParameters.lam A) T1)
+                (Karlin.FaithfulAdmissible.baseline P) q
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.internal_norm_sum_square_bound
+∀ {r : Type u_1} {w : Type u_2} [inst : Fintype r] [inst_1 : Fintype w] [inst_2 : Nonempty r] [inst_3 : Nonempty w]
+  (Z : Matrix r w ℚ) (L : Matrix r r ℚ) (B : Matrix w w ℚ) (T1 T2 C : ℚ),
+  0 < T1 →
+    T1 ≤ T2 →
+      Karlin.FaithfulAppendix.normStar Z ≤ T2 * C →
+        Karlin.FaithfulAppendix.normStar ((1 / (T1 * T2 ^ 2)) • (L * Z)) +
+            Karlin.FaithfulAppendix.normStar ((1 / (T1 * T2 ^ 2)) • (L.transpose * Z * B)) ≤
+          Karlin.FaithfulAppendix.normStar L * C * (1 + Karlin.FaithfulAppendix.normStar B) / T1 ^ 2
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerBundlePoly.eq_1
+∀ (d tau : ℕ),
+  Karlin.FaithfulPaperAlgebra.powerBundlePoly d tau =
+    (Karlin.FaithfulPaperAlgebra.powerSumPoly d).comp (Polynomial.C (2 * ↑tau) * Polynomial.X) -
+      (Karlin.FaithfulPaperAlgebra.powerSumPoly d).comp (Polynomial.C ↑tau * Polynomial.X)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.encodeInt.eq_1
+∀ (n : ℕ), Karlin.FaithfulEffectiveContract.encodeInt (Int.ofNat n) = 2 * n
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic.sizeOf_spec
+∀ (a : Karlin.FaithfulEffectiveContract.Program),
+  SizeOf.sizeOf (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic a) = 1 + SizeOf.sizeOf a
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_4
+∀ (w : ℕ) (A : Karlin.FaithfulPaperCokernel.Mat w) (c : ℚ) (Z : Karlin.FaithfulPaperCokernel.Mat w),
+  c • Z * Matrix.transpose A = c • (Z * Matrix.transpose A)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperChronology.future_reset_deficit._proof_1_4
+∀ {n : ℕ} (j i ell : Fin n), ¬↑ell < ↑i → ¬↑i ≤ ↑ell → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_integer_handoffs
+∀ (q : ℚ),
+  Karlin.scoreVec Karlin.A_RPS (Karlin.r2Vec q) (Karlin.runCount (fun x => 0) 0 (3 * q + 4)) 0 -
+        Karlin.scoreVec Karlin.A_RPS (Karlin.r2Vec q) (Karlin.runCount (fun x => 0) 0 (3 * q + 4)) 1 =
+      2 / 3 ∧
+    Karlin.rpsStateAfterRun0 q 1 - Karlin.rpsStateAfterRun0 q 0 = 1 / 3 ∧
+      Karlin.scoreVec Karlin.A_RPS (Karlin.rpsStateAfterRun0 q) (Karlin.runCount (fun x => 0) 1 (3 * q + 5)) 1 -
+            Karlin.scoreVec Karlin.A_RPS (Karlin.rpsStateAfterRun0 q) (Karlin.runCount (fun x => 0) 1 (3 * q + 5)) 2 =
+          2 / 3 ∧
+        Karlin.rpsStateAfterRun1 q 2 - Karlin.rpsStateAfterRun1 q 1 = 1 / 3 ∧
+          Karlin.scoreVec Karlin.A_RPS (Karlin.rpsStateAfterRun1 q) (Karlin.runCount (fun x => 0) 2 (3 * q + 6)) 2 -
+                Karlin.scoreVec Karlin.A_RPS (Karlin.rpsStateAfterRun1 q) (Karlin.runCount (fun x => 0) 2 (3 * q + 6))
+                  0 =
+              2 / 3 ∧
+            Karlin.r2Vec (q + 1) 0 - Karlin.r2Vec (q + 1) 2 = 1 / 3
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expN0_eq_sum
+∀ (w : ℕ) (t : ℚ), Karlin.expN0 w t = ∑ n ∈ Finset.range w, (t ^ n / ↑n.factorial) • Karlin.N0_mat w ^ n
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.seven_family_remainder
+∀ (k : ℕ) (hk : 3 ≤ k), (Karlin.FaithfulSevenFamily.clock k hk).Arem = ↑k - 2
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.height_polynomial_degree_by_backward_difference._proof_1_5
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ) (c : ℝ) (z : Polynomial ℝ),
+  2 ≤ k → z.natDegree = k → k = 0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.antidiagonalCoefficient._proof_1
+∀ (k : ℕ) (h : Karlin.FaithfulCokernel.TestIndex k), ↑h ≤ 2 * k → ¬↑h / 2 < k + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.actual_initial_last_eq._proof_1_1
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ)
+  (j : Karlin.FaithfulNextClock.Lift.Res),
+  ↑j + 1 = k + 1 + (k + 1) → ∀ (i : Karlin.FaithfulNextClock.Lift.Res), ↑i < k + 1 + (k + 1) → ¬↑i ≤ ↑j → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers._proof_1_6
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ), 2 ≤ k → ∀ (q : ℕ), ¬1 ≤ k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_momentSection_solves._proof_1_6
+∀ (k : ℕ), ¬0 < k + 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ceiling_computes
+∀ {p : Karlin.FaithfulEffectiveContract.Program} {f : ℚ → ℚ},
+  Karlin.FaithfulEffectiveContract.Computes p f →
+    Karlin.FaithfulEffectiveContract.Computes (Karlin.FaithfulEffectiveContract.ceiling p) fun eps => ↑⌈f eps⌉₊
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_reference_residual
+Karlin.FaithfulGain.AdmissibleGain.referenceResidual Karlin.FaithfulSeedAdmissible.rpsAdmissible = Karlin.D0tX_rps
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.maximum.eq_1
+∀ (p q : Karlin.FaithfulEffectiveContract.Program),
+  Karlin.FaithfulEffectiveContract.maximum p q = p ++ q ++ [Karlin.FaithfulEffectiveContract.instruction 4 0]
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.ThresholdRealizer.positive_input
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (E : Karlin.FaithfulEffectiveContract.ThresholdRealizer P) (input : ℕ),
+  0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+    Karlin.FaithfulEffectiveContract.execute E.code input =
+      Option.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.rpsFamily_correct
+∀ (k : ℕ) (hk : 2 ≤ k) (eps : ℚ),
+  0 < eps →
+    Karlin.FaithfulEffectiveContract.execute (Karlin.FaithfulEffectiveContract.rpsFamily k hk).code
+        (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+      Option.some (Karlin.FaithfulEffectiveLift.familyThreshold k hk eps)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k),
+  ((fun q =>
+        ↑(Karlin.FaithfulRealization.phaseTime P (q + 1)) / ↑(Karlin.FaithfulRealization.phaseTime P q) -
+          1) =O[Filter.atTop]
+      fun q => 1 / ↑q) ∧
+    (fun q =>
+        ↑(Karlin.cumScore (Karlin.FaithfulRealization.game P) (Karlin.FaithfulRealization.play P)
+                (Karlin.FaithfulRealization.phaseTime P (q + 1))
+                (Karlin.FaithfulRealization.play P (Karlin.FaithfulRealization.phaseTime P (q + 1)))) /
+            ↑(Karlin.cumScore (Karlin.FaithfulRealization.game P) (Karlin.FaithfulRealization.play P)
+                (Karlin.FaithfulRealization.phaseTime P q)
+                (Karlin.FaithfulRealization.play P (Karlin.FaithfulRealization.phaseTime P q))) -
+          1) =O[Filter.atTop]
+      fun q => 1 / ↑q
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.machine.sizeOf_spec
+∀ (a : ℕ), SizeOf.sizeOf (Karlin.FaithfulEffectiveContract.UniversalProgram.machine a) = 1 + SizeOf.sizeOf a
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.one_sub_exp_neg
+∀ {R : Type u_1} [inst : Ring R] [inst_1 : Algebra ℚ R] (a : R) (n : ℕ),
+  a ^ (n + 1) = 0 → 1 - IsNilpotent.exp (-a) = a * Karlin.FaithfulPaperCokernel.expFactor a n
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_17
+∀ (w : ℕ) (c : ℚ) (X Y : Karlin.FaithfulPaperCokernel.Mat w),
+  (X + Y) * Matrix.transpose ((algebraMap ℚ (Karlin.FaithfulPaperCokernel.Mat w)) c) =
+    X * Matrix.transpose ((algebraMap ℚ (Karlin.FaithfulPaperCokernel.Mat w)) c) +
+      Y * Matrix.transpose ((algebraMap ℚ (Karlin.FaithfulPaperCokernel.Mat w)) c)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.powerBundlePoly_degree_le
+∀ (d tau : ℕ), (Karlin.FaithfulPaperAlgebra.powerBundlePoly d tau).natDegree ≤ d + 1
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.run.eq_2
+∀ (x : ℚ) (x_1 : List ℚ) (t : ℕ) (p : List ℕ),
+  Karlin.FaithfulEffectiveContract.run (t :: p) x x_1 =
+    Karlin.FaithfulEffectiveContract.run p x (Karlin.FaithfulEffectiveContract.tick t x x_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.phase_length_ordinary_coefficient_positive
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k),
+  0 < (Karlin.FaithfulGrowthRecurrences.realRowPoly (Karlin.FaithfulGrowth.Clock.totalCountCoeff P)).coeff (k - 1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_10
+∀ (w : ℕ) (A B : Karlin.FaithfulPaperCokernel.Mat w),
+  { toFun := fun Z => Z * Matrix.transpose (A * B), map_add' := ⋯, map_smul' := ⋯ } =
+    { toFun := fun Z => Z * Matrix.transpose A, map_add' := ⋯, map_smul' := ⋯ } *
+      { toFun := fun Z => Z * Matrix.transpose B, map_add' := ⋯, map_smul' := ⋯ }
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_13
+∀ (w : ℕ), { toFun := fun Z => Z * Matrix.transpose 0, map_add' := ⋯, map_smul' := ⋯ } = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_count_minor_det._proof_1_1
+(Karlin.C2.submatrix (fun i => Fin.castLE ⋯ i) id).det = -3
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expN0_eq_nilpotent_exp
+∀ (w : ℕ) (t : ℚ), Karlin.expN0 w t = IsNilpotent.exp (t • Karlin.N0_mat w)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.adjoint_conditions
+∀ (k : ℕ),
+  0 < k →
+    ∀ (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      Karlin.L_adjoint_DP (k + 1) Z = 0 →
+        Matrix.transpose Z = Karlin.expN0 (k + 1) 1 * Z ∧ (Karlin.FaithfulPaperCokernel.D (k + 1)) Z = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.paper_momentSection_solves._proof_1_4
+∀ (i j : Fin (0 + 1)), i = 0 → ↑j < 0 + 1 → ¬↑j = ↑0 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.two_action_zero_constant
+∀ (s : Fin 2 → ℚ) (W : List (Fin 2)), Karlin.wordScore !![0, 0; 0, 0] s W = s
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.ordinary_power_bundle_expansion
+∀ (d tau : ℕ),
+  (fun q =>
+      ∑ j ∈ Finset.Ico (tau * q) (2 * tau * q), ↑j ^ d -
+        ↑tau ^ (d + 1) * (2 ^ (d + 1) - 1) / (↑d + 1) * ↑q ^ (d + 1)) =O[Filter.atTop]
+    fun q => ↑q ^ d
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_reference_height
+Karlin.FaithfulSeedAdmissible.rpsAdmissible.referenceHeight = ![4, 3 / 2, 1]
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperAlgebra.heightDifferencePoly_degree_and_leading._proof_1_2
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ), 2 ≤ k → ¬k - 1 < k → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.eval.eq_2
+∀ (x : ℚ) (p : Karlin.FaithfulEffectiveContract.Program),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic p).eval x =
+    Part.some ((Karlin.FaithfulEffectiveContract.run p x []).headD 0)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.adjoint_expansion
+∀ (k : ℕ),
+  0 < k →
+    ∀ (Z : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      Karlin.L_adjoint_DP (k + 1) Z = 0 →
+        Z =
+          ∑ h,
+            Karlin.FaithfulPaperCokernel.antidiagonalCoefficient k (Karlin.expN0 (k + 1) (1 / 2) * Z) h •
+              Karlin.Z_DP (k + 1) ↑h
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.main_literal_simultaneous
+∀ (k : ℕ) (hk : 2 ≤ k),
+  have M := Karlin.FaithfulMain.matrix k hk;
+  have a := Karlin.FaithfulMain.trajectory k hk;
+  ∀ (t : ℕ),
+    1 ≤ t →
+      (∀ (i : Fin ((Karlin.FaithfulMain.clock k hk).m + 1)),
+          i ≠ a t → ∑ s ∈ Finset.range t, M i (a s) < ∑ s ∈ Finset.range t, M (a t) (a s)) ∧
+        ∀ (j : Fin ((Karlin.FaithfulMain.clock k hk).m + 1)),
+          j ≠ a t → ∑ s ∈ Finset.range t, M (a s) (a t) < ∑ s ∈ Finset.range t, M (a s) j
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.round.injEq
+∀ (a a_1 : Karlin.FaithfulEffectiveContract.UniversalProgram), (a.round = a_1.round) = (a = a_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.test_coordinate_identity
+∀ (w h : ℕ) (F : Karlin.FaithfulPaperCokernel.Mat w),
+  Karlin.matInnerProd (Karlin.Z_DP w h) ((Karlin.S_mat w).transpose * F * Karlin.S_mat w) =
+    Karlin.matInnerProd (Karlin.Z_binom_concrete w h) F
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.decode_encode_rat
+∀ (q : ℚ), Karlin.FaithfulEffectiveContract.decodeRat (Karlin.FaithfulEffectiveContract.encodeRat q) = q
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.rpsFamily._proof_2
+∀ (k : ℕ), 2 ≤ k → k - 2 + 2 = k
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperSeeds.rps_positive_preload
+∀ (q c : ℚ),
+  0 ≤ q →
+    0 < c →
+      have z := ![c, q + 4 / 3 + c, 2 * q + 3 + c];
+      (∀ (i : Fin 3), 0 < z i) ∧ Karlin.A_RPS.mulVec z = fun i => Karlin.r2Vec q i + 2 / 3
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCoverage.actual_initial_strict
+∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k} (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      ∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+        ↑j + 1 < k + 1 + (k + 1) →
+          Karlin.FaithfulActualWaiting.pullState A T1 T2 q (Sum.inr j) <
+            P.entry (A.tau * q) P.b +
+              Karlin.FaithfulTables.parentTranslation P A.tau
+                (Karlin.FaithfulGain.AdmissibleGain.selectedGain A
+                  (Karlin.FaithfulParameters.AdmissibleParameters.lam A) T1)
+                (Karlin.FaithfulAdmissible.baseline P) q
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.expFactor_commute
+∀ {R : Type u_1} [inst : Ring R] [inst_1 : Algebra ℚ R] (a : R) (n : ℕ),
+  Commute a (Karlin.FaithfulPaperCokernel.expFactor a n)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln.eq_2
+∀ (x : ℕ) (x_1 : ℚ) (p : Karlin.FaithfulEffectiveContract.Program),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.arithmetic p).evaln x x_1 =
+    Option.some ((Karlin.FaithfulEffectiveContract.run p x_1 []).headD 0)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.rightTranspose._proof_8
+∀ (w : ℕ) (A B X Y : Karlin.FaithfulPaperCokernel.Mat w),
+  (X + Y) * Matrix.transpose (A * B) = X * Matrix.transpose (A * B) + Y * Matrix.transpose (A * B)
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperCokernel.D_pow_zero
+∀ (k : ℕ), Karlin.FaithfulPaperCokernel.D (k + 1) ^ (2 * k + 1) = 0
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.UniversalProgram.evaln.eq_3
+∀ (x : ℕ) (x_1 : ℚ) (op : ℕ) (p q : Karlin.FaithfulEffectiveContract.UniversalProgram),
+  (Karlin.FaithfulEffectiveContract.UniversalProgram.binary op p q).evaln x x_1 =
+    (p.evaln x x_1).bind fun x_2 =>
+      Option.map (Karlin.FaithfulEffectiveContract.UniversalProgram.operation op x_2) (q.evaln x x_1)
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.constant_computes
+∀ (q : ℚ), Karlin.FaithfulEffectiveContract.Computes (Karlin.FaithfulEffectiveContract.constant q) fun x => q
+ADDED_THEOREM_TYPE Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios._proof_1_5
+∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k),
+  2 ≤ k →
+    k - 1 + 1 = k →
+      (Karlin.FaithfulRateError.phaseTimePoly (Karlin.FaithfulRealization.countCoeff P) (k - 1) P.Q).natDegree = k →
+        (Karlin.FaithfulRateError.phaseHeightPoly (Karlin.FaithfulRealization.scoreCoeff P) (k - 1) P.Q
+                ↑(Karlin.FaithfulRealization.bias P P.b + Karlin.FaithfulRealization.shift P)).natDegree =
+            k - 1 →
+          ¬0 < k - 1 → False
+ADDED_THEOREM_TYPE Karlin.FaithfulEffectiveContract.universal_rpsFamily_correct
+∀ (k : ℕ) (hk : 2 ≤ k) (eps : ℚ),
+  0 < eps →
+    ∃ fuel,
+      (Karlin.FaithfulEffectiveContract.universalRpsFamily k hk).program.execute fuel
+          (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+        Option.some (Karlin.FaithfulEffectiveLift.familyThreshold k hk eps)
+ADDED_CLOSURE_RESULT declarations=572 visited=38850 axioms=[propext, Quot.sound, Classical.choice]
+INDEPENDENT_ROUTE_RESULT Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff visited=18597 excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulGrowthRecurrences.bundle_sum_expansion,
+ Karlin.FaithfulGrowthRecurrences.polynomial_height_expansion,
+ Karlin.FaithfulScale.binomial_row_integral_of_values]
+INDEPENDENT_ROUTE_RESULT Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers visited=16062 excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulGrowthRecurrences.bundle_sum_expansion,
+ Karlin.FaithfulGrowthRecurrences.polynomial_height_expansion,
+ Karlin.FaithfulScale.binomial_row_integral_of_values]
+INDEPENDENT_ROUTE_RESULT Karlin.FaithfulPaperAlgebra.height_expansion_by_degree_drop visited=15993 excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulGrowthRecurrences.bundle_sum_expansion,
+ Karlin.FaithfulGrowthRecurrences.polynomial_height_expansion,
+ Karlin.FaithfulScale.binomial_row_integral_of_values]
+INDEPENDENT_ROUTE_RESULT Karlin.FaithfulPaperAlgebra.chosenCorrection_forward_difference_formula visited=17441 excluded=[Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulGrowthRecurrences.bundle_sum_expansion,
+ Karlin.FaithfulGrowthRecurrences.polynomial_height_expansion,
+ Karlin.FaithfulScale.binomial_row_integral_of_values]
+MAIN_CLOSURE_RESULT Karlin.FaithfulMain.main_theorem project=2201 total=37713 axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+MAIN_CLOSURE_RESULT Karlin.FaithfulSevenFamily.main_theorem project=2319 total=37779 axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+structure Karlin.FaithfulEffectiveContract.ThresholdRealizer {k : ℕ} (P : Karlin.FaithfulClock.Clock k) : Type
+number of parameters: 2
+fields:
+  Karlin.FaithfulEffectiveContract.ThresholdRealizer.program : Karlin.FaithfulEffectiveContract.Program
+  Karlin.FaithfulEffectiveContract.ThresholdRealizer.computes : ∀ (eps : ℚ),
+      0 < eps → ∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run self.program eps s = ↑(P.threshold eps) :: s
+constructor:
+  Karlin.FaithfulEffectiveContract.ThresholdRealizer.mk {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+    (program : Karlin.FaithfulEffectiveContract.Program)
+    (computes :
+      ∀ (eps : ℚ),
+        0 < eps → ∀ (s : List ℚ), Karlin.FaithfulEffectiveContract.run program eps s = ↑(P.threshold eps) :: s) :
+    Karlin.FaithfulEffectiveContract.ThresholdRealizer P
+structure Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer {k : ℕ} (P : Karlin.FaithfulClock.Clock k) : Type
+number of parameters: 2
+fields:
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.program : Karlin.FaithfulEffectiveContract.UniversalProgram
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.computes : ∀ (eps : ℚ),
+      0 < eps → self.program.eval eps = Part.some ↑(P.threshold eps)
+constructor:
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.mk {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+    (program : Karlin.FaithfulEffectiveContract.UniversalProgram)
+    (computes : ∀ (eps : ℚ), 0 < eps → program.eval eps = Part.some ↑(P.threshold eps)) :
+    Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P
+@Karlin.FaithfulEffectiveContract.lift_every_partrec_parent : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (f : ℕ → Part ℕ),
+  Nat.Partrec f →
+    (∀ (eps : ℚ), 0 < eps → f (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+      Nonempty (Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer (Karlin.FaithfulLift.nextClock A))
+@Karlin.FaithfulEffectiveContract.lift_every_partrec_parent_program : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (f : ℕ → Part ℕ),
+  Nat.Partrec f →
+    (∀ (eps : ℚ), 0 < eps → f (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+      ∃ code,
+        ∀ (input : ℕ),
+          0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+            Karlin.FaithfulEffectiveContract.UniversalProgram.runCode code input =
+              Part.some ((Karlin.FaithfulLift.nextClock A).threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+@Karlin.FaithfulEffectiveContract.universal_clock_contract : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (E : Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P),
+  ∃ code,
+    ∀ (input : ℕ),
+      0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+        (∃ fuel,
+            Karlin.FaithfulEffectiveContract.UniversalProgram.executeCode code fuel input =
+              Option.some (P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input))) ∧
+          ∀ (q : ℕ),
+            P.threshold (Karlin.FaithfulEffectiveContract.decodeRat input) ≤ q →
+              ∀ r ≤ (P.word q).length,
+                Karlin.FaithfulClock.height P.b (P.entry (q + 1)) -
+                    Karlin.FaithfulClock.height P.b (Karlin.wordScore P.A (P.entry q) (List.take r (P.word q))) ≤
+                  Karlin.FaithfulEffectiveContract.decodeRat input * ↑((P.word q).length - r) + P.Arem
+Karlin.FaithfulMain.main_theorem : ∀ (k : ℕ),
+  2 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 5 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulMain.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))
+Karlin.FaithfulSevenFamily.main_theorem : ∀ (k : ℕ),
+  3 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 9 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulSevenFamily.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))
+@Karlin.FaithfulPaperCoverage.chosen_strictness : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P),
+  have T1 := Karlin.FaithfulController.firstScale A;
+  have T2 := Karlin.FaithfulController.secondScale A T1;
+  ∀ (q : ℕ),
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      have h :=
+        Karlin.FaithfulTables.parentTranslation P A.tau
+          (Karlin.FaithfulGain.AdmissibleGain.selectedGain A (Karlin.FaithfulParameters.AdmissibleParameters.lam A) T1)
+          (Karlin.FaithfulAdmissible.baseline P) q;
+      have W := Karlin.FaithfulWindow.consecutiveWord P.word (A.tau * q) (A.tau * q);
+      (∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+          ↑j + 1 < k + 1 + (k + 1) →
+            Karlin.FaithfulActualWaiting.pullState A T1 T2 q (Sum.inr j) < P.entry (A.tau * q) P.b + h) ∧
+        (∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+            ↑j + 1 = k + 1 + (k + 1) →
+              Karlin.FaithfulActualWaiting.pullState A T1 T2 q (Sum.inr j) = P.entry (A.tau * q) P.b + h) ∧
+          ∀ (j : Karlin.FaithfulNextClock.Lift.Res),
+            k + 1 ≤ ↑j →
+              ∀ (r : ℕ),
+                0 < r →
+                  r ≤ W.length →
+                    Karlin.wordScore
+                        (Karlin.liftedGameMat (Karlin.FaithfulGateway.game P)
+                          (Karlin.FaithfulActualWaiting.pullCoupling A T1 T2) (Karlin.FaithfulNextClock.Lift.J A T1 T2))
+                        (Karlin.FaithfulActualWaiting.pullState A T1 T2 q)
+                        (Karlin.FaithfulWaiting.parentStage P (List.take r W)) (Sum.inr j) <
+                      Karlin.FaithfulClock.height P.b (Karlin.wordScore P.A (P.entry (A.tau * q)) (List.take r W)) + h
+@Karlin.FaithfulPaperCoverage.selected_chronology : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P),
+  have T1 := Karlin.FaithfulController.firstScale A;
+  have T2 := Karlin.FaithfulController.secondScale A T1;
+  ∀ (q : ℕ),
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      Karlin.IsValidPriorityWord (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+          (Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 q) Karlin.FaithfulNextClockAssembly.rank
+          (List.map Sum.inl (Karlin.FaithfulNextClock.Lift.old A q) ++
+            Karlin.FaithfulNextClockAssembly.reset A T1 T2 q) ∧
+        Karlin.wordScore (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+              (Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 q)
+              (List.map Sum.inl (Karlin.FaithfulNextClock.Lift.old A q) ++
+                Karlin.FaithfulNextClockAssembly.reset A T1 T2 q) =
+            Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 (q + 1) ∧
+          ∀ r ≤ (Karlin.FaithfulNextClockAssembly.reset A T1 T2 q).length,
+            Karlin.FaithfulInheritance.scoreHeight Karlin.FaithfulNextClock.Lift.base
+                (Karlin.wordScore (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+                  (Karlin.FaithfulNextClockAssembly.entryScore A T1 T2 q)
+                  (List.map Sum.inl (Karlin.FaithfulNextClock.Lift.old A q) ++
+                    List.take r (Karlin.FaithfulNextClockAssembly.reset A T1 T2 q))) =
+              Karlin.FaithfulNextClock.Lift.zeta A T1 ⬝ᵥ Karlin.binomBasis (k + 1) q
+Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff : ∀ (k : ℕ),
+  0 < k →
+    ∀ (F : Karlin.FaithfulPaperCokernel.Mat (k + 1)),
+      (∃ E, Karlin.L_moment (Karlin.B_mat (k + 1)) E = F) ↔
+        ∀ (h : ℕ), k ≤ h → h ≤ 2 * k → Even h → Karlin.matInnerProd (Karlin.Z_binom_concrete (k + 1) h) F = 0
+@Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k)
+  (tau : ℕ),
+  0 < tau →
+    (fun q =>
+        ∑ s ∈ Finset.Ico (tau * q) (2 * tau * q), ↑(P.word s).length -
+          ↑(Karlin.FaithfulGrowthRecurrences.bundleLeading P tau) * ↑q ^ k) =O[Filter.atTop]
+      fun q => ↑q ^ (k - 1)
+@Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k),
+  ((fun q =>
+        ↑(Karlin.FaithfulRealization.phaseTime P (q + 1)) / ↑(Karlin.FaithfulRealization.phaseTime P q) -
+          1) =O[Filter.atTop]
+      fun q => 1 / ↑q) ∧
+    (fun q =>
+        ↑(Karlin.cumScore (Karlin.FaithfulRealization.game P) (Karlin.FaithfulRealization.play P)
+                (Karlin.FaithfulRealization.phaseTime P (q + 1))
+                (Karlin.FaithfulRealization.play P (Karlin.FaithfulRealization.phaseTime P (q + 1)))) /
+            ↑(Karlin.cumScore (Karlin.FaithfulRealization.game P) (Karlin.FaithfulRealization.play P)
+                (Karlin.FaithfulRealization.phaseTime P q)
+                (Karlin.FaithfulRealization.play P (Karlin.FaithfulRealization.phaseTime P q))) -
+          1) =O[Filter.atTop]
+      fun q => 1 / ↑q

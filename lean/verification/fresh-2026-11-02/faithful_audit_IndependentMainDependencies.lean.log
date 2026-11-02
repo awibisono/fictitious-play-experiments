@@ -1,0 +1,53 @@
+ENTRY_POINT Karlin.FaithfulMain.main_theorem: axioms=[propext,
+ Quot.sound,
+ Classical.choice]; no_grounded_or_old_main=true; broad_substrings_checked=true
+ACTUAL_CONSTRUCTION_DEPENDENCY Karlin.FaithfulSeedAdmissible.rpsAdmissible: present
+ACTUAL_CONSTRUCTION_DEPENDENCY Karlin.FaithfulLift.nextAdmissible: present
+ACTUAL_CONSTRUCTION_DEPENDENCY Karlin.FaithfulNextClockAssembly.nextRaw: present
+ACTUAL_CONSTRUCTION_DEPENDENCY Karlin.FaithfulController.secondScale: present
+ACTUAL_CONSTRUCTION_DEPENDENCY Karlin.FaithfulNextTables.prescribedT2: present
+ACTUAL_CONSTRUCTION_DEPENDENCY Karlin.FaithfulRealization.exact_gap_limit: present
+ACTUAL_CONSTRUCTION_DEPENDENCY Karlin.FaithfulRateError.standard_gap_from_phase_tables_relative_error: present
+ENTRY_POINT Karlin.FaithfulMain.admissible: axioms=[propext,
+ Quot.sound,
+ Classical.choice]; no_grounded_or_old_main=true; broad_substrings_checked=true
+ENTRY_POINT Karlin.FaithfulLift.nextAdmissible: axioms=[propext,
+ Quot.sound,
+ Classical.choice]; no_grounded_or_old_main=true; broad_substrings_checked=true
+ENTRY_POINT Karlin.FaithfulLift.principal_parent: axioms=[propext,
+ Quot.sound,
+ Classical.choice]; no_grounded_or_old_main=true; broad_substrings_checked=true
+ENTRY_POINT Karlin.IndependentMainAudit.unconditional_all_orders: axioms=[propext,
+ Quot.sound,
+ Classical.choice]; no_grounded_or_old_main=true; broad_substrings_checked=true
+NAMESPACE Karlin.FaithfulMain: declarations=29
+NAMESPACE Karlin.FaithfulLift: declarations=33
+NAMESPACE Karlin.FaithfulNextAdmissible: declarations=31
+NAMESPACE Karlin.FaithfulFamily: declarations=31
+NAMESPACE Karlin.FaithfulGameReindex: declarations=33
+NAMESPACE Karlin.IndependentMainAudit: declarations=1
+MAIN_AUDIT declarations=158; axioms=[propext,
+ Quot.sound,
+ Classical.choice]; no_grounded_or_old_main=true; broad_substrings_checked=true
+Karlin.FaithfulMain.main_theorem : ∀ (k : ℕ),
+  2 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 5 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulMain.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))

@@ -1,0 +1,32 @@
+{
+  "upstream_source_commit": "23f53ae238d01b1be52c981434c6abaef5cd49c9",
+  "upstream_project_subtree": "53cb48cc944ea05c209f577b493a34173fa469d3",
+  "historical_manuscript_reference": "https://arxiv.org/abs/2610.08768v1",
+  "historical_tex_sha256": "71967f4e2a72cc2cb79488d8f75336da7974bc79a92d62ba499a4bf85a4e9302",
+  "historical_arxiv_pdf_sha256": "96f95a8077db30c802b87c7e989d52ff55056171d3bfcf9a2742b6561d752704",
+  "reference_reconciled_date": "2026-10-11",
+  "latest_v19_full_correspondence": "not_verified",
+  "identity_note": "The audited upstream source revision is distinct from the hosting-repository commit. Use the exact hosting commit to cite this artifact. File manifests record content identity; they are not signatures.",
+  "current_v19_central_correspondence": {
+    "source_file": "master_v19_v2.tex",
+    "source_commit": "ffc8a40843adb2adafc1cbcc827cfe6df7a52496",
+    "source_sha256": "b487c7cc70439ccaef9ba4884222f4b03176a8b556c774c3681ec9f62932ec3e",
+    "reviewed_date": "2026-11-02",
+    "central_correspondence": "checked_no_discrepancy_in_stated_scope",
+    "scope": [
+      "main_family_statement",
+      "smaller_family_statement",
+      "simultaneous_play_and_empirical_gap_definitions",
+      "setup_action_and_strict_simulation",
+      "exact_constant_all_integer_time_error_and_fixed_start_phase",
+      "threshold_realizer_and_program_quantifiers"
+    ],
+    "limits": "Not a renewed whole-manuscript proof audit or a refreshed complete statement-by-statement crosswalk; unextracted proofs, literature/optimality comparisons, displayed numerical matrices, experiments, and practical runtime are not certified."
+  },
+  "prepublication_snapshot": {
+    "as_of": "2026-11-02, before public repository upload",
+    "publication_commit": null,
+    "publication_status": "local_candidate_only"
+  },
+  "hosting_repository": "https://github.com/awibisono/fictitious-play-experiments"
+}

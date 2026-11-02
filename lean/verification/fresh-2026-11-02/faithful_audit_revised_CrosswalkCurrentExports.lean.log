@@ -1,0 +1,554 @@
+Karlin.FaithfulMain.main_theorem : ∀ (k : ℕ),
+  2 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 5 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulMain.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))
+@Karlin.FaithfulGrowth.Clock.dyadic_suffix : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) {eps : ℚ},
+  0 < eps →
+    ∀ (tau q r : ℕ),
+      Karlin.FaithfulGrowth.Clock.bundleThreshold P eps ≤ tau * q →
+        r ≤ (Karlin.FaithfulWindow.dyadicWord P.word tau q).length →
+          Karlin.FaithfulClock.height P.b (P.entry (2 * tau * q)) -
+              Karlin.FaithfulClock.height P.b
+                (Karlin.wordScore P.A (P.entry (tau * q))
+                  (List.take r (Karlin.FaithfulWindow.dyadicWord P.word tau q))) ≤
+            eps * ↑((Karlin.FaithfulWindow.dyadicWord P.word tau q).length - r) + P.Arem
+@Karlin.FaithfulGrowthRecurrences.phase_length_expansion : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k),
+  (fun q => ↑(P.word q).length - ↑(Karlin.FaithfulGrowthRecurrences.lengthLeading P) * ↑q ^ (k - 1)) =O[Filter.atTop]
+    fun q => ↑q ^ (k - 2)
+@Karlin.FaithfulGrowthRecurrences.phase_height_expansion : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k),
+  (fun q =>
+      ↑(Karlin.FaithfulClock.height P.b (P.entry q)) -
+        ↑(Karlin.FaithfulGrowthRecurrences.heightLeading P) * ↑q ^ (k - 1)) =O[Filter.atTop]
+    fun q => ↑q ^ (k - 2)
+@Karlin.FaithfulGrowthRecurrences.bundle_sum_expansion : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ),
+  0 < tau →
+    (fun q =>
+        ∑ s ∈ Finset.Ico (tau * q) (2 * tau * q), ↑(P.word s).length -
+          ↑(Karlin.FaithfulGrowthRecurrences.bundleLeading P tau) * ↑q ^ k) =O[Filter.atTop]
+      fun q => ↑q ^ (k - 1)
+@Karlin.FaithfulGrowthRecurrences.polynomial_height_expansion : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ)
+  (c : ℝ) (z : Polynomial ℝ),
+  (∀ (q : ℕ),
+      1 ≤ q →
+        Polynomial.eval (↑q) z - Polynomial.eval (↑q - 1) z =
+          ↑(P.entry (2 * tau * q) P.b) - ↑(P.entry (tau * q) P.b) + c) →
+    (fun q =>
+        Polynomial.eval (↑q) z - ↑(Karlin.FaithfulGrowthRecurrences.liftHeightLeading P tau) * ↑q ^ k) =O[Filter.atTop]
+      fun q => ↑q ^ (k - 1)
+Karlin.FaithfulGrowthRecurrences.family_clock_successor : ∀ (k : ℕ) (hk : 2 ≤ k),
+  Karlin.FaithfulMain.clock (k + 1) ⋯ = Karlin.FaithfulLift.nextClock (Karlin.FaithfulMain.admissible k hk)
+@Karlin.FaithfulGrowthRecurrences.next_height_recurrence : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P),
+  Karlin.FaithfulGrowthRecurrences.heightLeading (Karlin.FaithfulLift.nextClock A) =
+    Karlin.FaithfulGrowthRecurrences.heightLeading P * ↑A.tau ^ (k - 1) * (2 ^ (k - 1) - 1) / ↑k
+@Karlin.FaithfulGrowthRecurrences.next_length_recurrence : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P),
+  Karlin.FaithfulGrowthRecurrences.lengthLeading (Karlin.FaithfulLift.nextClock A) =
+    Karlin.FaithfulGrowthRecurrences.lengthLeading P * ↑A.tau ^ k * (2 ^ k - 1) / ↑k +
+      (∑ i, ↑(Karlin.FaithfulGrowthRecurrences.actualResetTable A i (Fin.last k))) / ↑k.factorial
+@Karlin.FaithfulProcessSetup.rational_bias_realizes_priority : ∀ {m : ℕ} (b : Fin m) (M : Matrix (Fin m) (Fin m) ℚ)
+  (f : Fin m → ℚ) (rank : Equiv.Perm (Fin m)),
+  Karlin.FaithfulProcessSetup.IsPriorityProcess M f rank (Karlin.FaithfulProcessSetup.priorityPlay b M f rank) ∧
+    Karlin.FaithfulProcessSetup.IsStrictProcess M (fun i => f i + Karlin.FaithfulProcessSetup.bias M f rank i)
+        (Karlin.FaithfulProcessSetup.priorityPlay b M f rank) ∧
+      ∀ (a : ℕ → Fin m),
+        Karlin.FaithfulProcessSetup.IsWeakProcess M (fun i => f i + Karlin.FaithfulProcessSetup.bias M f rank i) a →
+          a = Karlin.FaithfulProcessSetup.priorityPlay b M f rank
+@Karlin.FaithfulProcessSetup.strict_comparison_preserved : ∀ {m : ℕ} (b : Fin m) (M : Matrix (Fin m) (Fin m) ℚ)
+  (f : Fin m → ℚ) (rank : Equiv.Perm (Fin m)) (a : ℕ → Fin m) (t : ℕ) (i j : Fin m),
+  Karlin.FaithfulProcessSetup.score M f a t i < Karlin.FaithfulProcessSetup.score M f a t j →
+    Karlin.FaithfulProcessSetup.score M (fun i => f i + Karlin.FaithfulProcessSetup.bias M f rank i) a t i <
+      Karlin.FaithfulProcessSetup.score M (fun i => f i + Karlin.FaithfulProcessSetup.bias M f rank i) a t j
+@Karlin.FaithfulProcessSetup.actual_setup_process : ∀ {m : ℕ} (b : Fin m) {M : Matrix (Fin m) (Fin m) ℚ},
+  Karlin.IsSkewSymmetric M →
+    ∀ {f : Fin m → ℚ} {a : ℕ → Fin m},
+      Karlin.FaithfulProcessSetup.IsStrictProcess M f a →
+        ∀ (row col : ℕ → Option (Fin m)),
+          Karlin.IsWeakTwoPlayerFPTrajectory (Karlin.FaithfulProcessSetup.setupGame b M f) row col →
+            row 0 = none → col 0 = none → ∀ (t : ℕ), row (t + 1) = some (a t) ∧ col (t + 1) = some (a t)
+@Karlin.FaithfulStartPhase.realization_at_any_phase : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (Q : ℕ)
+  (hQ : P.Q ≤ Q),
+  Karlin.IsSkewSymmetric (Karlin.FaithfulRealization.game (Karlin.FaithfulStartPhase.clock P Q hQ)) ∧
+    Karlin.FaithfulRealization.play (Karlin.FaithfulStartPhase.clock P Q hQ) 0 = none ∧
+      (∀ (i : Option (Fin (Karlin.FaithfulStartPhase.clock P Q hQ).m)),
+          Karlin.cumScore (Karlin.FaithfulRealization.game (Karlin.FaithfulStartPhase.clock P Q hQ))
+              (Karlin.FaithfulRealization.play (Karlin.FaithfulStartPhase.clock P Q hQ)) 0 i =
+            0) ∧
+        Karlin.IsStrictTwoPlayerFPTrajectory (Karlin.FaithfulRealization.game (Karlin.FaithfulStartPhase.clock P Q hQ))
+            (Karlin.FaithfulRealization.play (Karlin.FaithfulStartPhase.clock P Q hQ))
+            (Karlin.FaithfulRealization.play (Karlin.FaithfulStartPhase.clock P Q hQ)) ∧
+          0 < Karlin.FaithfulRealization.gapConstant P ∧
+            Filter.Tendsto
+              (fun t =>
+                ↑(Karlin.standardDualityGap (Karlin.FaithfulRealization.game (Karlin.FaithfulStartPhase.clock P Q hQ))
+                      (Karlin.FaithfulRealization.play (Karlin.FaithfulStartPhase.clock P Q hQ))
+                      (Karlin.FaithfulRealization.play (Karlin.FaithfulStartPhase.clock P Q hQ)) t) *
+                  ↑t ^ (1 / ↑k))
+              Filter.atTop (nhds (Karlin.FaithfulRealization.gapConstant P))
+@Karlin.FaithfulStartPhase.relative_error_at_any_phase : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (Q : ℕ)
+  (hQ : P.Q ≤ Q),
+  (fun t =>
+      ↑(Karlin.standardDualityGap (Karlin.FaithfulRealization.game (Karlin.FaithfulStartPhase.clock P Q hQ))
+              (Karlin.FaithfulRealization.play (Karlin.FaithfulStartPhase.clock P Q hQ))
+              (Karlin.FaithfulRealization.play (Karlin.FaithfulStartPhase.clock P Q hQ)) t) /
+          (Karlin.FaithfulRealization.gapConstant P * ↑t ^ (-(1 / ↑k))) -
+        1) =O[Filter.atTop]
+    fun t => ↑t ^ (-(1 / ↑k))
+Karlin.FaithfulSeed.rpsClock : Karlin.FaithfulClock.Clock 2
+@Karlin.FaithfulLift.nextClock : {k : ℕ} →
+  {P : Karlin.FaithfulClock.Clock k} → Karlin.FaithfulAdmissible.Admissible P → Karlin.FaithfulClock.Clock (k + 1)
+@Karlin.FaithfulLift.nextAdmissible : {k : ℕ} →
+  {P : Karlin.FaithfulClock.Clock k} →
+    (A : Karlin.FaithfulAdmissible.Admissible P) →
+      Karlin.FaithfulAdmissible.Admissible (Karlin.FaithfulLift.nextClock A)
+@Karlin.FaithfulLift.principal_parent : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P),
+  (Karlin.FaithfulLift.nextClock A).A.submatrix ⇑(Karlin.FaithfulLift.parentAction A)
+      ⇑(Karlin.FaithfulLift.parentAction A) =
+    P.A
+@Karlin.FaithfulGateway.gateway_gap : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (a : ℕ),
+  P.Q ≤ a →
+    ∀ (n r : ℕ) (h delta : ℚ),
+      Karlin.wordScore (Karlin.FaithfulGateway.game P) (Karlin.FaithfulGateway.initial P a n h delta)
+            (List.map Sum.inl (List.take r (Karlin.FaithfulWindow.consecutiveWord P.word a n))) (Sum.inr 0) -
+          Karlin.wordScore (Karlin.FaithfulGateway.game P) (Karlin.FaithfulGateway.initial P a n h delta)
+            (List.map Sum.inl (List.take r (Karlin.FaithfulWindow.consecutiveWord P.word a n))) (Sum.inl P.b) =
+        delta - P.v ⬝ᵥ Karlin.wordCountVec (List.drop r (Karlin.FaithfulWindow.consecutiveWord P.word a n))
+@Karlin.FaithfulGateway.oldWord_valid : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (a : ℕ),
+  P.Q ≤ a →
+    ∀ (n : ℕ) (h delta : ℚ),
+      0 < delta →
+        delta < P.delta0 →
+          Karlin.IsValidPriorityWord (Karlin.FaithfulGateway.game P) (Karlin.FaithfulGateway.initial P a n h delta)
+            (Karlin.FaithfulGateway.priority P) (Karlin.FaithfulGateway.oldWord P a n)
+@Karlin.FaithfulGateway.after_gateway_parent_max : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (a : ℕ),
+  P.Q ≤ a →
+    ∀ (n : ℕ) (h delta : ℚ),
+      (∀ (i : Fin P.m),
+          Karlin.wordScore (Karlin.FaithfulGateway.game P) (Karlin.FaithfulGateway.initial P a n h delta)
+              (Karlin.FaithfulGateway.oldWord P a n) (Sum.inl i) ≤
+            P.entry (a + n) P.b + h) ∧
+        Karlin.wordScore (Karlin.FaithfulGateway.game P) (Karlin.FaithfulGateway.initial P a n h delta)
+            (Karlin.FaithfulGateway.oldWord P a n) (Sum.inl P.b) =
+          P.entry (a + n) P.b + h
+@Karlin.reset_identity_iff : ∀ {m : Type u_1} {n : Type u_2} {w : Type u_3} [inst : Fintype m] [inst_1 : Fintype n]
+  [inst_2 : Fintype w] [inst_3 : DecidableEq w] (G_O : Matrix m m ℚ) (P : Matrix m n ℚ) (J : Matrix n n ℚ)
+  (S X : Matrix m w ℚ) (M : Matrix n w ℚ) (B N : Matrix w w ℚ) (zeta : w → ℚ),
+  B * (1 + N) = 1 →
+    (G_O * X + P * M = S * N ∧ -P.transpose * X + (J - J.transpose) * M = Karlin.V_reset J M B zeta * N ↔
+      P * M = Karlin.D_deficit G_O S X N ∧ P.transpose * X = Karlin.Q_reset J M B zeta)
+@Karlin.interpolate_iff : ∀ {m : Type u_1} {n : Type u_2} {w : Type u_3} [inst : Fintype m] [inst_1 : Fintype n]
+  [Fintype w] [inst_3 : DecidableEq w] (X L_X : Matrix m w ℚ) (M : Matrix n w ℚ) (R_M : Matrix w n ℚ) (D : Matrix m w ℚ)
+  (Q : Matrix n w ℚ) (P0 : Matrix m n ℚ),
+  X.transpose * L_X = 1 → R_M * M = 1 → ((∃ P, P * M = D ∧ P.transpose * X = Q) ↔ D.transpose * X = M.transpose * Q)
+Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests : ∀ (k : ℕ) (F : Matrix (Fin (k + 1)) (Fin (k + 1)) ℚ),
+  (∃ E, Karlin.L_moment (Karlin.B_mat (k + 1)) E = F) ↔
+    ∀ (h : ℕ), k ≤ h → h ≤ 2 * k → Even h → Karlin.matInnerProd (Karlin.Z_binom_concrete (k + 1) h) F = 0
+Karlin.FaithfulCokernel.exists_fixed_bounded_moment_section : ∀ (k : ℕ),
+  ∃ S C,
+    0 ≤ C ∧
+      ∀ (F : Matrix (Fin (k + 1)) (Fin (k + 1)) ℚ),
+        (∀ (h : ℕ), k ≤ h → h ≤ 2 * k → Even h → Karlin.matInnerProd (Karlin.Z_binom_concrete (k + 1) h) F = 0) →
+          Karlin.L_moment (Karlin.B_mat (k + 1)) (S F) = F ∧
+            Karlin.FaithfulCokernel.entryAbsSum (S F) ≤ C * Karlin.FaithfulCokernel.entryAbsSum F
+@Karlin.FaithfulScaleClock.integer_scale_actual_tables : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (cref delta : ℚ),
+  0 < Karlin.FaithfulScaleClock.chosenScale P cref ∧
+    ∃ ell,
+      ∀ (h : ℕ),
+        k < h →
+          h ≤ 2 * k →
+            Even h →
+              Karlin.matInnerProd (Karlin.Z_binom (Karlin.S_mat (k + 1)) h)
+                  ((Karlin.FaithfulTables.D P (Karlin.FaithfulScaleClock.chosenScale P cref) cref (P.Arem + 3)
+                          delta).transpose *
+                      Karlin.FaithfulTables.X P (Karlin.FaithfulScaleClock.chosenScale P cref) -
+                    Karlin.outerProd (fun j => ↑(ell j))
+                      (Karlin.FaithfulTables.psi (Karlin.FaithfulScaleClock.scoreSummary P)
+                        (Karlin.FaithfulScaleClock.chosenScale P cref) cref (P.Arem + 3))) =
+                0
+@Karlin.FaithfulScaleClock.chosen_pair_summary_independent : ∀ {k : ℕ} (P Q : Karlin.FaithfulClock.Clock k) (c c' : ℚ),
+  (∀ (a b : Fin k),
+      0 < ↑a → Karlin.FaithfulScaleClock.momentSummary P a b = Karlin.FaithfulScaleClock.momentSummary Q a b) →
+    Karlin.FaithfulScaleClock.lengthSummary P = Karlin.FaithfulScaleClock.lengthSummary Q →
+      (∀ (a : Fin k),
+          0 < ↑a → Karlin.FaithfulScaleClock.scoreSummary P a = Karlin.FaithfulScaleClock.scoreSummary Q a) →
+        Karlin.FaithfulScaleClock.chosenScale P c = Karlin.FaithfulScaleClock.chosenScale Q c' ∧
+          Karlin.FaithfulScaleClock.chosenCorrection P c = Karlin.FaithfulScaleClock.chosenCorrection Q c'
+Karlin.FaithfulScaleEffective.compute_spec_all : ∀ (k : ℕ) (hk : 2 ≤ k) (M : Matrix (Fin k) (Fin k) ℚ)
+  (lengthRow chi : Fin k → ℚ) (c : ℚ),
+  Karlin.FaithfulScaleEffective.compute k hk M lengthRow chi c =
+    (Karlin.FaithfulScale.integerScale k (Karlin.FaithfulScale.referenceSolver k hk M lengthRow chi c),
+      Karlin.FaithfulScale.referenceCorrectionInt k hk M lengthRow chi c)
+Karlin.FaithfulScaleEffective.compute_correct : ∀ (k : ℕ) (hk : 2 ≤ k) (M : Matrix (Fin k) (Fin k) ℚ)
+  (lengthRow chi : Fin k → ℚ) (c : ℚ),
+  chi ⟨k - 1, ⋯⟩ ≠ 0 →
+    have result := Karlin.FaithfulScaleEffective.compute k hk M lengthRow chi c;
+    0 < result.1 ∧
+      ∀ (h : ℕ),
+        k < h →
+          h ≤ 2 * k →
+            Even h →
+              Karlin.matInnerProd (Karlin.Z_DP (k + 1) h)
+                  ((Matrix.of fun i j =>
+                      Polynomial.eval (↑result.1) (Karlin.FaithfulScale.referenceInterior k M lengthRow chi c i j)) -
+                    Karlin.outerProd (Matrix.vecMul (fun j => ↑(result.2 j)) (Karlin.S_mat (k + 1))) fun j =>
+                      Polynomial.eval (↑result.1) (Karlin.FaithfulScale.referencePsi k chi c j)) =
+                0
+Karlin.FaithfulSeedAdmissible.rpsAdmissible : Karlin.FaithfulAdmissible.Admissible Karlin.FaithfulSeed.rpsClock
+@Karlin.FaithfulGain.AdmissibleGain.eventually_momentTable : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam : ℕ),
+  1 ≤ lam →
+    ∃ K KE T0,
+      0 ≤ K ∧
+        0 ≤ KE ∧
+          1 ≤ T0 ∧
+            ∀ (T : ℕ),
+              T0 ≤ T →
+                0 <
+                    Karlin.FaithfulGain.AdmissibleGain.baselineCounts A lam ⟨k, ⋯⟩ * ↑T +
+                      (Karlin.FaithfulGain.AdmissibleGain.oldTotals A ⟨k, ⋯⟩ + A.correction ⟨k, ⋯⟩) ∧
+                  0 < Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T ∧
+                    Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T < 1 ∧
+                      |Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T - A.cref| ≤ K / ↑T ∧
+                        (∀ (delta : ℚ),
+                            Karlin.L_moment (Karlin.B_mat (k + 1))
+                                (Karlin.FaithfulGain.AdmissibleGain.momentTable A lam T) =
+                              (Karlin.FaithfulTables.D P A.tau (Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T)
+                                      (Karlin.FaithfulAdmissible.baseline P) delta).transpose *
+                                  Karlin.FaithfulTables.X P A.tau -
+                                Karlin.outerProd
+                                  (Karlin.FaithfulGain.totalCounts
+                                    (Karlin.FaithfulGain.AdmissibleGain.baselineCounts A lam) A.correction T)
+                                  (Karlin.FaithfulTables.psi (P.R P.b) A.tau
+                                    (Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T)
+                                    (Karlin.FaithfulAdmissible.baseline P))) ∧
+                          Karlin.Faithful.entrySum
+                              (Karlin.FaithfulGain.AdmissibleGain.momentTable A lam T -
+                                ↑T • Karlin.Faithful.paperE0 k (↑lam) A.referenceHeight) ≤
+                            KE
+@Karlin.FaithfulSynthesis.uniform_validScales : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam : ℕ),
+  1 ≤ lam →
+    ∀ (LX : Matrix (Karlin.FaithfulTables.OldAct P) (Fin (k + 1)) ℚ),
+      ∃ N, 1 ≤ N ∧ ∀ (T1 : ℕ), N ≤ T1 → ∀ (T2 : ℕ), T1 ≤ T2 → Karlin.FaithfulSynthesis.ValidScales A lam T1 T2 LX
+@Karlin.FaithfulController.firstScale_spec : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (T1 : ℕ),
+  Karlin.FaithfulController.firstScale A ≤ T1 → ∀ (T2 : ℕ), T1 ≤ T2 → Karlin.FaithfulController.ValidParameters A T1 T2
+@Karlin.FaithfulNextTables.prescribedT2_weights_spec : ∀ {k : ℕ} (P : Karlin.FaithfulClock.Clock k) (tau : ℕ),
+  0 < tau →
+    ∀ (c cref H delta T1 lam : ℚ),
+      0 < T1 →
+        0 < lam →
+          ∀ (ellStar : Fin (k + 1) → ℚ) (E : Matrix (Fin (k + 1)) (Fin (k + 1)) ℚ),
+            0 <
+                T1 * lam * Karlin.FaithfulTables.zeta (P.R P.b) tau cref H (Karlin.lastIdx k) +
+                  ellStar (Karlin.lastIdx k) →
+              have tauNext :=
+                Karlin.FaithfulNextTables.nextScale k ⋯ (Karlin.FaithfulTables.S_mid P tau c H delta)
+                  (Karlin.FaithfulTables.X P tau) (Karlin.FaithfulTables.zeta (P.R P.b) tau c H)
+                  (Karlin.FaithfulTables.zeta (P.R P.b) tau cref H) ellStar T1 lam E;
+              have T2 := Karlin.FaithfulNextTables.prescribedT2 P tau c cref H delta T1 lam ellStar E;
+              have a := Karlin.FaithfulNextTables.prescribedWeights P tau c cref H delta T1 lam ellStar E;
+              T1 < ↑T2 ∧
+                T1 * lam * Karlin.FaithfulTables.zeta (P.R P.b) tau cref H (Karlin.lastIdx k) < ↑T2 ∧
+                  1 < ↑T2 ∧
+                    (∀ (i : Karlin.FaithfulTables.OldAct P ⊕ Fin (k + 1) ⊕ Fin (k + 1)), 0 < a i) ∧
+                      ∀ (Hnext : ℚ),
+                        Matrix.vecMul a
+                            (Karlin.FaithfulNextTables.nextCounts (Karlin.FaithfulTables.X P tau)
+                              (Karlin.FaithfulNextTables.resetCounts k T1 (↑T2) lam
+                                (Karlin.FaithfulTables.zeta (P.R P.b) tau cref H) ellStar)) =
+                          Karlin.FaithfulNextTables.target (Karlin.FaithfulTables.zeta (P.R P.b) tau c H) tauNext
+                            (1 / 2) Hnext
+@Karlin.FaithfulNextAdmissible.admissible : {k : ℕ} →
+  (P : Karlin.FaithfulClock.Clock k) →
+    (Q : Karlin.FaithfulClock.Clock (k + 1)) →
+      (tau : ℕ) →
+        0 < tau →
+          (c cref H delta T1 lam : ℚ) →
+            0 < T1 →
+              0 < lam →
+                (ellStar : Fin (k + 1) → ℚ) →
+                  (E Lr : Matrix (Fin (k + 1)) (Fin (k + 1)) ℚ) →
+                    (∀ (j : Fin (k + 1)), Lr 0 j = 0) →
+                      0 <
+                          T1 * lam * Karlin.FaithfulTables.zeta (P.R P.b) tau cref H (Karlin.lastIdx k) +
+                            ellStar (Karlin.lastIdx k) →
+                        1 +
+                              ellStar ⬝ᵥ
+                                (Karlin.Winv_concrete k T1
+                                      (↑(Karlin.FaithfulNextTables.prescribedT2 P tau c cref H delta T1 lam ellStar E))
+                                      lam (Karlin.FaithfulTables.zeta (P.R P.b) tau cref H)).mulVec
+                                  (Karlin.Faithful.earlyUnit k) ≠
+                            0 →
+                          Karlin.FaithfulNextAdmissible.TableMatch P Q tau c cref H delta T1 lam ellStar E Lr →
+                            Karlin.FaithfulAdmissible.Admissible Q
+@Karlin.FaithfulNextClockAssembly.word_valid : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (T1 T2 q : ℕ),
+  Karlin.FaithfulController.ValidParameters A T1 T2 →
+    Karlin.FaithfulController.outerOnset A T1 T2 ≤ q →
+      Karlin.IsValidPriorityWord (Karlin.FaithfulNextClock.Lift.game A T1 T2)
+        (Karlin.FaithfulNextClockAssembly.rotatedScore A T1 T2 q) Karlin.FaithfulNextClockAssembly.rank
+        (Karlin.FaithfulNextClock.Lift.word A T1 T2 q)
+@Karlin.FaithfulResetPlateau.chosen_reset_prefix_height : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (q : ℕ),
+  Karlin.FaithfulController.outerOnset A (Karlin.FaithfulController.firstScale A)
+        (Karlin.FaithfulController.secondScale A (Karlin.FaithfulController.firstScale A)) ≤
+      q →
+    ∀
+      r ≤
+        (Karlin.FaithfulNextClockAssembly.reset A (Karlin.FaithfulController.firstScale A)
+            (Karlin.FaithfulController.secondScale A (Karlin.FaithfulController.firstScale A)) q).length,
+      Karlin.FaithfulInheritance.scoreHeight Karlin.FaithfulNextClock.Lift.base
+          (Karlin.wordScore
+            (Karlin.FaithfulNextClock.Lift.game A (Karlin.FaithfulController.firstScale A)
+              (Karlin.FaithfulController.secondScale A (Karlin.FaithfulController.firstScale A)))
+            (Karlin.FaithfulNextClockAssembly.rotatedScore A (Karlin.FaithfulController.firstScale A)
+              (Karlin.FaithfulController.secondScale A (Karlin.FaithfulController.firstScale A)) q)
+            (List.take r
+              (Karlin.FaithfulNextClockAssembly.reset A (Karlin.FaithfulController.firstScale A)
+                (Karlin.FaithfulController.secondScale A (Karlin.FaithfulController.firstScale A)) q))) =
+        Karlin.FaithfulNextClock.Lift.zeta A (Karlin.FaithfulController.firstScale A) ⬝ᵥ Karlin.binomBasis (k + 1) q
+@Karlin.FaithfulNextClockAssembly.nextClock : {k : ℕ} →
+  {P : Karlin.FaithfulClock.Clock k} →
+    (A : Karlin.FaithfulAdmissible.Admissible P) →
+      (T1 T2 : ℕ) → Karlin.FaithfulController.ValidParameters A T1 T2 → Karlin.FaithfulClock.Clock (k + 1)
+Karlin.FaithfulEffectiveLift.familyBundle : (k : ℕ) → 2 ≤ k → Karlin.FaithfulFamily.Bundle k
+Karlin.FaithfulEffectiveLift.familySuffix : ∀ (k : ℕ) (hk : 2 ≤ k) (eps : ℚ),
+  0 < eps →
+    ∀ (q : ℕ),
+      Karlin.FaithfulEffectiveLift.familyThreshold k hk eps ≤ q →
+        ∀ r ≤ (Karlin.FaithfulEffectiveLift.familyWord k hk q).length,
+          let P := Karlin.FaithfulEffectiveLift.familyClock k hk;
+          Karlin.FaithfulClock.height P.b (P.entry (q + 1)) -
+              Karlin.FaithfulClock.height P.b
+                (Karlin.wordScore P.A (P.entry q) (List.take r (Karlin.FaithfulEffectiveLift.familyWord k hk q))) ≤
+            eps * ↑((Karlin.FaithfulEffectiveLift.familyWord k hk q).length - r) + P.Arem
+Karlin.FaithfulSevenFamily.main_theorem : ∀ (k : ℕ),
+  3 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 9 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulSevenFamily.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))
+Karlin.FaithfulConsequences.normalized_exact_gap : ∀ (k : ℕ) (hk : 2 ≤ k),
+  0 < Karlin.FaithfulConsequences.normalizedConstant k hk ∧
+    Filter.Tendsto
+      (fun t =>
+        ↑(Karlin.standardDualityGap (Karlin.FaithfulConsequences.normalizedMatrix k hk)
+              (Karlin.FaithfulMain.trajectory k hk) (Karlin.FaithfulMain.trajectory k hk) t) *
+          ↑t ^ (1 / ↑k))
+      Filter.atTop (nhds (Karlin.FaithfulConsequences.normalizedConstant k hk))
+Karlin.FaithfulConsequences.family_constant_power_rational : ∀ (k : ℕ) (hk : 2 ≤ k),
+  Karlin.FaithfulMain.constant k hk ^ k =
+    ↑(2 ^ k * ↑k ^ (k - 1) * Karlin.FaithfulConsequences.leadingHeight k hk ^ k /
+        (↑(k - 1).factorial * Karlin.FaithfulConsequences.leadingCount k hk ^ (k - 1)))
+Karlin.FaithfulConsequences.no_universal_polynomial_exponent : ¬∃ gamma,
+    0 < gamma ∧
+      ∀ (m : ℕ) (M : Matrix (Fin (m + 1)) (Fin (m + 1)) ℚ) (a : ℕ → Fin (m + 1)),
+        Karlin.IsSkewSymmetric M →
+          (∀ (i j : Fin (m + 1)), -1 ≤ M i j ∧ M i j ≤ 1) →
+            a 0 = 0 →
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a →
+                (fun t => ↑(Karlin.standardDualityGap M a a t)) =O[Filter.atTop] fun t => ↑t ^ (-gamma)
+Karlin.FaithfulAppendixRPS.exact_matrix : Karlin.FaithfulGameReindex.finGame Karlin.FaithfulRPS.matrix =
+  Karlin.FaithfulAppendixRPS.matrix
+Karlin.FaithfulAppendixRPS.constant_exact : Karlin.FaithfulRPS.constant = 2 * √2 / 3
+Karlin.FaithfulAppendixRPS.normalized_constant_exact : Karlin.FaithfulRPS.constant / (313 / 36) = 24 * √2 / 313
+Karlin.FaithfulAppendix.cross_bound : ∀ (k : ℕ) (T1 T2 lam : ℚ) (z ell : Fin (k + 1) → ℚ)
+  (E L : Matrix (Fin (k + 1)) (Fin (k + 1)) ℚ),
+  0 < T1 →
+    T1 ≤ T2 →
+      Karlin.FaithfulAppendix.nu k T1 lam z ell < 1 / 2 →
+        Karlin.FaithfulAppendix.normStar
+            (Karlin.Faithful.paperCross k T1 T2 lam z ell E L -
+              Karlin.Faithful.paperKappa k T1 lam • Karlin.outerProd (fun x => 1) fun x => 1) ≤
+          Karlin.FaithfulAppendix.bCross k T1 lam z ell E L
+Karlin.FaithfulAppendix.score_bound : ∀ (k : ℕ) (T1 T2 lam : ℚ) (z ell psi : Fin (k + 1) → ℚ)
+  (E L B : Matrix (Fin (k + 1)) (Fin (k + 1)) ℚ),
+  0 < T1 →
+    T1 ≤ T2 →
+      0 < lam →
+        0 < z (Karlin.lastIdx k) →
+          Karlin.FaithfulAppendix.nu k T1 lam z ell < 1 / 2 →
+            have Z := Karlin.outerProd (fun x => 1) z;
+            Karlin.FaithfulAppendix.normStar
+                (Karlin.Faithful.resetScoreTarget psi
+                    (Karlin.WE_concrete k T1 T2 lam z (Karlin.Faithful.earlyUnit k) ell)
+                    (Karlin.W_concrete k T1 T2 lam z) L (Karlin.Faithful.paperCross k T1 T2 lam z ell E L)
+                    (1 / (T1 * T2 ^ 2)) B -
+                  (-(Z + Z * B)).fromRows (Z + Z * B)) ≤
+              Karlin.FaithfulAppendix.bQ k T1 lam z ell psi E L B
+@Karlin.FaithfulAppendix.coupling_bound : ∀ {m : Type u_1} [inst : Fintype m] [inst_1 : Nonempty m] (k : ℕ)
+  (T1 T2 lam : ℚ) (z ell psi : Fin (k + 1) → ℚ) (E L B : Matrix (Fin (k + 1)) (Fin (k + 1)) ℚ) (a : m → ℚ)
+  (X LX D : Matrix m (Fin (k + 1)) ℚ),
+  Matrix.vecMul a X = z + Matrix.vecMul z B →
+    0 < T1 →
+      T1 ≤ T2 →
+        0 < lam →
+          0 < z (Karlin.lastIdx k) →
+            Karlin.FaithfulAppendix.nu k T1 lam z ell < 1 / 2 →
+              have WE := Karlin.WE_concrete k T1 T2 lam z (Karlin.Faithful.earlyUnit k) ell;
+              have W := Karlin.W_concrete k T1 T2 lam z;
+              have M := WE.fromRows W;
+              have RM := Matrix.fromCols 0 (Karlin.Winv_concrete k T1 T2 lam z);
+              have Q :=
+                Karlin.Faithful.resetScoreTarget psi WE W L (Karlin.Faithful.paperCross k T1 T2 lam z ell E L)
+                  (1 / (T1 * T2 ^ 2)) B;
+              have P0 := Karlin.Faithful.referenceCoupling a;
+              Karlin.FaithfulAppendix.normStar (Karlin.P_interp X LX M RM D Q P0 - P0) ≤
+                Karlin.FaithfulAppendix.bP k T1 lam z ell psi E L B a X LX D
+@Karlin.FaithfulAppendix.Actual.Candidate : {k : ℕ} →
+  {P : Karlin.FaithfulClock.Clock k} → Karlin.FaithfulAdmissible.Admissible P → ℕ → ℕ → Prop
+@Karlin.FaithfulAppendix.Actual.actual_cross_bound : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T1 T2 : ℕ),
+  0 < T1 →
+    T1 ≤ T2 →
+      Karlin.FaithfulAppendix.nu k (↑T1) (↑lam) A.referenceHeight A.correction < 1 / 2 →
+        Karlin.FaithfulAppendix.normStar
+            (Karlin.Faithful.paperCross k (↑T1) (↑T2) (↑lam) A.referenceHeight A.correction
+                (Karlin.FaithfulGain.AdmissibleGain.momentTable A lam T1) (Karlin.FaithfulResetEquations.paperLower k) -
+              Karlin.Faithful.paperKappa k ↑T1 ↑lam • Karlin.outerProd (fun x => 1) fun x => 1) ≤
+          Karlin.FaithfulAppendix.Actual.crossCap A lam T1
+@Karlin.FaithfulAppendix.Actual.actual_score_bound : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T1 T2 : ℕ),
+  0 < lam →
+    0 < T1 →
+      T1 ≤ T2 →
+        Karlin.FaithfulAppendix.nu k (↑T1) (↑lam) A.referenceHeight A.correction < 1 / 2 →
+          Karlin.FaithfulAppendix.normStar
+              (Karlin.Q_reset
+                  (Karlin.FaithfulResetEquations.resetJ k (↑T1) (↑T2) (↑lam) A.referenceHeight A.correction
+                    (Karlin.FaithfulGain.AdmissibleGain.momentTable A lam T1))
+                  (Karlin.FaithfulResetEquations.resetM k (↑T1) (↑T2) (↑lam) A.referenceHeight A.correction)
+                  (Karlin.B_mat (k + 1))
+                  (Karlin.FaithfulTables.zeta (P.R P.b) A.tau (Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T1)
+                    (Karlin.FaithfulAdmissible.baseline P)) -
+                (Karlin.Faithful.referenceCoupling A.weights).transpose * Karlin.FaithfulTables.X P A.tau) ≤
+            Karlin.FaithfulAppendix.Actual.scoreCap A lam T1
+@Karlin.FaithfulAppendix.Actual.actual_coupling_bound : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T1 T2 : ℕ),
+  0 < lam →
+    0 < T1 →
+      T1 ≤ T2 →
+        Karlin.FaithfulAppendix.nu k (↑T1) (↑lam) A.referenceHeight A.correction < 1 / 2 →
+          Karlin.FaithfulAppendix.normStar
+              (Karlin.FaithfulResetEquations.actualCoupling A lam T1 T2 - Karlin.Faithful.referenceCoupling A.weights) ≤
+            Karlin.FaithfulAppendix.Actual.couplingCap A lam T1
+@Karlin.FaithfulAppendix.Actual.candidate_coupling_signs : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T1 : ℕ),
+  0 < lam →
+    Karlin.FaithfulAppendix.Actual.Candidate A lam T1 →
+      ∀ (T2 : ℕ),
+        T1 ≤ T2 →
+          (∀ (i : Karlin.FaithfulTables.OldAct P) (j : Fin (k + 1)),
+              Karlin.FaithfulResetEquations.actualCoupling A lam T1 T2 i (Sum.inl j) <
+                  -(Karlin.FaithfulSynthesis.minimumWeight A / 4) ∧
+                Karlin.FaithfulSynthesis.minimumWeight A / 4 <
+                  Karlin.FaithfulResetEquations.actualCoupling A lam T1 T2 i (Sum.inr j)) ∧
+            ∀ (j : Fin (k + 1)),
+              P.Arem <
+                -Karlin.FaithfulResetEquations.actualCoupling A lam T1 T2 (Sum.inr 0) (Sum.inl j) -
+                  Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T1
+@Karlin.FaithfulAppendix.Actual.candidate_equations : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T1 : ℕ),
+  0 < lam →
+    Karlin.FaithfulAppendix.Actual.Candidate A lam T1 →
+      ∀ (T2 : ℕ),
+        T1 ≤ T2 →
+          ∀ (delta : ℚ),
+            have M := Karlin.FaithfulResetEquations.resetM k (↑T1) (↑T2) (↑lam) A.referenceHeight A.correction;
+            have J :=
+              Karlin.FaithfulResetEquations.resetJ k (↑T1) (↑T2) (↑lam) A.referenceHeight A.correction
+                (Karlin.FaithfulGain.AdmissibleGain.momentTable A lam T1);
+            Karlin.FaithfulResetEquations.actualCoupling A lam T1 T2 * M =
+                Karlin.FaithfulTables.D P A.tau (Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T1)
+                  (Karlin.FaithfulAdmissible.baseline P) delta ∧
+              (Karlin.FaithfulResetEquations.actualCoupling A lam T1 T2).transpose * Karlin.FaithfulTables.X P A.tau =
+                Karlin.Q_reset J M (Karlin.B_mat (k + 1))
+                  (Karlin.FaithfulTables.zeta (P.R P.b) A.tau (Karlin.FaithfulGain.AdmissibleGain.selectedGain A lam T1)
+                    (Karlin.FaithfulAdmissible.baseline P))
+@Karlin.FaithfulAppendix.Actual.candidate_validScales : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T1 : ℕ),
+  0 < lam →
+    Karlin.FaithfulAppendix.Actual.Candidate A lam T1 →
+      ∀ (T2 : ℕ),
+        T1 ≤ T2 → Karlin.FaithfulSynthesis.ValidScales A lam T1 T2 (Karlin.FaithfulResetEquations.leftInverseLX P A.tau)
+@Karlin.FaithfulAppendix.Search.candidate_after_canonicalOnset : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam : ℕ),
+  1 ≤ lam →
+    ∀ (T : ℕ),
+      Karlin.FaithfulAppendix.Search.canonicalOnset A lam ≤ T → Karlin.FaithfulAppendix.Actual.Candidate A lam T
+@Karlin.FaithfulAppendix.Search.passes : {k : ℕ} →
+  {P : Karlin.FaithfulClock.Clock k} → Karlin.FaithfulAdmissible.Admissible P → ℕ → ℕ → Bool
+@Karlin.FaithfulAppendix.Search.passes_iff : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T : ℕ),
+  Karlin.FaithfulAppendix.Search.passes A lam T = true ↔ Karlin.FaithfulAppendix.Actual.Candidate A lam T
+@Karlin.FaithfulAppendix.Search.successiveScale : {k : ℕ} →
+  {P : Karlin.FaithfulClock.Clock k} → Karlin.FaithfulAdmissible.Admissible P → (lam : ℕ) → 1 ≤ lam → ℕ
+@Karlin.FaithfulAppendix.Search.successiveScale_minimal : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam : ℕ) (hlam : 1 ≤ lam) (T : ℕ),
+  Karlin.FaithfulAppendix.Actual.Candidate A lam T → Karlin.FaithfulAppendix.Search.successiveScale A lam hlam ≤ T
+@Karlin.FaithfulAppendix.Search.successiveScale_le_onset : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam : ℕ) (hlam : 1 ≤ lam),
+  Karlin.FaithfulAppendix.Search.successiveScale A lam hlam ≤ Karlin.FaithfulAppendix.Search.canonicalOnset A lam
+@Karlin.FaithfulAppendix.Search.canonicalSuccessiveScale_valid : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (T2 : ℕ),
+  Karlin.FaithfulAppendix.Search.canonicalSuccessiveScale A ≤ T2 →
+    Karlin.FaithfulSynthesis.ValidScales A (Karlin.FaithfulParameters.AdmissibleParameters.lam A)
+      (Karlin.FaithfulAppendix.Search.canonicalSuccessiveScale A) T2
+      (Karlin.FaithfulResetEquations.leftInverseLX P A.tau)
+@Karlin.FaithfulAppendix.Search.doublingScale : {k : ℕ} →
+  {P : Karlin.FaithfulClock.Clock k} → Karlin.FaithfulAdmissible.Admissible P → (lam : ℕ) → 1 ≤ lam → ℕ
+@Karlin.FaithfulAppendix.Search.doublingIndex_minimal : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam : ℕ) (hlam : 1 ≤ lam) (j : ℕ),
+  Karlin.FaithfulAppendix.Actual.Candidate A lam (2 ^ j) → Karlin.FaithfulAppendix.Search.doublingIndex A lam hlam ≤ j
+@Karlin.FaithfulAppendix.Search.doublingIndex_le_onset : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam : ℕ) (hlam : 1 ≤ lam),
+  Karlin.FaithfulAppendix.Search.doublingIndex A lam hlam ≤ Karlin.FaithfulAppendix.Search.canonicalOnset A lam
+@Karlin.FaithfulAppendix.Search.canonicalDoublingScale_valid : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (T2 : ℕ),
+  Karlin.FaithfulAppendix.Search.canonicalDoublingScale A ≤ T2 →
+    Karlin.FaithfulSynthesis.ValidScales A (Karlin.FaithfulParameters.AdmissibleParameters.lam A)
+      (Karlin.FaithfulAppendix.Search.canonicalDoublingScale A) T2 (Karlin.FaithfulResetEquations.leftInverseLX P A.tau)
+@Karlin.FaithfulAppendix.Search.passes_reject_denominator : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T : ℕ),
+  Even k →
+    Karlin.FaithfulAppendix.Actual.gainDenominator A lam T ≤ 0 → Karlin.FaithfulAppendix.Search.passes A lam T = false
+@Karlin.FaithfulAppendix.Search.passes_reject_nu : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (lam T : ℕ),
+  1 / 2 ≤ Karlin.FaithfulAppendix.nu k (↑T) (↑lam) A.referenceHeight A.correction →
+    Karlin.FaithfulAppendix.Search.passes A lam T = false

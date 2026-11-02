@@ -1,0 +1,43 @@
+{
+  "prepared_utc_date": "2026-11-02",
+  "status": "passed_final_clean_reproduction",
+  "fresh_build": "passed_3205_jobs",
+  "fresh_independent_probes": "all_six_passed",
+  "fresh_eight_companion_checks": "all_eight_passed",
+  "preliminary_expanded_run": "Build and six current independent probes passed, but the aggregate failed in a historical dependency harness. Two independently confirmed stale harnesses are excluded from this source release; see SUPERSEDED_CHECKS.md. No aggregate PASS is inferred from that preliminary run.",
+  "latest_v19_full_correspondence": "not_verified",
+  "historical_audit": "See HISTORICAL_AUDIT.md; historical audit results are distinct from the fresh run.",
+  "fresh_build_warnings": 18,
+  "fresh_errors": 0,
+  "fresh_run_finished_utc": "2026-11-02T05:08:24.781624+00:00",
+  "fresh_report": "FRESH_VERIFICATION.md",
+  "fresh_evidence": "fresh-2026-11-02/final-evidence-summary.json",
+  "tested_source_map_sha256": "991979fe299c26bd1531a0b620900e0efe28e3d90bb7b302a6f58dd4f38a26df",
+  "tested_source_export_manifest_sha256": "da697e74de6013e4a05ad11194d641b7b0b1ab10b788aebdac58243426453b52",
+  "post_run_changes": "Only status/readme/reports/evidence/reference metadata and distribution manifest; mathematical sources, mapped inputs, verifier, and reproduction script unchanged. Current v19 central correspondence is a scoped source review, not a new Lean build.",
+  "latest_v19_central_correspondence": {
+    "source_file": "master_v19_v2.tex",
+    "source_commit": "ffc8a40843adb2adafc1cbcc827cfe6df7a52496",
+    "source_sha256": "b487c7cc70439ccaef9ba4884222f4b03176a8b556c774c3681ec9f62932ec3e",
+    "reviewed_date": "2026-11-02",
+    "central_correspondence": "checked_no_discrepancy_in_stated_scope",
+    "scope": [
+      "main_family_statement",
+      "smaller_family_statement",
+      "simultaneous_play_and_empirical_gap_definitions",
+      "setup_action_and_strict_simulation",
+      "exact_constant_all_integer_time_error_and_fixed_start_phase",
+      "threshold_realizer_and_program_quantifiers"
+    ],
+    "limits": "Not a renewed whole-manuscript proof audit or a refreshed complete statement-by-statement crosswalk; unextracted proofs, literature/optimality comparisons, displayed numerical matrices, experiments, and practical runtime are not certified."
+  },
+  "v19_correspondence_report": "V19_CENTRAL_CORRESPONDENCE.md",
+  "prepublication_snapshot": {
+    "as_of": "2026-11-02, before public repository upload",
+    "published": false,
+    "hosting_commit": null,
+    "meaning": "Historical review-snapshot fields, not current repository visibility."
+  },
+  "hosting_repository": "https://github.com/awibisono/fictitious-play-experiments",
+  "hosting_revision_note": "Use the exact repository commit containing this artifact; the audited upstream source revision is distinct."
+}

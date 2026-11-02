@@ -1,0 +1,122 @@
+{
+  "prepared_utc_date": "2026-11-02",
+  "upstream_source_commit": "23f53ae238d01b1be52c981434c6abaef5cd49c9",
+  "original_project_lean_files": 105,
+  "retained_project_lean_files": 103,
+  "mathematical_library_files_retained": 95,
+  "project_lean_files_byte_unchanged": 93,
+  "omitted_superseded_harnesses": [
+    {
+      "source_path": "lean_formalization/faithful_audit/revised/RevisedGateAudit.lean",
+      "original_sha256": "f828d762878ca8e9c578a8e526a9adeb41ccdac76d1de5a43c6a6ff909b78847",
+      "original_bytes": 4630,
+      "reason": "Historical audit requires the old moment_solvable_iff_listed_tests dependency in final-family proofs; the audited current route intentionally uses paper_moment_solvable_iff and excludes the old route. The theorem itself is not invalidated.",
+      "current_replacement_checks": [
+        "verification/probes/IndependentWholeGate.lean",
+        "verification/probes/IndependentAssemblyGate.lean",
+        "verification/probes/IndependentRouteGate.lean"
+      ]
+    },
+    {
+      "source_path": "lean_formalization/faithful_audit/revised/RevisedSevenGateAudit.lean",
+      "original_sha256": "ed18dd172e14832ddaacefbf4ac6ee2ba076aa7ed660e11d82bcfd20da9b4866",
+      "original_bytes": 4748,
+      "reason": "Historical audit requires the old moment_solvable_iff_listed_tests dependency in final-family proofs; the audited current route intentionally uses paper_moment_solvable_iff and excludes the old route. The theorem itself is not invalidated.",
+      "current_replacement_checks": [
+        "verification/probes/IndependentWholeGate.lean",
+        "verification/probes/IndependentAssemblyGate.lean",
+        "verification/probes/IndependentRouteGate.lean"
+      ]
+    }
+  ],
+  "comment_only_source_changes": [
+    {
+      "public_path": "Karlin/FaithfulAppendixNorm.lean",
+      "original_sha256": "13f91f6583b83ff0336b9a6b7206adea850f376e5d4fd2aa7d0b5f9878e39137",
+      "public_sha256": "3520f224c4a9e6e4cc108065db0c6ed90fe79edf7a8459432a2d9408472e315d",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "Karlin/FaithfulMain.lean",
+      "original_sha256": "640a9e701c3cb50bb79a0ec4315fc112fb70163b28f6feb9599255204a17fc45",
+      "public_sha256": "754d6973fbfb772e8be8d2dd287e4224c46ad5377b1369f8d02fffeb927d605b",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "Karlin/FaithfulNextClockAssembly.lean",
+      "original_sha256": "00c97559cf471557e49d50bf9f39902516511a3eb9499f0200e9d71d759bb926",
+      "public_sha256": "134f74da3e8702cbb23d02566bd4d04cf3d7b3ead1ce179889ef8d3234492c3b",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "Karlin/FaithfulPaperAlgebra.lean",
+      "original_sha256": "6c6ddcfa1a51aaa6ed4a06c49f5b8ec6da7cd16d8acb1a612710b7e9ffd110e2",
+      "public_sha256": "64f6d716d155c7227bd3fd9accdc585d5925a1673f712bd05af6496a41aebcd2",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "Karlin/FaithfulPaperCokernel.lean",
+      "original_sha256": "e9e438ac86bf36c8c3e5e6db5cf0e784e34ab65b8c754e80c031bf08dbad663c",
+      "public_sha256": "41e3ed1009de8458c360ce91f1822d5d86b587d1242ee63d8507ef339bc465fe",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "Karlin/FaithfulRateError.lean",
+      "original_sha256": "bf1ef3f1ce442b0090b348431ff332e6168daf64767956538f0f44409377e575",
+      "public_sha256": "4996acbfac18e9e992e07a325abe980b09983b46f4058c71c46877425d316b04",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "Karlin/FaithfulScale.lean",
+      "original_sha256": "12fcf9099e0e02603b1ba8805be8f84a822570ee6ccfa83f1b3b6cd8706e6b9e",
+      "public_sha256": "c9e148c0b2503c77ce7971680897cfe25c658d4daed7c5b6e0cbcc1a3eec832c",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "Karlin/FaithfulV15.lean",
+      "original_sha256": "8065d58e97fa5184551731160fd2801b32944d812a4210746f822e29d5b66611",
+      "public_sha256": "d1226c53db1b78be5a13b3120c6718ae1a76cfeeb39d1d291ca8604d4b0d0ffd",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "MainPaperRouteVerification.lean",
+      "original_sha256": "cbc82b764afe06b30724b5279ddf0f5f9990c99e979c36c8f31abab3c3a687d6",
+      "public_sha256": "af7a8fe359d0939e256ca9164e71b7de28c0271f9907a68583419f62604b3692",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    },
+    {
+      "public_path": "PaperRouteVerification.lean",
+      "original_sha256": "3c1bed630481a40741cca94abdc96a2c0ab5cbdbbf15474a3c1086114a560bbd",
+      "public_sha256": "92f9a930d33efe2ffadb3138cf3ea8c041e9c6e4a38573cb138c8e598a4804ea",
+      "noncomment_bytes_equal": true,
+      "reason": "Replace internal repair/refactor-history wording with neutral mathematical or verification descriptions; preserve useful mathematical content."
+    }
+  ],
+  "build_configuration_files_byte_unchanged": 3,
+  "independent_probe_files_byte_unchanged": 6,
+  "omitted_material": [
+    "Internal progress reports and coordination notes",
+    "Machine-specific historical verification wrappers, replaced by portable public scripts",
+    "Private project URLs and historical manuscript source/rendering dumps",
+    "Detailed internal audit workspaces and historical build logs",
+    "Toolchains, vendored dependencies, compiled outputs, and caches"
+  ],
+  "new_documentation": [
+    "Public README and scope/correspondence caveats",
+    "Public mathematical crosswalk",
+    "Historical-audit summary separated from fresh verification status",
+    "Source mapping, public export manifest, and reference metadata",
+    "Portable integrity verifier and reproduction entry point",
+    "Explicit unselected-license status"
+  ],
+  "scope_note": "Comment-only equivalence checks are auxiliary safeguards, not a substitute for a fresh Lean build and independent gates. A complete latest-v19 correspondence check remains outstanding."
+}

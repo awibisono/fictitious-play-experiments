@@ -1,0 +1,30 @@
+ROUTE_PASS Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff: closure=18597, axioms=[propext,
+ Quot.sound,
+ Classical.choice], required=[Karlin.FaithfulPaperCokernel.D_pow_zero,
+ Karlin.FaithfulPaperCokernel.exp_D_apply,
+ Karlin.FaithfulPaperCokernel.one_sub_exp_neg,
+ Karlin.FaithfulPaperCokernel.expFactor_geometric_inverse,
+ Karlin.FaithfulPaperCokernel.conjugate_adjoint,
+ Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion,
+ Karlin.FaithfulPaperCokernel.paper_binomial_kernel_mem_span]
+ROUTE_PASS Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers: closure=16062, axioms=[propext,
+ Quot.sound,
+ Classical.choice], required=[Karlin.FaithfulPaperAlgebra.ordinary_power_bundle_expansion,
+ Karlin.FaithfulPaperAlgebra.polynomial_bundle_remainder]
+ROUTE_PASS Karlin.FaithfulPaperAlgebra.height_expansion_by_degree_drop: closure=15993, axioms=[propext,
+ Quot.sound,
+ Classical.choice], required=[Karlin.FaithfulPaperAlgebra.backwardDifference_degree_and_leading,
+ Karlin.FaithfulPaperAlgebra.height_polynomial_degree_by_backward_difference]
+ROUTE_PASS Karlin.FaithfulPaperAlgebra.chosenCorrection_forward_difference_formula: closure=17441, axioms=[propext,
+ Quot.sound,
+ Classical.choice], required=[Karlin.FaithfulPaperAlgebra.binomial_row_integral_by_differences,
+ Karlin.FaithfulPaperAlgebra.forward_difference_formula,
+ Karlin.FaithfulPaperAlgebra.chosenCorrection_cast_by_differences]
+EFFECTIVE_PASS Karlin.FaithfulEffectiveContract.lift_every_partrec_parent_program: closure=29936; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+EFFECTIVE_PASS Karlin.FaithfulEffectiveContract.universal_clock_program: closure=11964; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+MAIN_ROUTE Karlin.FaithfulMain.main_theorem: oldCokernel=false, newCokernel=true
+MAIN_ROUTE Karlin.FaithfulSevenFamily.main_theorem: oldCokernel=false, newCokernel=true

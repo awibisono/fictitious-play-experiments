@@ -1,0 +1,99 @@
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulPaperCokernel.paper_momentSection_solves: bodyProject=285; full=22453; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulGain.eventually_gain_and_bounded_correction: bodyProject=338; full=22584; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulGain.correctedMoment_spec: bodyProject=314; full=22483; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulGain.AdmissibleGain.momentTable_solves: bodyProject=438; full=22698; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulGain.AdmissibleGain.eventually_momentTable: bodyProject=527; full=23886; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulLift.nextClock: bodyProject=1571; full=29399; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulLift.nextAdmissible: bodyProject=1794; full=29684; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulMain.strict_simultaneous: bodyProject=2022; full=30057; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulMain.exact_gap: bodyProject=2140; full=37669; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulSevenFamily.strict_simultaneous: bodyProject=2148; full=30127; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulSevenFamily.exact_gap: bodyProject=2266; full=37738; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulMain.main_theorem: bodyProject=2182; full=37713; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+INDEPENDENT_BODY_ROUTE_PASS Karlin.FaithfulSevenFamily.main_theorem: bodyProject=2305; full=37779; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+DIRECT_PROOF_EDGE Karlin.FaithfulGain.eventually_gain_and_bounded_correction -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves
+DIRECT_PROOF_EDGE Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves
+DIRECT_PROOF_EDGE Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+DIRECT_PROOF_EDGE Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulEffectiveLinear.section_on_range
+OTHER_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulGrowthRecurrences.bundle_sum_expansion=false
+OTHER_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulGrowthRecurrences.polynomial_height_expansion=false
+OTHER_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulScale.binomial_row_integral_of_values=true
+OTHER_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers=false
+OTHER_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperAlgebra.height_expansion_by_degree_drop=false
+OTHER_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperAlgebra.chosenCorrection_forward_difference_formula=false
+OTHER_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperBounds.internal_norm_sum_bound=false
+OTHER_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperChronology.pre_gateway_gain=false
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulTables.zeta_leading=true
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulInheritance.oldLengthRow_last_pos=true
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulRate.binomial_Ico_sum=true
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulRate.interpolated_normalized_limits=false
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulRateError.interpolated_polynomial_error=true
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulRateError.standard_gap_from_phase_tables_relative_error=true
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios=false
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulAppendix.linear_internal_bound=false
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.Faithful.internal_linear_bound=false
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.Faithful.score_error_bound=false
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulInheritance.rotated_suffix=true
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperChronology.actual_future_reset_deficit=false
+ACTUAL_ROUTE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperChronology.actual_earlier_reset_deficit=false
+COMPANION_MODULE_USE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperAlgebra=0
+COMPANION_MODULE_USE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperBounds=0
+COMPANION_MODULE_USE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperChronology=0
+COMPANION_MODULE_USE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperCoverage=0
+COMPANION_MODULE_USE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperSeeds=0
+COMPANION_MODULE_USE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulPaperCokernel=78
+COMPANION_MODULE_USE Karlin.FaithfulMain.main_theorem: Karlin.FaithfulEffectiveContract=0
+OTHER_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulGrowthRecurrences.bundle_sum_expansion=false
+OTHER_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulGrowthRecurrences.polynomial_height_expansion=false
+OTHER_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulScale.binomial_row_integral_of_values=true
+OTHER_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperAlgebra.clock_bundle_expansion_by_ordinary_powers=false
+OTHER_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperAlgebra.height_expansion_by_degree_drop=false
+OTHER_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperAlgebra.chosenCorrection_forward_difference_formula=false
+OTHER_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperBounds.internal_norm_sum_bound=false
+OTHER_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperChronology.pre_gateway_gain=false
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulTables.zeta_leading=true
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulInheritance.oldLengthRow_last_pos=true
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulRate.binomial_Ico_sum=true
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulRate.interpolated_normalized_limits=false
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulRateError.interpolated_polynomial_error=true
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulRateError.standard_gap_from_phase_tables_relative_error=true
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperBounds.clock_phase_boundary_ratios=false
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulAppendix.linear_internal_bound=false
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.Faithful.internal_linear_bound=false
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.Faithful.score_error_bound=false
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulInheritance.rotated_suffix=true
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperChronology.actual_future_reset_deficit=false
+ACTUAL_ROUTE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperChronology.actual_earlier_reset_deficit=false
+COMPANION_MODULE_USE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperAlgebra=0
+COMPANION_MODULE_USE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperBounds=0
+COMPANION_MODULE_USE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperChronology=0
+COMPANION_MODULE_USE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperCoverage=0
+COMPANION_MODULE_USE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperSeeds=0
+COMPANION_MODULE_USE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulPaperCokernel=78
+COMPANION_MODULE_USE Karlin.FaithfulSevenFamily.main_theorem: Karlin.FaithfulEffectiveContract=0

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-02",
+  "publication_target": "https://github.com/awibisono/fictitious-play-experiments/tree/main/lean",
+  "reviewed_source_archive_sha256": "fa3257f8c176603bbfcddc96b90cdd7695cce2fb557c1de75cb5d8d843dee69f",
+  "reviewed_distribution_manifest_sha256": "7ef50512419d80001b954f27a4bf855fb2607507edbe52062442ee2c9c163bf9",
+  "clean_build_tested_source_map_sha256": "991979fe299c26bd1531a0b620900e0efe28e3d90bb7b302a6f58dd4f38a26df",
+  "publication_changes": "Documentation only: use current public-release wording, explicitly label prepublication snapshot metadata, retain unselected-license status, and refresh the distribution manifest. A root README link and its corresponding checksum make this artifact discoverable.",
+  "unchanged": [
+    "all retained Lean source and proof bytes",
+    "all six independent probes and eight companion verification sources",
+    "toolchain, Lake configuration, and dependency lockfile",
+    "integrity verifier and reproduction script",
+    "all original fresh-build logs and evidence"
+  ],
+  "hosting_commit_note": "The commit containing this file is the publication identity; it is not the upstream source pin.",
+  "license_status": "not specified; no license selected as part of publication"
+}

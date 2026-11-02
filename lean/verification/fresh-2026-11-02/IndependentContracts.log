@@ -1,0 +1,7 @@
+'certified_rps' depends on axioms: [propext, Classical.choice, Quot.sound]
+'certified_seven' depends on axioms: [propext, Classical.choice, Quot.sound]
+'certified_rps_suffix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'generic_parent' depends on axioms: [propext, Classical.choice, Quot.sound]
+(mkRat (-1) 2, mkRat 0 1, mkRat 3 7)
+(none, some 2, some 2)
+(some 1, some 100)

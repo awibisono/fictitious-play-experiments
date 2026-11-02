@@ -1,0 +1,1160 @@
+{
+  "upstream_source_commit": "23f53ae238d01b1be52c981434c6abaef5cd49c9",
+  "upstream_project_subtree": "53cb48cc944ea05c209f577b493a34173fa469d3",
+  "files": [
+    {
+      "source_path": "lean_formalization/Karlin.lean",
+      "public_path": "Karlin.lean",
+      "original_sha256": "20ffe242bf62c344c12de338ffe73f6108250cf223811bf819cbbd634a07a5cc",
+      "original_bytes": 516,
+      "role": "project_source",
+      "public_bytes": 516,
+      "public_sha256": "20ffe242bf62c344c12de338ffe73f6108250cf223811bf819cbbd634a07a5cc",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/AdmissibleLift.lean",
+      "public_path": "Karlin/AdmissibleLift.lean",
+      "original_sha256": "cece02dcde8aadac2a466e96cbec07d2b1df210da29afbbb92dd93335d462334",
+      "original_bytes": 1538738,
+      "role": "project_source",
+      "public_bytes": 1538738,
+      "public_sha256": "cece02dcde8aadac2a466e96cbec07d2b1df210da29afbbb92dd93335d462334",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/AllOrdersComplete.lean",
+      "public_path": "Karlin/AllOrdersComplete.lean",
+      "original_sha256": "175345ca9f2ee98201a654dce07c53e6a10396e6dbfc1d9121ad1884e084bb65",
+      "original_bytes": 115511,
+      "role": "project_source",
+      "public_bytes": 115511,
+      "public_sha256": "175345ca9f2ee98201a654dce07c53e6a10396e6dbfc1d9121ad1884e084bb65",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/AllTimeGap.lean",
+      "public_path": "Karlin/AllTimeGap.lean",
+      "original_sha256": "dc79fd87a16b86d312401f2585d829eaf9af91fdf7cad5f87f0893999e0f1b00",
+      "original_bytes": 403541,
+      "role": "project_source",
+      "public_bytes": 403541,
+      "public_sha256": "dc79fd87a16b86d312401f2585d829eaf9af91fdf7cad5f87f0893999e0f1b00",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/BinomialBasis.lean",
+      "public_path": "Karlin/BinomialBasis.lean",
+      "original_sha256": "be1facf7be8298b7f190189a14435e2ae323b2575cc9a101758f10789c6fdd51",
+      "original_bytes": 8366,
+      "role": "project_source",
+      "public_bytes": 8366,
+      "public_sha256": "be1facf7be8298b7f190189a14435e2ae323b2575cc9a101758f10789c6fdd51",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/BundledClockLift.lean",
+      "public_path": "Karlin/BundledClockLift.lean",
+      "original_sha256": "1df0bdcb1b5bcc58721ab543ddd2eadf55b875e01262bf9ae37b91079a3ba0bc",
+      "original_bytes": 58864,
+      "role": "project_source",
+      "public_bytes": 58864,
+      "public_sha256": "1df0bdcb1b5bcc58721ab543ddd2eadf55b875e01262bf9ae37b91079a3ba0bc",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/ChronologyAndMain.lean",
+      "public_path": "Karlin/ChronologyAndMain.lean",
+      "original_sha256": "ace241b76ff4debcc5318d5af420ca1fac030cd7b47f2ba8799d2dbc9b8b6419",
+      "original_bytes": 50048,
+      "role": "project_source",
+      "public_bytes": 50048,
+      "public_sha256": "ace241b76ff4debcc5318d5af420ca1fac030cd7b47f2ba8799d2dbc9b8b6419",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/ChronologyBounds.lean",
+      "public_path": "Karlin/ChronologyBounds.lean",
+      "original_sha256": "71b2ced6d30d2a577fca9e790a0e2f055b46926bc882bbf00e5a76ed459a389d",
+      "original_bytes": 136943,
+      "role": "project_source",
+      "public_bytes": 136943,
+      "public_sha256": "71b2ced6d30d2a577fca9e790a0e2f055b46926bc882bbf00e5a76ed459a389d",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/CubicSevenAction.lean",
+      "public_path": "Karlin/CubicSevenAction.lean",
+      "original_sha256": "f743ef4689646fde4dc7faa24c91cea407cd1bad8466455848ced65f73f61f9a",
+      "original_bytes": 29784,
+      "role": "project_source",
+      "public_bytes": 29784,
+      "public_sha256": "f743ef4689646fde4dc7faa24c91cea407cd1bad8466455848ced65f73f61f9a",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/EndpointSanity.lean",
+      "public_path": "Karlin/EndpointSanity.lean",
+      "original_sha256": "ee097361dc60773d7829605a10c6c6fbc4081a814babcc03ed7efad519db49de",
+      "original_bytes": 2406,
+      "role": "project_source",
+      "public_bytes": 2406,
+      "public_sha256": "ee097361dc60773d7829605a10c6c6fbc4081a814babcc03ed7efad519db49de",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulActualSuffix.lean",
+      "public_path": "Karlin/FaithfulActualSuffix.lean",
+      "original_sha256": "0fb3358ea9b8e1978f7a96b41ef0cf2db0eca75a9feb6b8d6df542572544d4b7",
+      "original_bytes": 9168,
+      "role": "project_source",
+      "public_bytes": 9168,
+      "public_sha256": "0fb3358ea9b8e1978f7a96b41ef0cf2db0eca75a9feb6b8d6df542572544d4b7",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulActualWaiting.lean",
+      "public_path": "Karlin/FaithfulActualWaiting.lean",
+      "original_sha256": "b42873d31e0815813a272b11cefa10f5d42ff61346d42fe7fe4354aa46de7278",
+      "original_bytes": 12341,
+      "role": "project_source",
+      "public_bytes": 12341,
+      "public_sha256": "b42873d31e0815813a272b11cefa10f5d42ff61346d42fe7fe4354aa46de7278",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulAdmissible.lean",
+      "public_path": "Karlin/FaithfulAdmissible.lean",
+      "original_sha256": "7e64fb0af67f7dfc5fcc3e21212c35453af1bec70b808f0229e1ba7d15d00444",
+      "original_bytes": 2599,
+      "role": "project_source",
+      "public_bytes": 2599,
+      "public_sha256": "7e64fb0af67f7dfc5fcc3e21212c35453af1bec70b808f0229e1ba7d15d00444",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulAppendixActual.lean",
+      "public_path": "Karlin/FaithfulAppendixActual.lean",
+      "original_sha256": "84e6abda9ba7ec6c1843a26d0cbf801c671483da8a79b70240df28c37201c892",
+      "original_bytes": 13156,
+      "role": "project_source",
+      "public_bytes": 13156,
+      "public_sha256": "84e6abda9ba7ec6c1843a26d0cbf801c671483da8a79b70240df28c37201c892",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulAppendixBounds.lean",
+      "public_path": "Karlin/FaithfulAppendixBounds.lean",
+      "original_sha256": "d4a99bf0fe63758ec202c6f9388b0d4a322e09d77f185f99da098804611a72a6",
+      "original_bytes": 20284,
+      "role": "project_source",
+      "public_bytes": 20284,
+      "public_sha256": "d4a99bf0fe63758ec202c6f9388b0d4a322e09d77f185f99da098804611a72a6",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulAppendixNorm.lean",
+      "public_path": "Karlin/FaithfulAppendixNorm.lean",
+      "original_sha256": "13f91f6583b83ff0336b9a6b7206adea850f376e5d4fd2aa7d0b5f9878e39137",
+      "original_bytes": 264,
+      "role": "project_source",
+      "public_bytes": 189,
+      "public_sha256": "3520f224c4a9e6e4cc108065db0c6ed90fe79edf7a8459432a2d9408472e315d",
+      "change": "comment_only",
+      "original_noncomment_sha256": "263b2e6aab3d1f42efa4798da7145d8208ddcef3c65dc23662dcde5c144af211"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulAppendixRPS.lean",
+      "public_path": "Karlin/FaithfulAppendixRPS.lean",
+      "original_sha256": "b0c9e322501bfe20a0708ba4fff2072fb78173d5822653037d8182f1230411f1",
+      "original_bytes": 2766,
+      "role": "project_source",
+      "public_bytes": 2766,
+      "public_sha256": "b0c9e322501bfe20a0708ba4fff2072fb78173d5822653037d8182f1230411f1",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulAppendixSearch.lean",
+      "public_path": "Karlin/FaithfulAppendixSearch.lean",
+      "original_sha256": "46615185153558cf6e5d20775c865e580b4ef57ad4c8d43bc33a16786a7383de",
+      "original_bytes": 21782,
+      "role": "project_source",
+      "public_bytes": 21782,
+      "public_sha256": "46615185153558cf6e5d20775c865e580b4ef57ad4c8d43bc33a16786a7383de",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulBiasSetup.lean",
+      "public_path": "Karlin/FaithfulBiasSetup.lean",
+      "original_sha256": "a88dc537a62523cf0c373a8dc477eb27b55797dc77011dd618dfe104d53d0883",
+      "original_bytes": 1969,
+      "role": "project_source",
+      "public_bytes": 1969,
+      "public_sha256": "a88dc537a62523cf0c373a8dc477eb27b55797dc77011dd618dfe104d53d0883",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulBounds.lean",
+      "public_path": "Karlin/FaithfulBounds.lean",
+      "original_sha256": "49553a313ecfe18b762d58b3cb2a6010aefc205855a3c5809bdcaedf1be3169e",
+      "original_bytes": 65169,
+      "role": "project_source",
+      "public_bytes": 65169,
+      "public_sha256": "49553a313ecfe18b762d58b3cb2a6010aefc205855a3c5809bdcaedf1be3169e",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulChronology.lean",
+      "public_path": "Karlin/FaithfulChronology.lean",
+      "original_sha256": "fd05ea4c875d993d161e9403dcab381f3080ea3f432f2f334accee56ce79d710",
+      "original_bytes": 17084,
+      "role": "project_source",
+      "public_bytes": 17084,
+      "public_sha256": "fd05ea4c875d993d161e9403dcab381f3080ea3f432f2f334accee56ce79d710",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulChronologyAlgebra.lean",
+      "public_path": "Karlin/FaithfulChronologyAlgebra.lean",
+      "original_sha256": "3356718b631646eeedaed9c230d88d5a3d4f263b757c6841dcd55dcfe80fe80d",
+      "original_bytes": 7633,
+      "role": "project_source",
+      "public_bytes": 7633,
+      "public_sha256": "3356718b631646eeedaed9c230d88d5a3d4f263b757c6841dcd55dcfe80fe80d",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulClock.lean",
+      "public_path": "Karlin/FaithfulClock.lean",
+      "original_sha256": "7d0f5d9bb102137536fc67ea7ebda2fedd0f3e9be5697c6a552a7b920e1c8f6e",
+      "original_bytes": 9127,
+      "role": "project_source",
+      "public_bytes": 9127,
+      "public_sha256": "7d0f5d9bb102137536fc67ea7ebda2fedd0f3e9be5697c6a552a7b920e1c8f6e",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulClockPackage.lean",
+      "public_path": "Karlin/FaithfulClockPackage.lean",
+      "original_sha256": "157f3103750e999382f01808880151743957de3587f775ef8c052673280a1c22",
+      "original_bytes": 5455,
+      "role": "project_source",
+      "public_bytes": 5455,
+      "public_sha256": "157f3103750e999382f01808880151743957de3587f775ef8c052673280a1c22",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulCokernel.lean",
+      "public_path": "Karlin/FaithfulCokernel.lean",
+      "original_sha256": "40f9e816de84156aca3e9ae79bda62b40b3957d2657d78f2e185ace5407dc7c2",
+      "original_bytes": 35692,
+      "role": "project_source",
+      "public_bytes": 35692,
+      "public_sha256": "40f9e816de84156aca3e9ae79bda62b40b3957d2657d78f2e185ace5407dc7c2",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulConsequences.lean",
+      "public_path": "Karlin/FaithfulConsequences.lean",
+      "original_sha256": "d09082bb6ab9be5290b2642db07bef457d19a91e0f6f1233fc5d95575c62bd70",
+      "original_bytes": 16516,
+      "role": "project_source",
+      "public_bytes": 16516,
+      "public_sha256": "d09082bb6ab9be5290b2642db07bef457d19a91e0f6f1233fc5d95575c62bd70",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulController.lean",
+      "public_path": "Karlin/FaithfulController.lean",
+      "original_sha256": "7a06bff3202eaf6f09f0cf8c67f9fb9a8979082fef03fddb79d65b715fa4fe05",
+      "original_bytes": 7872,
+      "role": "project_source",
+      "public_bytes": 7872,
+      "public_sha256": "7a06bff3202eaf6f09f0cf8c67f9fb9a8979082fef03fddb79d65b715fa4fe05",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulEffectiveContract.lean",
+      "public_path": "Karlin/FaithfulEffectiveContract.lean",
+      "original_sha256": "f8726b2b944d90e6c43cebfd79fcc28ebf75e0cf03e528f2d6976b516fe64628",
+      "original_bytes": 35521,
+      "role": "project_source",
+      "public_bytes": 35521,
+      "public_sha256": "f8726b2b944d90e6c43cebfd79fcc28ebf75e0cf03e528f2d6976b516fe64628",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulEffectiveGram.lean",
+      "public_path": "Karlin/FaithfulEffectiveGram.lean",
+      "original_sha256": "f89cdab75cf61621e6479244355b04373b291232048e18a09c6060f895e52598",
+      "original_bytes": 1736,
+      "role": "project_source",
+      "public_bytes": 1736,
+      "public_sha256": "f89cdab75cf61621e6479244355b04373b291232048e18a09c6060f895e52598",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulEffectiveGramBridge.lean",
+      "public_path": "Karlin/FaithfulEffectiveGramBridge.lean",
+      "original_sha256": "3170d359a5e2d531640af3655ab22e6d74fbd22187738669025271249bb5f52e",
+      "original_bytes": 1335,
+      "role": "project_source",
+      "public_bytes": 1335,
+      "public_sha256": "3170d359a5e2d531640af3655ab22e6d74fbd22187738669025271249bb5f52e",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulEffectiveLift.lean",
+      "public_path": "Karlin/FaithfulEffectiveLift.lean",
+      "original_sha256": "e0de8e7bc540dcf252e88805435cb2a0ed98c33faefb1eff109d722a0cbcc1f3",
+      "original_bytes": 6852,
+      "role": "project_source",
+      "public_bytes": 6852,
+      "public_sha256": "e0de8e7bc540dcf252e88805435cb2a0ed98c33faefb1eff109d722a0cbcc1f3",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulEffectiveLinear.lean",
+      "public_path": "Karlin/FaithfulEffectiveLinear.lean",
+      "original_sha256": "8977e863f5f4c75d281fff11204303ac8d955283d525baa488f101788f402181",
+      "original_bytes": 3895,
+      "role": "project_source",
+      "public_bytes": 3895,
+      "public_sha256": "8977e863f5f4c75d281fff11204303ac8d955283d525baa488f101788f402181",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulEffectiveParameters.lean",
+      "public_path": "Karlin/FaithfulEffectiveParameters.lean",
+      "original_sha256": "f8915a11f21e83b5f479a79224381d0a340e8369cd21b2d5d16902c5acbaea77",
+      "original_bytes": 19362,
+      "role": "project_source",
+      "public_bytes": 19362,
+      "public_sha256": "f8915a11f21e83b5f479a79224381d0a340e8369cd21b2d5d16902c5acbaea77",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulEffectiveThreshold.lean",
+      "public_path": "Karlin/FaithfulEffectiveThreshold.lean",
+      "original_sha256": "8d3cb6e604492da6b1369a2d8711e8e0e0bc754da177bb8f01f482001b4051a0",
+      "original_bytes": 5739,
+      "role": "project_source",
+      "public_bytes": 5739,
+      "public_sha256": "8d3cb6e604492da6b1369a2d8711e8e0e0bc754da177bb8f01f482001b4051a0",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulFamily.lean",
+      "public_path": "Karlin/FaithfulFamily.lean",
+      "original_sha256": "536b6d8adee0d9258cc0780c2c1c8cb21f630a91a1e8ff5783c497b0c629c746",
+      "original_bytes": 2182,
+      "role": "project_source",
+      "public_bytes": 2182,
+      "public_sha256": "536b6d8adee0d9258cc0780c2c1c8cb21f630a91a1e8ff5783c497b0c629c746",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulFiniteDifference.lean",
+      "public_path": "Karlin/FaithfulFiniteDifference.lean",
+      "original_sha256": "ae830fd334ff0a448b09ea01976bd33d688c9593baf386399af23bba97642088",
+      "original_bytes": 1891,
+      "role": "project_source",
+      "public_bytes": 1891,
+      "public_sha256": "ae830fd334ff0a448b09ea01976bd33d688c9593baf386399af23bba97642088",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulGain.lean",
+      "public_path": "Karlin/FaithfulGain.lean",
+      "original_sha256": "a740a31cb4d69ee9140fee26de98dfccd450b196581ab08685ce792ae9fd3aea",
+      "original_bytes": 23509,
+      "role": "project_source",
+      "public_bytes": 23509,
+      "public_sha256": "a740a31cb4d69ee9140fee26de98dfccd450b196581ab08685ce792ae9fd3aea",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulGameReindex.lean",
+      "public_path": "Karlin/FaithfulGameReindex.lean",
+      "original_sha256": "63778830d6d0a3beebe4f940c569baf0f0a9a0a34c730c83e3a3ba70bab5b2ff",
+      "original_bytes": 9824,
+      "role": "project_source",
+      "public_bytes": 9824,
+      "public_sha256": "63778830d6d0a3beebe4f940c569baf0f0a9a0a34c730c83e3a3ba70bab5b2ff",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulGateway.lean",
+      "public_path": "Karlin/FaithfulGateway.lean",
+      "original_sha256": "d76be141fc62d0267078c8e9e8858abaffa6b30755bdd0bf63532cc04acc46c5",
+      "original_bytes": 8646,
+      "role": "project_source",
+      "public_bytes": 8646,
+      "public_sha256": "d76be141fc62d0267078c8e9e8858abaffa6b30755bdd0bf63532cc04acc46c5",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulGatewaySuffix.lean",
+      "public_path": "Karlin/FaithfulGatewaySuffix.lean",
+      "original_sha256": "9889bfe395f74cd5a11e524850fcd036f5f8b8ea8ab30e5bd15fa1bfef4a191a",
+      "original_bytes": 5724,
+      "role": "project_source",
+      "public_bytes": 5724,
+      "public_sha256": "9889bfe395f74cd5a11e524850fcd036f5f8b8ea8ab30e5bd15fa1bfef4a191a",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulGramSection.lean",
+      "public_path": "Karlin/FaithfulGramSection.lean",
+      "original_sha256": "f0da5f366897b6a7de0125c00f18b76a529757a78be6e110f4a0284cd12e71a4",
+      "original_bytes": 2780,
+      "role": "project_source",
+      "public_bytes": 2780,
+      "public_sha256": "f0da5f366897b6a7de0125c00f18b76a529757a78be6e110f4a0284cd12e71a4",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulGrowth.lean",
+      "public_path": "Karlin/FaithfulGrowth.lean",
+      "original_sha256": "f473054f16e9bd0c731de82cc9ab25ca58b0dab2a5c6d4017c0ac10ed8fba714",
+      "original_bytes": 17427,
+      "role": "project_source",
+      "public_bytes": 17427,
+      "public_sha256": "f473054f16e9bd0c731de82cc9ab25ca58b0dab2a5c6d4017c0ac10ed8fba714",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulGrowthRecurrences.lean",
+      "public_path": "Karlin/FaithfulGrowthRecurrences.lean",
+      "original_sha256": "aa4f5d6f252993a5ca71491806bbacda43a5f7097c7745ff70ab53b6a9c01d97",
+      "original_bytes": 16809,
+      "role": "project_source",
+      "public_bytes": 16809,
+      "public_sha256": "aa4f5d6f252993a5ca71491806bbacda43a5f7097c7745ff70ab53b6a9c01d97",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulInheritance.lean",
+      "public_path": "Karlin/FaithfulInheritance.lean",
+      "original_sha256": "6b56024904b263fe7481fcfd1726bec9c561dc98f7db8daf9e5a7c7244d580e5",
+      "original_bytes": 16731,
+      "role": "project_source",
+      "public_bytes": 16731,
+      "public_sha256": "6b56024904b263fe7481fcfd1726bec9c561dc98f7db8daf9e5a7c7244d580e5",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulLift.lean",
+      "public_path": "Karlin/FaithfulLift.lean",
+      "original_sha256": "048590b8114143a2b10fca5b4da4fc5beaf6d5d0df1777b44ee3bc950c50202a",
+      "original_bytes": 7706,
+      "role": "project_source",
+      "public_bytes": 7706,
+      "public_sha256": "048590b8114143a2b10fca5b4da4fc5beaf6d5d0df1777b44ee3bc950c50202a",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulMain.lean",
+      "public_path": "Karlin/FaithfulMain.lean",
+      "original_sha256": "640a9e701c3cb50bb79a0ec4315fc112fb70163b28f6feb9599255204a17fc45",
+      "original_bytes": 7222,
+      "role": "project_source",
+      "public_bytes": 7217,
+      "public_sha256": "754d6973fbfb772e8be8d2dd287e4224c46ad5377b1369f8d02fffeb927d605b",
+      "change": "comment_only",
+      "original_noncomment_sha256": "0766cba72fb55481f40fc9dd08e9f8f8d8327df0061862f59c6c887f11f7ad88"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulNextAdmissible.lean",
+      "public_path": "Karlin/FaithfulNextAdmissible.lean",
+      "original_sha256": "d52205b9cffdfa0346d793d828694c9a887aa30412c8b3660acb44c7c6adb6e8",
+      "original_bytes": 7563,
+      "role": "project_source",
+      "public_bytes": 7563,
+      "public_sha256": "d52205b9cffdfa0346d793d828694c9a887aa30412c8b3660acb44c7c6adb6e8",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulNextClock.lean",
+      "public_path": "Karlin/FaithfulNextClock.lean",
+      "original_sha256": "01ba8492cc406fad6f14671a22e58639da45782b03ab8e4224ac5ac251eb9d9a",
+      "original_bytes": 25639,
+      "role": "project_source",
+      "public_bytes": 25639,
+      "public_sha256": "01ba8492cc406fad6f14671a22e58639da45782b03ab8e4224ac5ac251eb9d9a",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulNextClockAssembly.lean",
+      "public_path": "Karlin/FaithfulNextClockAssembly.lean",
+      "original_sha256": "00c97559cf471557e49d50bf9f39902516511a3eb9499f0200e9d71d759bb926",
+      "original_bytes": 15102,
+      "role": "project_source",
+      "public_bytes": 15099,
+      "public_sha256": "134f74da3e8702cbb23d02566bd4d04cf3d7b3ead1ce179889ef8d3234492c3b",
+      "change": "comment_only",
+      "original_noncomment_sha256": "09184b75fe64d16fb4390908c5b93a9906a534fde02ab9c6b88917f443586038"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulNextTables.lean",
+      "public_path": "Karlin/FaithfulNextTables.lean",
+      "original_sha256": "f5f6358ae98dacf95d4c86bacd3b78cd34d4b663d5bdbb2bb4777bb40145f551",
+      "original_bytes": 37363,
+      "role": "project_source",
+      "public_bytes": 37363,
+      "public_sha256": "f5f6358ae98dacf95d4c86bacd3b78cd34d4b663d5bdbb2bb4777bb40145f551",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulNormCore.lean",
+      "public_path": "Karlin/FaithfulNormCore.lean",
+      "original_sha256": "3cfeb2f48f44c58be4ac28e19818ca8f265234b1b52dee8944530741daba9e7f",
+      "original_bytes": 4555,
+      "role": "project_source",
+      "public_bytes": 4555,
+      "public_sha256": "3cfeb2f48f44c58be4ac28e19818ca8f265234b1b52dee8944530741daba9e7f",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulNormStar.lean",
+      "public_path": "Karlin/FaithfulNormStar.lean",
+      "original_sha256": "2acf91372b33c2ad3372d7c3b7d7c47359a8d79a9969f2d1722d47cfc5ca2e14",
+      "original_bytes": 8932,
+      "role": "project_source",
+      "public_bytes": 8932,
+      "public_sha256": "2acf91372b33c2ad3372d7c3b7d7c47359a8d79a9969f2d1722d47cfc5ca2e14",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulPaperAlgebra.lean",
+      "public_path": "Karlin/FaithfulPaperAlgebra.lean",
+      "original_sha256": "6c6ddcfa1a51aaa6ed4a06c49f5b8ec6da7cd16d8acb1a612710b7e9ffd110e2",
+      "original_bytes": 23924,
+      "role": "project_source",
+      "public_bytes": 23908,
+      "public_sha256": "64f6d716d155c7227bd3fd9accdc585d5925a1673f712bd05af6496a41aebcd2",
+      "change": "comment_only",
+      "original_noncomment_sha256": "4383f30221668226a5d34257137740467e771a12f76b7d738b09962bb882bfa3"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulPaperBounds.lean",
+      "public_path": "Karlin/FaithfulPaperBounds.lean",
+      "original_sha256": "a07dec27e22100c351ebc94d230b87ba59cfe13358b37ce4588d7067005592f6",
+      "original_bytes": 9043,
+      "role": "project_source",
+      "public_bytes": 9043,
+      "public_sha256": "a07dec27e22100c351ebc94d230b87ba59cfe13358b37ce4588d7067005592f6",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulPaperChronology.lean",
+      "public_path": "Karlin/FaithfulPaperChronology.lean",
+      "original_sha256": "e7941f8901e8fcbacd3931578ccf74a0da03467e8c875960b599c6e650586ef9",
+      "original_bytes": 11156,
+      "role": "project_source",
+      "public_bytes": 11156,
+      "public_sha256": "e7941f8901e8fcbacd3931578ccf74a0da03467e8c875960b599c6e650586ef9",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulPaperCokernel.lean",
+      "public_path": "Karlin/FaithfulPaperCokernel.lean",
+      "original_sha256": "e9e438ac86bf36c8c3e5e6db5cf0e784e34ab65b8c754e80c031bf08dbad663c",
+      "original_bytes": 26609,
+      "role": "project_source",
+      "public_bytes": 26614,
+      "public_sha256": "41e3ed1009de8458c360ce91f1822d5d86b587d1242ee63d8507ef339bc465fe",
+      "change": "comment_only",
+      "original_noncomment_sha256": "7be45ef59cb9f4144adae6351d3e5fa63ca2dba0db8c39cb6e76a386cbc34082"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulPaperCoverage.lean",
+      "public_path": "Karlin/FaithfulPaperCoverage.lean",
+      "original_sha256": "d368778b6a57b5b9c6f409512db743fa1c71c1b2c013b2188e21364f4da416eb",
+      "original_bytes": 14296,
+      "role": "project_source",
+      "public_bytes": 14296,
+      "public_sha256": "d368778b6a57b5b9c6f409512db743fa1c71c1b2c013b2188e21364f4da416eb",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulPaperSeeds.lean",
+      "public_path": "Karlin/FaithfulPaperSeeds.lean",
+      "original_sha256": "a1e71a784a6fe1818003f7188296e3efef0705e49a387713d5e99d874102c245",
+      "original_bytes": 15334,
+      "role": "project_source",
+      "public_bytes": 15334,
+      "public_sha256": "a1e71a784a6fe1818003f7188296e3efef0705e49a387713d5e99d874102c245",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulParameters.lean",
+      "public_path": "Karlin/FaithfulParameters.lean",
+      "original_sha256": "c5f2520243458d3fa61ea2db71348d9ffe6c0e9dcb4445d8c944e3b750ca5d4f",
+      "original_bytes": 15721,
+      "role": "project_source",
+      "public_bytes": 15721,
+      "public_sha256": "c5f2520243458d3fa61ea2db71348d9ffe6c0e9dcb4445d8c944e3b750ca5d4f",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulPolynomialRoutes.lean",
+      "public_path": "Karlin/FaithfulPolynomialRoutes.lean",
+      "original_sha256": "c844ba0d2f2ae045ff36dc450b753d79d93e42fcecba503362093a378be6c61e",
+      "original_bytes": 17200,
+      "role": "project_source",
+      "public_bytes": 17200,
+      "public_sha256": "c844ba0d2f2ae045ff36dc450b753d79d93e42fcecba503362093a378be6c61e",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulProcessSetup.lean",
+      "public_path": "Karlin/FaithfulProcessSetup.lean",
+      "original_sha256": "f47657616a60fbfc8525a2ee5be6419591c334280a682a3bef634c856b4ff29c",
+      "original_bytes": 19232,
+      "role": "project_source",
+      "public_bytes": 19232,
+      "public_sha256": "f47657616a60fbfc8525a2ee5be6419591c334280a682a3bef634c856b4ff29c",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulProspectiveScale.lean",
+      "public_path": "Karlin/FaithfulProspectiveScale.lean",
+      "original_sha256": "db7b6525131fd94fe2b77eaf95a02211a80b4ad35f6e909dd371e78486deb893",
+      "original_bytes": 6265,
+      "role": "project_source",
+      "public_bytes": 6265,
+      "public_sha256": "db7b6525131fd94fe2b77eaf95a02211a80b4ad35f6e909dd371e78486deb893",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulRPS.lean",
+      "public_path": "Karlin/FaithfulRPS.lean",
+      "original_sha256": "08d48768bf2ba6bb04f06834029655be6cf32c0dbd746135206330c7e1736005",
+      "original_bytes": 1796,
+      "role": "project_source",
+      "public_bytes": 1796,
+      "public_sha256": "08d48768bf2ba6bb04f06834029655be6cf32c0dbd746135206330c7e1736005",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulRate.lean",
+      "public_path": "Karlin/FaithfulRate.lean",
+      "original_sha256": "4c61049c6337c39280490dc7b81d06e15a791ab974da5d61c162648feebb194b",
+      "original_bytes": 18456,
+      "role": "project_source",
+      "public_bytes": 18456,
+      "public_sha256": "4c61049c6337c39280490dc7b81d06e15a791ab974da5d61c162648feebb194b",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulRateError.lean",
+      "public_path": "Karlin/FaithfulRateError.lean",
+      "original_sha256": "bf1ef3f1ce442b0090b348431ff332e6168daf64767956538f0f44409377e575",
+      "original_bytes": 30837,
+      "role": "project_source",
+      "public_bytes": 30824,
+      "public_sha256": "4996acbfac18e9e992e07a325abe980b09983b46f4058c71c46877425d316b04",
+      "change": "comment_only",
+      "original_noncomment_sha256": "af4c8d316d9f129f8a4ff58d6763fd8102caf081d8110b92ec036bba27621882"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulRealization.lean",
+      "public_path": "Karlin/FaithfulRealization.lean",
+      "original_sha256": "a1096eeb5e4e3579a7bef9274bf77ccee4879aa2ffebe6b244d0a1cd97d7f3a3",
+      "original_bytes": 11893,
+      "role": "project_source",
+      "public_bytes": 11893,
+      "public_sha256": "a1096eeb5e4e3579a7bef9274bf77ccee4879aa2ffebe6b244d0a1cd97d7f3a3",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulReindex.lean",
+      "public_path": "Karlin/FaithfulReindex.lean",
+      "original_sha256": "aa04bdf40a1a00dfb2d1becda37d4d20d3b22b16de47e8a9bfc3778d8e32affd",
+      "original_bytes": 8991,
+      "role": "project_source",
+      "public_bytes": 8991,
+      "public_sha256": "aa04bdf40a1a00dfb2d1becda37d4d20d3b22b16de47e8a9bfc3778d8e32affd",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulReset.lean",
+      "public_path": "Karlin/FaithfulReset.lean",
+      "original_sha256": "f8af0ba47b3942f747f8530d4b0392aa2d0203f51d1aef7724806c4f5ddecd6c",
+      "original_bytes": 18863,
+      "role": "project_source",
+      "public_bytes": 18863,
+      "public_sha256": "f8af0ba47b3942f747f8530d4b0392aa2d0203f51d1aef7724806c4f5ddecd6c",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulResetEquations.lean",
+      "public_path": "Karlin/FaithfulResetEquations.lean",
+      "original_sha256": "a945ebc497e7d62954d473d6af845d07eea03495d420f3bf1b6e0d894d331c16",
+      "original_bytes": 18342,
+      "role": "project_source",
+      "public_bytes": 18342,
+      "public_sha256": "a945ebc497e7d62954d473d6af845d07eea03495d420f3bf1b6e0d894d331c16",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulResetPlateau.lean",
+      "public_path": "Karlin/FaithfulResetPlateau.lean",
+      "original_sha256": "dc6c390b41c424a99b38f2843c4b58b077648814a8600e3de8f0e6ee528363f8",
+      "original_bytes": 7930,
+      "role": "project_source",
+      "public_bytes": 7930,
+      "public_sha256": "dc6c390b41c424a99b38f2843c4b58b077648814a8600e3de8f0e6ee528363f8",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulScale.lean",
+      "public_path": "Karlin/FaithfulScale.lean",
+      "original_sha256": "12fcf9099e0e02603b1ba8805be8f84a822570ee6ccfa83f1b3b6cd8706e6b9e",
+      "original_bytes": 48943,
+      "role": "project_source",
+      "public_bytes": 48960,
+      "public_sha256": "c9e148c0b2503c77ce7971680897cfe25c658d4daed7c5b6e0cbcc1a3eec832c",
+      "change": "comment_only",
+      "original_noncomment_sha256": "ccaef0b64e83a159d0b529e2841e08f5ad039b80986789137b70936caac6fcb1"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulScaleClock.lean",
+      "public_path": "Karlin/FaithfulScaleClock.lean",
+      "original_sha256": "be0fde101751121c3044ba1d26364ce45b0b670c5c98457d9965529508af16c0",
+      "original_bytes": 8848,
+      "role": "project_source",
+      "public_bytes": 8848,
+      "public_sha256": "be0fde101751121c3044ba1d26364ce45b0b670c5c98457d9965529508af16c0",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulScaleEffective.lean",
+      "public_path": "Karlin/FaithfulScaleEffective.lean",
+      "original_sha256": "1a39a6211cb2829d02e5f0223a93f7e4a941fd7f039c4721effa1a66cf2026a7",
+      "original_bytes": 22967,
+      "role": "project_source",
+      "public_bytes": 22967,
+      "public_sha256": "1a39a6211cb2829d02e5f0223a93f7e4a941fd7f039c4721effa1a66cf2026a7",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSeed.lean",
+      "public_path": "Karlin/FaithfulSeed.lean",
+      "original_sha256": "21d07cb2292130a195bc29b9d4c7a41e60f95f95ff35045ac6d0c38785d65f8e",
+      "original_bytes": 6029,
+      "role": "project_source",
+      "public_bytes": 6029,
+      "public_sha256": "21d07cb2292130a195bc29b9d4c7a41e60f95f95ff35045ac6d0c38785d65f8e",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSeedAdmissible.lean",
+      "public_path": "Karlin/FaithfulSeedAdmissible.lean",
+      "original_sha256": "ed6711efac5dc6701322ae347730097bffa4d4104600ce53a914cd77afcdaebc",
+      "original_bytes": 2138,
+      "role": "project_source",
+      "public_bytes": 2138,
+      "public_sha256": "ed6711efac5dc6701322ae347730097bffa4d4104600ce53a914cd77afcdaebc",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSevenAdmissible.lean",
+      "public_path": "Karlin/FaithfulSevenAdmissible.lean",
+      "original_sha256": "eaca8a5b9e20b6cc07a4e09c3b750ccd103ae05e4fd7e721fa2b37617ee34173",
+      "original_bytes": 5974,
+      "role": "project_source",
+      "public_bytes": 5974,
+      "public_sha256": "eaca8a5b9e20b6cc07a4e09c3b750ccd103ae05e4fd7e721fa2b37617ee34173",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSevenData.lean",
+      "public_path": "Karlin/FaithfulSevenData.lean",
+      "original_sha256": "a71957c4545d8b917b3ab428a60ae8dafcfc951ff928641c241f9cb49feb9820",
+      "original_bytes": 17831,
+      "role": "project_source",
+      "public_bytes": 17831,
+      "public_sha256": "a71957c4545d8b917b3ab428a60ae8dafcfc951ff928641c241f9cb49feb9820",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSevenFamily.lean",
+      "public_path": "Karlin/FaithfulSevenFamily.lean",
+      "original_sha256": "702f0f6d51ee22f199a00f88256e29e76aef4d177fc7e861eda233e6bb9e7823",
+      "original_bytes": 8385,
+      "role": "project_source",
+      "public_bytes": 8385,
+      "public_sha256": "702f0f6d51ee22f199a00f88256e29e76aef4d177fc7e861eda233e6bb9e7823",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSevenMarker.lean",
+      "public_path": "Karlin/FaithfulSevenMarker.lean",
+      "original_sha256": "f910bd313c0f21255e7a1ca75bf66579c04df1cbba45b6f2a6e5a1f18a4d1551",
+      "original_bytes": 13437,
+      "role": "project_source",
+      "public_bytes": 13437,
+      "public_sha256": "f910bd313c0f21255e7a1ca75bf66579c04df1cbba45b6f2a6e5a1f18a4d1551",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSevenSeed.lean",
+      "public_path": "Karlin/FaithfulSevenSeed.lean",
+      "original_sha256": "9a6558baa7189f2da8b3248dc52eee6408f8929f5e3c7e1d1c4f739a34b71849",
+      "original_bytes": 4126,
+      "role": "project_source",
+      "public_bytes": 4126,
+      "public_sha256": "9a6558baa7189f2da8b3248dc52eee6408f8929f5e3c7e1d1c4f739a34b71849",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSevenSuffix.lean",
+      "public_path": "Karlin/FaithfulSevenSuffix.lean",
+      "original_sha256": "fd71afe725cab080b2a955cbec3a3225a7ae183af56ce2b7b0b8d6dd4af2654f",
+      "original_bytes": 9503,
+      "role": "project_source",
+      "public_bytes": 9503,
+      "public_sha256": "fd71afe725cab080b2a955cbec3a3225a7ae183af56ce2b7b0b8d6dd4af2654f",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulStageBounds.lean",
+      "public_path": "Karlin/FaithfulStageBounds.lean",
+      "original_sha256": "d406845737dad68366e3196d6c31de3384fedf53a1633838e1a98b24ab9943ff",
+      "original_bytes": 5329,
+      "role": "project_source",
+      "public_bytes": 5329,
+      "public_sha256": "d406845737dad68366e3196d6c31de3384fedf53a1633838e1a98b24ab9943ff",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulStartPhase.lean",
+      "public_path": "Karlin/FaithfulStartPhase.lean",
+      "original_sha256": "2b15326a489bf6a1fb4f7e02a284d4a05aa663f727d5553cd0aa867449e885f3",
+      "original_bytes": 3030,
+      "role": "project_source",
+      "public_bytes": 3030,
+      "public_sha256": "2b15326a489bf6a1fb4f7e02a284d4a05aa663f727d5553cd0aa867449e885f3",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulSynthesis.lean",
+      "public_path": "Karlin/FaithfulSynthesis.lean",
+      "original_sha256": "c388cbecbba52f6ad814a6ab8c0e11020f79b084001f29e784a32a03e4c31539",
+      "original_bytes": 5421,
+      "role": "project_source",
+      "public_bytes": 5421,
+      "public_sha256": "c388cbecbba52f6ad814a6ab8c0e11020f79b084001f29e784a32a03e4c31539",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulTables.lean",
+      "public_path": "Karlin/FaithfulTables.lean",
+      "original_sha256": "0cfc35e3c497afee4a2608c979011fc955695b46544688fc3590090364a2a5ed",
+      "original_bytes": 31797,
+      "role": "project_source",
+      "public_bytes": 31797,
+      "public_sha256": "0cfc35e3c497afee4a2608c979011fc955695b46544688fc3590090364a2a5ed",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulV15.lean",
+      "public_path": "Karlin/FaithfulV15.lean",
+      "original_sha256": "8065d58e97fa5184551731160fd2801b32944d812a4210746f822e29d5b66611",
+      "original_bytes": 1243,
+      "role": "project_source",
+      "public_bytes": 1145,
+      "public_sha256": "d1226c53db1b78be5a13b3120c6718ae1a76cfeeb39d1d291ca8604d4b0d0ffd",
+      "change": "comment_only",
+      "original_noncomment_sha256": "ca4fbdcad32afe90917307fb8244c38997c620fef3cb2040826630dfb2b1bad0"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulWaiting.lean",
+      "public_path": "Karlin/FaithfulWaiting.lean",
+      "original_sha256": "d876a60d2e58e9ea25783fbd9eeb8959bb8db9286830e612d7013997083b50a4",
+      "original_bytes": 15036,
+      "role": "project_source",
+      "public_bytes": 15036,
+      "public_sha256": "d876a60d2e58e9ea25783fbd9eeb8959bb8db9286830e612d7013997083b50a4",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FaithfulWindow.lean",
+      "public_path": "Karlin/FaithfulWindow.lean",
+      "original_sha256": "5b413836908e917bca977015ae3bdc8b26f804174d6037bde94ea84a4e3d7546",
+      "original_bytes": 9809,
+      "role": "project_source",
+      "public_bytes": 9809,
+      "public_sha256": "5b413836908e917bca977015ae3bdc8b26f804174d6037bde94ea84a4e3d7546",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/FictitiousPlay.lean",
+      "public_path": "Karlin/FictitiousPlay.lean",
+      "original_sha256": "641a7f73dcf58fc5703952152febe7e2e5fbab22b8120273e49133ff28ea5822",
+      "original_bytes": 11537,
+      "role": "project_source",
+      "public_bytes": 11537,
+      "public_sha256": "641a7f73dcf58fc5703952152febe7e2e5fbab22b8120273e49133ff28ea5822",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/GatewayLift.lean",
+      "public_path": "Karlin/GatewayLift.lean",
+      "original_sha256": "87acdfacc6c484f3baaa59170accada490940e3a6974cdcb2610fb1a581b7d5e",
+      "original_bytes": 229570,
+      "role": "project_source",
+      "public_bytes": 229570,
+      "public_sha256": "87acdfacc6c484f3baaa59170accada490940e3a6974cdcb2610fb1a581b7d5e",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/InductiveLift.lean",
+      "public_path": "Karlin/InductiveLift.lean",
+      "original_sha256": "5686405718c22eb615ddf5aa1a8e99ea1dfd4861f11b64ad5ab8af5b72b786eb",
+      "original_bytes": 39012,
+      "role": "project_source",
+      "public_bytes": 39012,
+      "public_sha256": "5686405718c22eb615ddf5aa1a8e99ea1dfd4861f11b64ad5ab8af5b72b786eb",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/PaperProof.lean",
+      "public_path": "Karlin/PaperProof.lean",
+      "original_sha256": "cef55e2f4cd07e3d355051707e025dcd0bdd317150d9fa7de200c0329a000dca",
+      "original_bytes": 181509,
+      "role": "project_source",
+      "public_bytes": 181509,
+      "public_sha256": "cef55e2f4cd07e3d355051707e025dcd0bdd317150d9fa7de200c0329a000dca",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/PriorityWordBias.lean",
+      "public_path": "Karlin/PriorityWordBias.lean",
+      "original_sha256": "b80e6bbc5c428dadc6c6a1e585f72176502f69c278fc0c907b5e75489c917cf2",
+      "original_bytes": 6008,
+      "role": "project_source",
+      "public_bytes": 6008,
+      "public_sha256": "b80e6bbc5c428dadc6c6a1e585f72176502f69c278fc0c907b5e75489c917cf2",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/RPSClock.lean",
+      "public_path": "Karlin/RPSClock.lean",
+      "original_sha256": "72d38a1cafbc68ab89f92a989329f7d7b46738e7a77cd190725a3a5b6bc15cae",
+      "original_bytes": 13725,
+      "role": "project_source",
+      "public_bytes": 13725,
+      "public_sha256": "72d38a1cafbc68ab89f92a989329f7d7b46738e7a77cd190725a3a5b6bc15cae",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/Karlin/UnrolledTrajectory.lean",
+      "public_path": "Karlin/UnrolledTrajectory.lean",
+      "original_sha256": "acf9a1ca26afa553504bb14d3cea8ec57430e4f559d3ccbf93441215d016aad0",
+      "original_bytes": 88069,
+      "role": "project_source",
+      "public_bytes": 88069,
+      "public_sha256": "acf9a1ca26afa553504bb14d3cea8ec57430e4f559d3ccbf93441215d016aad0",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/MainPaperRouteVerification.lean",
+      "public_path": "MainPaperRouteVerification.lean",
+      "original_sha256": "cbc82b764afe06b30724b5279ddf0f5f9990c99e979c36c8f31abab3c3a687d6",
+      "original_bytes": 5457,
+      "role": "project_source",
+      "public_bytes": 5444,
+      "public_sha256": "af7a8fe359d0939e256ca9164e71b7de28c0271f9907a68583419f62604b3692",
+      "change": "comment_only",
+      "original_noncomment_sha256": "afc14d8ea8ce75b8447d363ee6042be14d8e34a596ae1fa5e9309342d8e164f3"
+    },
+    {
+      "source_path": "lean_formalization/PaperRouteVerification.lean",
+      "public_path": "PaperRouteVerification.lean",
+      "original_sha256": "3c1bed630481a40741cca94abdc96a2c0ab5cbdbbf15474a3c1086114a560bbd",
+      "original_bytes": 4862,
+      "role": "project_source",
+      "public_bytes": 4861,
+      "public_sha256": "92f9a930d33efe2ffadb3138cf3ea8c041e9c6e4a38573cb138c8e598a4804ea",
+      "change": "comment_only",
+      "original_noncomment_sha256": "22526f984247d276b437d5c7dc6c4a1ffec639f8dd5d186ca29d1148bd09e30f"
+    },
+    {
+      "source_path": "lean_formalization/RemainingPaperRouteVerification.lean",
+      "public_path": "RemainingPaperRouteVerification.lean",
+      "original_sha256": "64e62b38b8bb361147a50da9faa0991042401cc0b41343671fc2577aa3f676f8",
+      "original_bytes": 7952,
+      "role": "project_source",
+      "public_bytes": 7952,
+      "public_sha256": "64e62b38b8bb361147a50da9faa0991042401cc0b41343671fc2577aa3f676f8",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/faithful_audit/FinalDependencies.lean",
+      "public_path": "faithful_audit/FinalDependencies.lean",
+      "original_sha256": "4fda8a06322d93e192b1289726831db00af581b8fb004e2b260fd25a6c80461a",
+      "original_bytes": 2221,
+      "role": "project_source",
+      "public_bytes": 2221,
+      "public_sha256": "4fda8a06322d93e192b1289726831db00af581b8fb004e2b260fd25a6c80461a",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/faithful_audit/IndependentMainDependencies.lean",
+      "public_path": "faithful_audit/IndependentMainDependencies.lean",
+      "original_sha256": "ceb92945e0795a1672e1d3509970fd29f8a7f2f2e6a2d00b987f6c96724508eb",
+      "original_bytes": 4956,
+      "role": "project_source",
+      "public_bytes": 4956,
+      "public_sha256": "ceb92945e0795a1672e1d3509970fd29f8a7f2f2e6a2d00b987f6c96724508eb",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/faithful_audit/revised/CrosswalkCurrentExports.lean",
+      "public_path": "faithful_audit/revised/CrosswalkCurrentExports.lean",
+      "original_sha256": "a8b4ad7865cb7610fe8b92b63f15f3e4b023d7d95ee833e2017660377fe8c155",
+      "original_bytes": 4341,
+      "role": "project_source",
+      "public_bytes": 4341,
+      "public_sha256": "a8b4ad7865cb7610fe8b92b63f15f3e4b023d7d95ee833e2017660377fe8c155",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/faithful_audit/revised/IntegrationGate.lean",
+      "public_path": "faithful_audit/revised/IntegrationGate.lean",
+      "original_sha256": "2d83d35d084ea7e62c1758fbcda8e3020fca9955491f36d59ff1d6049afdfaf5",
+      "original_bytes": 11497,
+      "role": "project_source",
+      "public_bytes": 11497,
+      "public_sha256": "2d83d35d084ea7e62c1758fbcda8e3020fca9955491f36d59ff1d6049afdfaf5",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/faithful_audit/revised/RevisedAllDependencies.lean",
+      "public_path": "faithful_audit/revised/RevisedAllDependencies.lean",
+      "original_sha256": "c5351d42faa6fccd5377c785f2c930b8351d44832dee21b2ee74fc4489571da5",
+      "original_bytes": 2224,
+      "role": "project_source",
+      "public_bytes": 2224,
+      "public_sha256": "c5351d42faa6fccd5377c785f2c930b8351d44832dee21b2ee74fc4489571da5",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/lake-manifest.json",
+      "public_path": "lake-manifest.json",
+      "original_sha256": "035a626c8ad011ff3af79aabf71205ca0c6cbb83279e3cbaaff87c2f03f9f03d",
+      "original_bytes": 3131,
+      "role": "build_configuration",
+      "public_bytes": 3131,
+      "public_sha256": "035a626c8ad011ff3af79aabf71205ca0c6cbb83279e3cbaaff87c2f03f9f03d",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/lakefile.toml",
+      "public_path": "lakefile.toml",
+      "original_sha256": "41f69e319459b24aa7348b320492248c2f10fa3f34884e8bd21852a7b6c42883",
+      "original_bytes": 165,
+      "role": "build_configuration",
+      "public_bytes": 165,
+      "public_sha256": "41f69e319459b24aa7348b320492248c2f10fa3f34884e8bd21852a7b6c42883",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "lean_formalization/lean-toolchain",
+      "public_path": "lean-toolchain",
+      "original_sha256": "d55ca0039a5479db5b38919d005b2c427b89b3be4f0184a20f2f4eae931f5bdb",
+      "original_bytes": 25,
+      "role": "build_configuration",
+      "public_bytes": 25,
+      "public_sha256": "d55ca0039a5479db5b38919d005b2c427b89b3be4f0184a20f2f4eae931f5bdb",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "independent-audit/lean_formalization/IndependentAssemblyGate.lean",
+      "public_path": "verification/probes/IndependentAssemblyGate.lean",
+      "original_sha256": "b31c1a57dbd2995f1858fa218c11c826a362a8893404bab84ca858c6b288e825",
+      "original_bytes": 6650,
+      "role": "independent_probe",
+      "public_bytes": 6650,
+      "public_sha256": "b31c1a57dbd2995f1858fa218c11c826a362a8893404bab84ca858c6b288e825",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "independent-audit/lean_formalization/IndependentContracts.lean",
+      "public_path": "verification/probes/IndependentContracts.lean",
+      "original_sha256": "5268ee37629941bcc422170e119692cedbfa7748ab5deea8e4cf970df30bd206",
+      "original_bytes": 3955,
+      "role": "independent_probe",
+      "public_bytes": 3955,
+      "public_sha256": "5268ee37629941bcc422170e119692cedbfa7748ab5deea8e4cf970df30bd206",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "independent-audit/lean_formalization/IndependentInventory.lean",
+      "public_path": "verification/probes/IndependentInventory.lean",
+      "original_sha256": "bd379b36ab75de13f2ad2a7b9f70022ab4f57655250e2bafd12048b182712e1b",
+      "original_bytes": 885,
+      "role": "independent_probe",
+      "public_bytes": 885,
+      "public_sha256": "bd379b36ab75de13f2ad2a7b9f70022ab4f57655250e2bafd12048b182712e1b",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "independent-audit/lean_formalization/IndependentRemainingGate.lean",
+      "public_path": "verification/probes/IndependentRemainingGate.lean",
+      "original_sha256": "64ee7585d343ad3c2c93af857de370e5ae7425d1407c7afa2b651269a746132c",
+      "original_bytes": 8178,
+      "role": "independent_probe",
+      "public_bytes": 8178,
+      "public_sha256": "64ee7585d343ad3c2c93af857de370e5ae7425d1407c7afa2b651269a746132c",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "independent-audit/lean_formalization/IndependentRouteGate.lean",
+      "public_path": "verification/probes/IndependentRouteGate.lean",
+      "original_sha256": "ca7fd80d1e330e54326d4aede040073f8f5581b3aeb8f2e30a23731853d695b5",
+      "original_bytes": 3255,
+      "role": "independent_probe",
+      "public_bytes": 3255,
+      "public_sha256": "ca7fd80d1e330e54326d4aede040073f8f5581b3aeb8f2e30a23731853d695b5",
+      "change": "unchanged"
+    },
+    {
+      "source_path": "independent-audit/lean_formalization/IndependentWholeGate.lean",
+      "public_path": "verification/probes/IndependentWholeGate.lean",
+      "original_sha256": "6ae5f850912bcead31cf1b2d9a13cec49456b19a4d2663b8ba63cca62b98da48",
+      "original_bytes": 11807,
+      "role": "independent_probe",
+      "public_bytes": 11807,
+      "public_sha256": "6ae5f850912bcead31cf1b2d9a13cec49456b19a4d2663b8ba63cca62b98da48",
+      "change": "unchanged"
+    }
+  ],
+  "omitted_superseded_harnesses": [
+    {
+      "source_path": "lean_formalization/faithful_audit/revised/RevisedGateAudit.lean",
+      "original_sha256": "f828d762878ca8e9c578a8e526a9adeb41ccdac76d1de5a43c6a6ff909b78847",
+      "original_bytes": 4630,
+      "reason": "Historical audit requires the old moment_solvable_iff_listed_tests dependency in final-family proofs; the audited current route intentionally uses paper_moment_solvable_iff and excludes the old route. The theorem itself is not invalidated.",
+      "current_replacement_checks": [
+        "verification/probes/IndependentWholeGate.lean",
+        "verification/probes/IndependentAssemblyGate.lean",
+        "verification/probes/IndependentRouteGate.lean"
+      ]
+    },
+    {
+      "source_path": "lean_formalization/faithful_audit/revised/RevisedSevenGateAudit.lean",
+      "original_sha256": "ed18dd172e14832ddaacefbf4ac6ee2ba076aa7ed660e11d82bcfd20da9b4866",
+      "original_bytes": 4748,
+      "reason": "Historical audit requires the old moment_solvable_iff_listed_tests dependency in final-family proofs; the audited current route intentionally uses paper_moment_solvable_iff and excludes the old route. The theorem itself is not invalidated.",
+      "current_replacement_checks": [
+        "verification/probes/IndependentWholeGate.lean",
+        "verification/probes/IndependentAssemblyGate.lean",
+        "verification/probes/IndependentRouteGate.lean"
+      ]
+    }
+  ]
+}

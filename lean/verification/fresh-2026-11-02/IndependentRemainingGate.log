@@ -1,0 +1,37 @@
+CONSUMER_PASS Karlin.FaithfulScale.binomial_row_integral_of_values: required=2; excluded=0; body=8
+CONSUMER_PASS Karlin.FaithfulTables.zeta_leading: required=4; excluded=1; body=159
+CONSUMER_PASS Karlin.FaithfulInheritance.oldLengthRow_last_pos: required=5; excluded=1; body=146
+CONSUMER_PASS Karlin.Faithful.actual_reset_signs: required=8; excluded=3; body=129
+CONSUMER_PASS Karlin.FaithfulRateError.interpolated_polynomial_error: required=3; excluded=1; body=20
+CONSUMER_PASS Karlin.FaithfulRealization.exact_gap_limit: required=5; excluded=2; body=287
+CONSUMER_PASS Karlin.FaithfulRealization.relative_gap_error: required=2; excluded=1; body=284
+CONSUMER_PASS Karlin.FaithfulActualSuffix.actual_suffix: required=3; excluded=2; body=858
+CONSUMER_PASS Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain: required=2; excluded=3; body=776
+DIRECT_EDGE_PASS Karlin.FaithfulScale.binomial_row_integral_of_values -> Karlin.FaithfulFiniteDifference.binomial_row_eq_forward_difference
+DIRECT_EDGE_PASS Karlin.FaithfulTables.zeta_leading -> Karlin.FaithfulPolynomialRoutes.backwardDifference_top_coefficient
+DIRECT_EDGE_PASS Karlin.FaithfulInheritance.oldLengthRow_last_pos -> Karlin.FaithfulPolynomialRoutes.bundle_row_top_coefficient
+DIRECT_EDGE_PASS Karlin.Faithful.actual_reset_signs -> Karlin.Faithful.coupling_error_normStar_bound
+DIRECT_EDGE_PASS Karlin.Faithful.score_error_normStar_bound -> Karlin.Faithful.internal_normStar_bound_with_entry_constants
+DIRECT_EDGE_PASS Karlin.FaithfulRateError.interpolated_polynomial_error -> Karlin.FaithfulRateError.within_phase_ratio_error
+DIRECT_EDGE_PASS Karlin.FaithfulRealization.exact_gap_limit -> Karlin.FaithfulRateError.standard_gap_from_phase_tables_exact_limit
+DIRECT_EDGE_PASS Karlin.FaithfulActualSuffix.actual_suffix -> Karlin.FaithfulGatewaySuffix.actual_pre_gateway_gain
+MAIN_BODY_PASS Karlin.FaithfulLift.nextClock: body=1571; full=29399; axioms=[propext, Quot.sound, Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulLift.nextAdmissible: body=1794; full=29684; axioms=[propext, Quot.sound, Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulMain.strict_simultaneous: body=2022; full=30057; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulSevenFamily.strict_simultaneous: body=2148; full=30127; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulMain.exact_gap: body=2140; full=37669; axioms=[propext, Quot.sound, Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulSevenFamily.exact_gap: body=2266; full=37738; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulMain.relative_error: body=2137; full=37653; axioms=[propext, Quot.sound, Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulSevenFamily.relative_error: body=2263; full=37722; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulMain.main_theorem: body=2182; full=37713; axioms=[propext, Quot.sound, Classical.choice]
+MAIN_BODY_PASS Karlin.FaithfulSevenFamily.main_theorem: body=2305; full=37779; axioms=[propext,
+ Quot.sound,
+ Classical.choice]

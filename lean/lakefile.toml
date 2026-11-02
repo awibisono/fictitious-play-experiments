@@ -1,0 +1,10 @@
+name = "karlin_formalization"
+defaultTargets = ["Karlin"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.27.0"
+
+[[lean_lib]]
+name = "Karlin"

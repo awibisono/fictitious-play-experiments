@@ -1,0 +1,150 @@
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulPaperCokernel.paper_momentSection_solves: project=295; total=22453; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulGain.eventually_gain_and_bounded_correction: project=348; total=22584; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulGain.eventually_gain_and_bounded_correction -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulGain.correctedMoment_spec: project=324; total=22483; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulGain.AdmissibleGain.momentTable_solves: project=461; total=22698; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulGain.AdmissibleGain.eventually_momentTable: project=550; total=23886; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulGain.AdmissibleGain.eventually_momentTable -> Karlin.FaithfulGain.eventually_gain_and_bounded_correction -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulLift.nextClock: project=1586; total=29399; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulLift.nextClock -> Karlin.FaithfulController.chosen_valid -> Karlin.FaithfulController.firstScale_spec -> Karlin.FaithfulEffectiveParameters.canonicalFirstScale_spec -> Karlin.FaithfulEffectiveParameters.effectiveFirstScale_spec -> Karlin.FaithfulEffectiveParameters.closedScale_uniform_valid -> Karlin.FaithfulEffectiveParameters.certificate_valid -> Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulLift.nextAdmissible: project=1809; total=29684; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulLift.nextAdmissible -> Karlin.FaithfulController.chosen_valid -> Karlin.FaithfulController.firstScale_spec -> Karlin.FaithfulEffectiveParameters.canonicalFirstScale_spec -> Karlin.FaithfulEffectiveParameters.effectiveFirstScale_spec -> Karlin.FaithfulEffectiveParameters.closedScale_uniform_valid -> Karlin.FaithfulEffectiveParameters.certificate_valid -> Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulMain.strict_simultaneous: project=2043; total=30057; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulMain.strict_simultaneous -> Karlin.FaithfulMain.clock -> Karlin.FaithfulMain.bundle -> Karlin.FaithfulMain.step -> Karlin.FaithfulLift.nextClock -> Karlin.FaithfulController.chosen_valid -> Karlin.FaithfulController.firstScale_spec -> Karlin.FaithfulEffectiveParameters.canonicalFirstScale_spec -> Karlin.FaithfulEffectiveParameters.effectiveFirstScale_spec -> Karlin.FaithfulEffectiveParameters.closedScale_uniform_valid -> Karlin.FaithfulEffectiveParameters.certificate_valid -> Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulMain.exact_gap: project=2159; total=37669; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulMain.exact_gap -> Karlin.FaithfulMain.clock -> Karlin.FaithfulMain.bundle -> Karlin.FaithfulMain.step -> Karlin.FaithfulLift.nextClock -> Karlin.FaithfulController.chosen_valid -> Karlin.FaithfulController.firstScale_spec -> Karlin.FaithfulEffectiveParameters.canonicalFirstScale_spec -> Karlin.FaithfulEffectiveParameters.effectiveFirstScale_spec -> Karlin.FaithfulEffectiveParameters.closedScale_uniform_valid -> Karlin.FaithfulEffectiveParameters.certificate_valid -> Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulSevenFamily.strict_simultaneous: project=2164; total=30127; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulSevenFamily.strict_simultaneous -> Karlin.FaithfulSevenFamily.clock -> Karlin.FaithfulSevenFamily.bundle -> Karlin.FaithfulSevenFamily.iterate -> Karlin.FaithfulMain.step -> Karlin.FaithfulLift.nextClock -> Karlin.FaithfulController.chosen_valid -> Karlin.FaithfulController.firstScale_spec -> Karlin.FaithfulEffectiveParameters.canonicalFirstScale_spec -> Karlin.FaithfulEffectiveParameters.effectiveFirstScale_spec -> Karlin.FaithfulEffectiveParameters.closedScale_uniform_valid -> Karlin.FaithfulEffectiveParameters.certificate_valid -> Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulSevenFamily.exact_gap: project=2280; total=37738; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulSevenFamily.exact_gap -> Karlin.FaithfulSevenFamily.clock -> Karlin.FaithfulSevenFamily.bundle -> Karlin.FaithfulSevenFamily.iterate -> Karlin.FaithfulMain.step -> Karlin.FaithfulLift.nextClock -> Karlin.FaithfulController.chosen_valid -> Karlin.FaithfulController.firstScale_spec -> Karlin.FaithfulEffectiveParameters.canonicalFirstScale_spec -> Karlin.FaithfulEffectiveParameters.effectiveFirstScale_spec -> Karlin.FaithfulEffectiveParameters.closedScale_uniform_valid -> Karlin.FaithfulEffectiveParameters.certificate_valid -> Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulMain.main_theorem: project=2201; total=37713; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulMain.main_theorem -> Karlin.FaithfulMain.dimension -> Karlin.FaithfulMain.step -> Karlin.FaithfulLift.nextClock -> Karlin.FaithfulController.chosen_valid -> Karlin.FaithfulController.firstScale_spec -> Karlin.FaithfulEffectiveParameters.canonicalFirstScale_spec -> Karlin.FaithfulEffectiveParameters.effectiveFirstScale_spec -> Karlin.FaithfulEffectiveParameters.closedScale_uniform_valid -> Karlin.FaithfulEffectiveParameters.certificate_valid -> Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+ASSEMBLY_ROUTE_PASS Karlin.FaithfulSevenFamily.main_theorem: project=2319; total=37779; axioms=[propext,
+ Quot.sound,
+ Classical.choice]
+ROUTE_PATH Karlin.FaithfulSevenFamily.main_theorem -> Karlin.FaithfulSevenFamily.dimension -> Karlin.FaithfulSevenFamily.iterate -> Karlin.FaithfulMain.step -> Karlin.FaithfulLift.nextClock -> Karlin.FaithfulController.chosen_valid -> Karlin.FaithfulController.firstScale_spec -> Karlin.FaithfulEffectiveParameters.canonicalFirstScale_spec -> Karlin.FaithfulEffectiveParameters.effectiveFirstScale_spec -> Karlin.FaithfulEffectiveParameters.closedScale_uniform_valid -> Karlin.FaithfulEffectiveParameters.certificate_valid -> Karlin.FaithfulGain.AdmissibleGain.momentTable_solves -> Karlin.FaithfulGain.correctedMoment_solves_perturbed_tables -> Karlin.FaithfulGain.correctedMoment_spec -> Karlin.FaithfulPaperCokernel.paper_momentSection_solves -> Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff
+REQUIRED_PDF_ROUTE [Karlin.FaithfulPaperCokernel.paper_moment_solvable_iff,
+ Karlin.FaithfulPaperCokernel.D_pow_zero,
+ Karlin.FaithfulPaperCokernel.exp_D_apply,
+ Karlin.FaithfulPaperCokernel.one_sub_exp_neg,
+ Karlin.FaithfulPaperCokernel.expFactor_geometric_inverse,
+ Karlin.FaithfulPaperCokernel.conjugate_adjoint,
+ Karlin.FaithfulPaperCokernel.symmetric_derivation_expansion,
+ Karlin.FaithfulPaperCokernel.paper_binomial_kernel_mem_span]
+EXCLUDED_OLD_COKERNEL_ROUTE [Karlin.FaithfulCokernel.adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.moment_solvable_iff_listed_tests,
+ Karlin.FaithfulCokernel.adjoint_kernel_eq_testSpan,
+ Karlin.FaithfulCokernel.dp_adjoint_kernel_mem_testSpan,
+ Karlin.FaithfulCokernel.dp_adjoint_kernel_eq_testSpan,
+ Karlin.FaithfulCokernel.momentSection_solves,
+ Karlin.FaithfulCokernel.bounded_moment_solution,
+ Karlin.FaithfulCokernel.exists_fixed_bounded_moment_section,
+ Karlin.FaithfulCokernel.binomialKernelBasis,
+ Karlin.FaithfulCokernel.dividedPowerKernelBasis]
+structure Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer {k : ℕ} (P : Karlin.FaithfulClock.Clock k) : Type
+number of parameters: 2
+fields:
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.program : Karlin.FaithfulEffectiveContract.UniversalProgram
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.computes : ∀ (eps : ℚ),
+      0 < eps → self.program.eval eps = Part.some ↑(P.threshold eps)
+constructor:
+  Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer.mk {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+    (program : Karlin.FaithfulEffectiveContract.UniversalProgram)
+    (computes : ∀ (eps : ℚ), 0 < eps → program.eval eps = Part.some ↑(P.threshold eps)) :
+    Karlin.FaithfulEffectiveContract.UniversalThresholdRealizer P
+@Karlin.FaithfulEffectiveContract.lift_every_partrec_parent_program : ∀ {k : ℕ} {P : Karlin.FaithfulClock.Clock k}
+  (A : Karlin.FaithfulAdmissible.Admissible P) (f : ℕ → Part ℕ),
+  Nat.Partrec f →
+    (∀ (eps : ℚ), 0 < eps → f (Karlin.FaithfulEffectiveContract.encodeRat eps) = Part.some (P.threshold eps)) →
+      ∃ code,
+        ∀ (input : ℕ),
+          0 < Karlin.FaithfulEffectiveContract.decodeRat input →
+            Karlin.FaithfulEffectiveContract.UniversalProgram.runCode code input =
+              Part.some ((Karlin.FaithfulLift.nextClock A).threshold (Karlin.FaithfulEffectiveContract.decodeRat input))
+Karlin.FaithfulEffectiveContract.universal_rpsFamily_correct : ∀ (k : ℕ) (hk : 2 ≤ k) (eps : ℚ),
+  0 < eps →
+    ∃ fuel,
+      (Karlin.FaithfulEffectiveContract.universalRpsFamily k hk).program.execute fuel
+          (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+        Option.some (Karlin.FaithfulEffectiveLift.familyThreshold k hk eps)
+Karlin.FaithfulEffectiveContract.universal_sevenFamily_correct : ∀ (k : ℕ) (hk : 3 ≤ k) (eps : ℚ),
+  0 < eps →
+    ∃ fuel,
+      (Karlin.FaithfulEffectiveContract.universalSevenFamily k hk).program.execute fuel
+          (Karlin.FaithfulEffectiveContract.encodeRat eps) =
+        Option.some (Karlin.FaithfulSevenFamily.threshold k hk eps)
+Karlin.FaithfulMain.main_theorem : ∀ (k : ℕ),
+  2 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 5 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulMain.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))
+Karlin.FaithfulSevenFamily.main_theorem : ∀ (k : ℕ),
+  3 ≤ k →
+    ∃ m M a c,
+      m + 1 = (k + 1) ^ 2 - 9 ∧
+        Karlin.IsSkewSymmetric M ∧
+          a 0 = 0 ∧
+            (∀ (i : Fin (m + 1)), Karlin.FaithfulSevenFamily.counts a 0 i = 0) ∧
+              Karlin.IsStrictTwoPlayerFPTrajectory M a a ∧
+                (∀ (row col : ℕ → Fin (m + 1)),
+                    Karlin.IsWeakTwoPlayerFPTrajectory M row col →
+                      row 0 = 0 → col 0 = 0 → ∀ (t : ℕ), row t = a t ∧ col t = a t) ∧
+                  0 < c ∧
+                    Filter.Tendsto (fun t => ↑(Karlin.standardDualityGap M a a t) * ↑t ^ (1 / ↑k)) Filter.atTop
+                        (nhds c) ∧
+                      ((fun t => ↑(Karlin.standardDualityGap M a a t) / (c * ↑t ^ (-(1 / ↑k))) - 1) =O[Filter.atTop]
+                          fun t => ↑t ^ (-(1 / ↑k))) ∧
+                        ∃ T,
+                          1 ≤ T ∧
+                            ∀ (t : ℕ),
+                              T ≤ t →
+                                c / 2 * ↑t ^ (-(1 / ↑k)) ≤ ↑(Karlin.standardDualityGap M a a t) ∧
+                                  ↑(Karlin.standardDualityGap M a a t) ≤ 2 * c * ↑t ^ (-(1 / ↑k))
+'Karlin.FaithfulEffectiveContract.lift_every_partrec_parent_program' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'Karlin.FaithfulEffectiveContract.universal_clock_program' depends on axioms: [propext, Classical.choice, Quot.sound]
