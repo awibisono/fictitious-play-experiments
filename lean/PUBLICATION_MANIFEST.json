@@ -505,8 +505,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7311,
-      "sha256": "251de7c9fbcc2996c78942d49419ac3b826f4bc865e27cc1bef9254a1ec04961"
+      "bytes": 2049,
+      "sha256": "bac8bef3493255f288f8451811515946d41e18de4b6ef6456b515f928e75faac"
     },
     {
       "path": "REPRODUCE.sh",
